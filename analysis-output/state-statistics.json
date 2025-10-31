@@ -1,0 +1,212 @@
+{
+  "MADHYA PRADESH": {
+    "total": 52,
+    "matched": 47,
+    "unmatched": 5,
+    "matchRate": "90.38%"
+  },
+  "MAHARASHTRA": {
+    "total": 35,
+    "matched": 31,
+    "unmatched": 4,
+    "matchRate": "88.57%"
+  },
+  "MANIPUR": {
+    "total": 16,
+    "matched": 16,
+    "unmatched": 0,
+    "matchRate": "100.00%"
+  },
+  "MEGHALAYA": {
+    "total": 12,
+    "matched": 12,
+    "unmatched": 0,
+    "matchRate": "100.00%"
+  },
+  "MIZORAM": {
+    "total": 11,
+    "matched": 11,
+    "unmatched": 0,
+    "matchRate": "100.00%"
+  },
+  "NAGALAND": {
+    "total": 11,
+    "matched": 11,
+    "unmatched": 0,
+    "matchRate": "100.00%"
+  },
+  "ODISHA": {
+    "total": 30,
+    "matched": 26,
+    "unmatched": 4,
+    "matchRate": "86.67%"
+  },
+  "PUNJAB": {
+    "total": 23,
+    "matched": 18,
+    "unmatched": 5,
+    "matchRate": "78.26%"
+  },
+  "RAJASTHAN": {
+    "total": 33,
+    "matched": 33,
+    "unmatched": 0,
+    "matchRate": "100.00%"
+  },
+  "SIKKIM": {
+    "total": 6,
+    "matched": 0,
+    "unmatched": 6,
+    "matchRate": "0.00%"
+  },
+  "TAMIL NADU": {
+    "total": 37,
+    "matched": 33,
+    "unmatched": 4,
+    "matchRate": "89.19%"
+  },
+  "TRIPURA": {
+    "total": 8,
+    "matched": 8,
+    "unmatched": 0,
+    "matchRate": "100.00%"
+  },
+  "UTTAR PRADESH": {
+    "total": 75,
+    "matched": 73,
+    "unmatched": 2,
+    "matchRate": "97.33%"
+  },
+  "WEST BENGAL": {
+    "total": 23,
+    "matched": 14,
+    "unmatched": 9,
+    "matchRate": "60.87%"
+  },
+  "CHHATTISGARH": {
+    "total": 33,
+    "matched": 25,
+    "unmatched": 8,
+    "matchRate": "75.76%"
+  },
+  "JHARKHAND": {
+    "total": 24,
+    "matched": 24,
+    "unmatched": 0,
+    "matchRate": "100.00%"
+  },
+  "UTTARAKHAND": {
+    "total": 13,
+    "matched": 13,
+    "unmatched": 0,
+    "matchRate": "100.00%"
+  },
+  "TELANGANA": {
+    "total": 32,
+    "matched": 28,
+    "unmatched": 4,
+    "matchRate": "87.50%"
+  },
+  "LADAKH": {
+    "total": 2,
+    "matched": 1,
+    "unmatched": 1,
+    "matchRate": "50.00%"
+  },
+  "ARUNACHAL PRADESH": {
+    "total": 26,
+    "matched": 25,
+    "unmatched": 1,
+    "matchRate": "96.15%"
+  },
+  "ASSAM": {
+    "total": 36,
+    "matched": 32,
+    "unmatched": 4,
+    "matchRate": "88.89%"
+  },
+  "BIHAR": {
+    "total": 38,
+    "matched": 37,
+    "unmatched": 1,
+    "matchRate": "97.37%"
+  },
+  "GUJARAT": {
+    "total": 33,
+    "matched": 32,
+    "unmatched": 1,
+    "matchRate": "96.97%"
+  },
+  "HARYANA": {
+    "total": 22,
+    "matched": 22,
+    "unmatched": 0,
+    "matchRate": "100.00%"
+  },
+  "HIMACHAL PRADESH": {
+    "total": 12,
+    "matched": 12,
+    "unmatched": 0,
+    "matchRate": "100.00%"
+  },
+  "JAMMU AND KASHMIR": {
+    "total": 20,
+    "matched": 19,
+    "unmatched": 1,
+    "matchRate": "95.00%"
+  },
+  "KARNATAKA": {
+    "total": 32,
+    "matched": 29,
+    "unmatched": 3,
+    "matchRate": "90.63%"
+  },
+  "KERALA": {
+    "total": 14,
+    "matched": 14,
+    "unmatched": 0,
+    "matchRate": "100.00%"
+  },
+  "ANDHRA PRADESH": {
+    "total": 26,
+    "matched": 25,
+    "unmatched": 1,
+    "matchRate": "96.15%"
+  },
+  "GOA": {
+    "total": 2,
+    "matched": 2,
+    "unmatched": 0,
+    "matchRate": "100.00%"
+  },
+  "PUDUCHERRY": {
+    "total": 2,
+    "matched": 2,
+    "unmatched": 0,
+    "matchRate": "100.00%"
+  },
+  "DN HAVELI AND DD": {
+    "total": 1,
+    "matched": 1,
+    "unmatched": 0,
+    "matchRate": "100.00%"
+  },
+  "ANDAMAN AND NICOBAR": {
+    "total": 3,
+    "matched": 3,
+    "unmatched": 0,
+    "matchRate": "100.00%"
+  },
+  "LAKSHADWEEP": {
+    "total": 1,
+    "matched": 1,
+    "unmatched": 0,
+    "matchRate": "100.00%"
+  },
+  "NA": {
+    "total": 1,
+    "matched": 0,
+    "unmatched": 1,
+    "matchRate": "0.00%"
+  }
+}

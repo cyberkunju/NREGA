@@ -1,0 +1,3470 @@
+{
+  "pune|maharashtra": {
+    "geoDistrict": "PUNE",
+    "geoState": "MAHARASHTRA",
+    "geoId": 159,
+    "confidence": 1
+  },
+  "jalna|maharashtra": {
+    "geoDistrict": "JALNA",
+    "geoState": "MAHARASHTRA",
+    "geoId": 179,
+    "confidence": 1
+  },
+  "parbhani|maharashtra": {
+    "geoDistrict": "PARBHANI",
+    "geoState": "MAHARASHTRA",
+    "geoId": 166,
+    "confidence": 1
+  },
+  "amravati|maharashtra": {
+    "geoDistrict": "AMRAVATI",
+    "geoState": "MAHARASHTRA",
+    "geoId": 209,
+    "confidence": 1
+  },
+  "washim|maharashtra": {
+    "geoDistrict": "WASHIM",
+    "geoState": "MAHARASHTRA",
+    "geoId": 588,
+    "confidence": 1
+  },
+  "senapati|manipur": {
+    "geoDistrict": "SENAPATI",
+    "geoState": "MANIPUR",
+    "geoId": 388,
+    "confidence": 1
+  },
+  "pherzawl|manipur": {
+    "geoDistrict": "PHERZAWL",
+    "geoState": "MANIPUR",
+    "geoId": 666,
+    "confidence": 1
+  },
+  "north garo hills|meghalaya": {
+    "geoDistrict": "NORTH GARO HILLS",
+    "geoState": "MEGHALAYA",
+    "geoId": 674,
+    "confidence": 1
+  },
+  "aizawl|mizoram": {
+    "geoDistrict": "Aizawl",
+    "geoState": "MIZORAM",
+    "geoId": 313,
+    "confidence": 1
+  },
+  "wokha|nagaland": {
+    "geoDistrict": "WOKHA",
+    "geoState": "NAGALAND",
+    "geoId": 436,
+    "confidence": 1
+  },
+  "mon|nagaland": {
+    "geoDistrict": "MON",
+    "geoState": "NAGALAND",
+    "geoId": 451,
+    "confidence": 1
+  },
+  "dimapur|nagaland": {
+    "geoDistrict": "DIMAPUR",
+    "geoState": "NAGALAND",
+    "geoId": 402,
+    "confidence": 1
+  },
+  "dhenkanal|odisha": {
+    "geoDistrict": "DHENKANAL",
+    "geoState": "ODISHA",
+    "geoId": 192,
+    "confidence": 1
+  },
+  "koraput|odisha": {
+    "geoDistrict": "KORAPUT",
+    "geoState": "ODISHA",
+    "geoId": 152,
+    "confidence": 1
+  },
+  "jharsuguda|odisha": {
+    "geoDistrict": "JHARSUGUDA",
+    "geoState": "ODISHA",
+    "geoId": 595,
+    "confidence": 1
+  },
+  "amritsar|punjab": {
+    "geoDistrict": "AMRITSAR",
+    "geoState": "PUNJAB",
+    "geoId": 564,
+    "confidence": 1
+  },
+  "ludhiana|punjab": {
+    "geoDistrict": "LUDHIANA",
+    "geoState": "PUNJAB",
+    "geoId": 550,
+    "confidence": 1
+  },
+  "jalandhar|punjab": {
+    "geoDistrict": "JALANDHAR",
+    "geoState": "PUNJAB",
+    "geoId": 557,
+    "confidence": 1
+  },
+  "patiala|punjab": {
+    "geoDistrict": "PATIALA",
+    "geoState": "PUNJAB",
+    "geoId": 719,
+    "confidence": 1
+  },
+  "faridkot|punjab": {
+    "geoDistrict": "FARIDKOT",
+    "geoState": "PUNJAB",
+    "geoId": 543,
+    "confidence": 1
+  },
+  "moga|punjab": {
+    "geoDistrict": "MOGA",
+    "geoState": "PUNJAB",
+    "geoId": 546,
+    "confidence": 1
+  },
+  "tarn taran|punjab": {
+    "geoDistrict": "TARN TARAN",
+    "geoState": "PUNJAB",
+    "geoId": 558,
+    "confidence": 1
+  },
+  "pathankot|punjab": {
+    "geoDistrict": "PATHANKOT",
+    "geoState": "PUNJAB",
+    "geoId": 680,
+    "confidence": 1
+  },
+  "bharatpur|rajasthan": {
+    "geoDistrict": "BHARATPUR",
+    "geoState": "RAJASTHAN",
+    "geoId": 458,
+    "confidence": 1
+  },
+  "dausa|rajasthan": {
+    "geoDistrict": "DAUSA",
+    "geoState": "RAJASTHAN",
+    "geoId": 437,
+    "confidence": 1
+  },
+  "ajmer|rajasthan": {
+    "geoDistrict": "AJMER",
+    "geoState": "RAJASTHAN",
+    "geoId": 431,
+    "confidence": 1
+  },
+  "udaipur|rajasthan": {
+    "geoDistrict": "UDAIPUR",
+    "geoState": "RAJASTHAN",
+    "geoId": 709,
+    "confidence": 1
+  },
+  "dungarpur|rajasthan": {
+    "geoDistrict": "DUNGARPUR",
+    "geoState": "RAJASTHAN",
+    "geoId": 661,
+    "confidence": 1
+  },
+  "kota|rajasthan": {
+    "geoDistrict": "KOTA",
+    "geoState": "RAJASTHAN",
+    "geoId": 372,
+    "confidence": 1
+  },
+  "tiruvallur|tamil nadu": {
+    "geoDistrict": "TIRUVALLUR",
+    "geoState": "TAMIL NADU",
+    "geoId": 712,
+    "confidence": 1
+  },
+  "cuddalore|tamil nadu": {
+    "geoDistrict": "CUDDALORE",
+    "geoState": "TAMIL NADU",
+    "geoId": 61,
+    "confidence": 1
+  },
+  "coimbatore|tamil nadu": {
+    "geoDistrict": "COIMBATORE",
+    "geoState": "TAMIL NADU",
+    "geoId": 55,
+    "confidence": 1
+  },
+  "chengalpattu|tamil nadu": {
+    "geoDistrict": "CHENGALPATTU",
+    "geoState": "TAMIL NADU",
+    "geoId": 681,
+    "confidence": 1
+  },
+  "tenkasi|tamil nadu": {
+    "geoDistrict": "TENKASI",
+    "geoState": "TAMIL NADU",
+    "geoId": 696,
+    "confidence": 1
+  },
+  "gomati|tripura": {
+    "geoDistrict": "GOMATI",
+    "geoState": "TRIPURA",
+    "geoId": 701,
+    "confidence": 1
+  },
+  "moradabad|uttar pradesh": {
+    "geoDistrict": "MORADABAD",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 508,
+    "confidence": 1
+  },
+  "saharanpur|uttar pradesh": {
+    "geoDistrict": "SAHARANPUR",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 533,
+    "confidence": 1
+  },
+  "bulandshahr|uttar pradesh": {
+    "geoDistrict": "BULANDSHAHR",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 490,
+    "confidence": 1
+  },
+  "budaun|uttar pradesh": {
+    "geoDistrict": "BUDAUN",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 478,
+    "confidence": 1
+  },
+  "kanpur dehat|uttar pradesh": {
+    "geoDistrict": "KANPUR DEHAT",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 425,
+    "confidence": 1
+  },
+  "lalitpur|uttar pradesh": {
+    "geoDistrict": "LALITPUR",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 335,
+    "confidence": 1
+  },
+  "banda|uttar pradesh": {
+    "geoDistrict": "BANDA",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 370,
+    "confidence": 1
+  },
+  "fatehpur|uttar pradesh": {
+    "geoDistrict": "FATEHPUR",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 385,
+    "confidence": 1
+  },
+  "pratapgarh|uttar pradesh": {
+    "geoDistrict": "PRATAPGARH",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 29,
+    "confidence": 1
+  },
+  "bahraich|uttar pradesh": {
+    "geoDistrict": "BAHRAICH",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 474,
+    "confidence": 1
+  },
+  "gonda|uttar pradesh": {
+    "geoDistrict": "GONDA",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 686,
+    "confidence": 1
+  },
+  "gorakhpur|uttar pradesh": {
+    "geoDistrict": "GORAKHPUR",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 433,
+    "confidence": 1
+  },
+  "azamgarh|uttar pradesh": {
+    "geoDistrict": "AZAMGARH",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 398,
+    "confidence": 1
+  },
+  "hathras|uttar pradesh": {
+    "geoDistrict": "HATHRAS",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 457,
+    "confidence": 1
+  },
+  "auraiya|uttar pradesh": {
+    "geoDistrict": "AURAIYA",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 422,
+    "confidence": 1
+  },
+  "sambhal|uttar pradesh": {
+    "geoDistrict": "SAMBHAL",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 728,
+    "confidence": 1
+  },
+  "bastar|chhattisgarh": {
+    "geoDistrict": "BASTAR",
+    "geoState": "CHHATTISGARH",
+    "geoId": 160,
+    "confidence": 1
+  },
+  "raigarh|chhattisgarh": {
+    "geoDistrict": "RAIGARH",
+    "geoState": "CHHATTISGARH",
+    "geoId": 235,
+    "confidence": 1
+  },
+  "raipur|chhattisgarh": {
+    "geoDistrict": "RAIPUR",
+    "geoState": "CHHATTISGARH",
+    "geoId": 594,
+    "confidence": 1
+  },
+  "baloda bazar|chhattisgarh": {
+    "geoDistrict": "BALODA BAZAR",
+    "geoState": "CHHATTISGARH",
+    "geoId": 211,
+    "confidence": 1
+  },
+  "ranchi|jharkhand": {
+    "geoDistrict": "RANCHI",
+    "geoState": "JHARKHAND",
+    "geoId": 272,
+    "confidence": 1
+  },
+  "pakur|jharkhand": {
+    "geoDistrict": "PAKUR",
+    "geoState": "JHARKHAND",
+    "geoId": 319,
+    "confidence": 1
+  },
+  "khunti|jharkhand": {
+    "geoDistrict": "KHUNTI",
+    "geoState": "JHARKHAND",
+    "geoId": 259,
+    "confidence": 1
+  },
+  "haridwar|uttarakhand": {
+    "geoDistrict": "HARIDWAR",
+    "geoState": "UTTARAKHAND",
+    "geoId": 526,
+    "confidence": 1
+  },
+  "chamoli|uttarakhand": {
+    "geoDistrict": "CHAMOLI",
+    "geoState": "UTTARAKHAND",
+    "geoId": 549,
+    "confidence": 1
+  },
+  "pauri garhwal|uttarakhand": {
+    "geoDistrict": "PAURI GARHWAL",
+    "geoState": "UTTARAKHAND",
+    "geoId": 527,
+    "confidence": 1
+  },
+  "jagtial|telangana": {
+    "geoDistrict": "JAGTIAL",
+    "geoState": "TELANGANA",
+    "geoId": 148,
+    "confidence": 1
+  },
+  "sangareddy|telangana": {
+    "geoDistrict": "SANGAREDDY",
+    "geoState": "TELANGANA",
+    "geoId": 134,
+    "confidence": 1
+  },
+  "upper subansiri|arunachal pradesh": {
+    "geoDistrict": "UPPER SUBANSIRI",
+    "geoState": "ARUNACHAL PRADESH",
+    "geoId": 510,
+    "confidence": 1
+  },
+  "lohit|arunachal pradesh": {
+    "geoDistrict": "LOHIT",
+    "geoState": "ARUNACHAL PRADESH",
+    "geoId": 628,
+    "confidence": 1
+  },
+  "lakhimpur|assam": {
+    "geoDistrict": "LAKHIMPUR",
+    "geoState": "ASSAM",
+    "geoId": 487,
+    "confidence": 1
+  },
+  "dhemaji|assam": {
+    "geoDistrict": "DHEMAJI",
+    "geoState": "ASSAM",
+    "geoId": 623,
+    "confidence": 1
+  },
+  "jorhat|assam": {
+    "geoDistrict": "JORHAT",
+    "geoState": "ASSAM",
+    "geoId": 456,
+    "confidence": 1
+  },
+  "tinsukia|assam": {
+    "geoDistrict": "TINSUKIA",
+    "geoState": "ASSAM",
+    "geoId": 494,
+    "confidence": 1
+  },
+  "majuli|assam": {
+    "geoDistrict": "MAJULI",
+    "geoState": "ASSAM",
+    "geoId": 631,
+    "confidence": 1
+  },
+  "west karbi anglong|assam": {
+    "geoDistrict": "WEST KARBI ANGLONG",
+    "geoState": "ASSAM",
+    "geoId": 635,
+    "confidence": 1
+  },
+  "patna|bihar": {
+    "geoDistrict": "PATNA",
+    "geoState": "BIHAR",
+    "geoId": 364,
+    "confidence": 1
+  },
+  "nalanda|bihar": {
+    "geoDistrict": "NALANDA",
+    "geoState": "BIHAR",
+    "geoId": 354,
+    "confidence": 1
+  },
+  "samastipur|bihar": {
+    "geoDistrict": "SAMASTIPUR",
+    "geoState": "BIHAR",
+    "geoId": 381,
+    "confidence": 1
+  },
+  "supaul|bihar": {
+    "geoDistrict": "SUPAUL",
+    "geoState": "BIHAR",
+    "geoId": 411,
+    "confidence": 1
+  },
+  "kachchh|gujarat": {
+    "geoDistrict": "KACHCHH",
+    "geoState": "GUJARAT",
+    "geoId": 321,
+    "confidence": 1
+  },
+  "bharuch|gujarat": {
+    "geoDistrict": "BHARUCH",
+    "geoState": "GUJARAT",
+    "geoId": 225,
+    "confidence": 1
+  },
+  "valsad|gujarat": {
+    "geoDistrict": "VALSAD",
+    "geoState": "GUJARAT",
+    "geoId": 195,
+    "confidence": 1
+  },
+  "anand|gujarat": {
+    "geoDistrict": "ANAND",
+    "geoState": "GUJARAT",
+    "geoId": 240,
+    "confidence": 1
+  },
+  "gir somnath|gujarat": {
+    "geoDistrict": "GIR SOMNATH",
+    "geoState": "GUJARAT",
+    "geoId": 584,
+    "confidence": 1
+  },
+  "devbhumi dwarka|gujarat": {
+    "geoDistrict": "DEVBHUMI DWARKA",
+    "geoState": "GUJARAT",
+    "geoId": 242,
+    "confidence": 1
+  },
+  "mahisagar|gujarat": {
+    "geoDistrict": "MAHISAGAR",
+    "geoState": "GUJARAT",
+    "geoId": 608,
+    "confidence": 1
+  },
+  "kurukshetra|haryana": {
+    "geoDistrict": "KURUKSHETRA",
+    "geoState": "HARYANA",
+    "geoId": 529,
+    "confidence": 1
+  },
+  "sonipat|haryana": {
+    "geoDistrict": "SONIPAT",
+    "geoState": "HARYANA",
+    "geoId": 512,
+    "confidence": 1
+  },
+  "gurugram|haryana": {
+    "geoDistrict": "GURUGRAM",
+    "geoState": "HARYANA",
+    "geoId": 483,
+    "confidence": 1
+  },
+  "mahendragarh|haryana": {
+    "geoDistrict": "MAHENDRAGARH",
+    "geoState": "HARYANA",
+    "geoId": 479,
+    "confidence": 1
+  },
+  "anantnag|jammu and kashmir": {
+    "geoDistrict": "ANANTNAG",
+    "geoState": "JAMMU AND KASHMIR",
+    "geoId": 697,
+    "confidence": 1
+  },
+  "jammu|jammu and kashmir": {
+    "geoDistrict": "JAMMU",
+    "geoState": "JAMMU AND KASHMIR",
+    "geoId": 692,
+    "confidence": 1
+  },
+  "kishtwar|jammu and kashmir": {
+    "geoDistrict": "KISHTWAR",
+    "geoState": "JAMMU AND KASHMIR",
+    "geoId": 655,
+    "confidence": 1
+  },
+  "ballari|karnataka": {
+    "geoDistrict": "BALLARI",
+    "geoState": "KARNATAKA",
+    "geoId": 100,
+    "confidence": 1
+  },
+  "gadag|karnataka": {
+    "geoDistrict": "GADAG",
+    "geoState": "KARNATAKA",
+    "geoId": 99,
+    "confidence": 1
+  },
+  "haveri|karnataka": {
+    "geoDistrict": "HAVERI",
+    "geoState": "KARNATAKA",
+    "geoId": 93,
+    "confidence": 1
+  },
+  "raichur|karnataka": {
+    "geoDistrict": "RAICHUR",
+    "geoState": "KARNATAKA",
+    "geoId": 105,
+    "confidence": 1
+  },
+  "shivamogga|karnataka": {
+    "geoDistrict": "SHIVAMOGGA",
+    "geoState": "KARNATAKA",
+    "geoId": 88,
+    "confidence": 1
+  },
+  "uttara kannada|karnataka": {
+    "geoDistrict": "UTTARA  KANNADA",
+    "geoState": "KARNATAKA",
+    "geoId": 96,
+    "confidence": 1
+  },
+  "yadgir|karnataka": {
+    "geoDistrict": "YADGIR",
+    "geoState": "KARNATAKA",
+    "geoId": 590,
+    "confidence": 1
+  },
+  "kozhikode|kerala": {
+    "geoDistrict": "KOZHIKODE",
+    "geoState": "KERALA",
+    "geoId": 62,
+    "confidence": 1
+  },
+  "malappuram|kerala": {
+    "geoDistrict": "MALAPPURAM",
+    "geoState": "KERALA",
+    "geoId": 58,
+    "confidence": 1
+  },
+  "idukki|kerala": {
+    "geoDistrict": "IDUKKI",
+    "geoState": "KERALA",
+    "geoId": 42,
+    "confidence": 1
+  },
+  "kottayam|kerala": {
+    "geoDistrict": "KOTTAYAM",
+    "geoState": "KERALA",
+    "geoId": 37,
+    "confidence": 1
+  },
+  "kollam|kerala": {
+    "geoDistrict": "KOLLAM",
+    "geoState": "KERALA",
+    "geoId": 33,
+    "confidence": 1
+  },
+  "tikamgarh|madhya pradesh": {
+    "geoDistrict": "TIKAMGARH",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 358,
+    "confidence": 1
+  },
+  "panna|madhya pradesh": {
+    "geoDistrict": "PANNA",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 723,
+    "confidence": 1
+  },
+  "satna|madhya pradesh": {
+    "geoDistrict": "SATNA",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 328,
+    "confidence": 1
+  },
+  "shahdol|madhya pradesh": {
+    "geoDistrict": "SHAHDOL",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 291,
+    "confidence": 1
+  },
+  "shajapur|madhya pradesh": {
+    "geoDistrict": "SHAJAPUR",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 295,
+    "confidence": 1
+  },
+  "sehore|madhya pradesh": {
+    "geoDistrict": "SEHORE",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 270,
+    "confidence": 1
+  },
+  "betul|madhya pradesh": {
+    "geoDistrict": "BETUL",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 224,
+    "confidence": 1
+  },
+  "chhindwara|madhya pradesh": {
+    "geoDistrict": "CHHINDWARA",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 236,
+    "confidence": 1
+  },
+  "harda |madhya pradesh": {
+    "geoDistrict": "HARDA",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 229,
+    "confidence": 1
+  },
+  "dhule|maharashtra": {
+    "geoDistrict": "DHULE",
+    "geoState": "MAHARASHTRA",
+    "geoId": 587,
+    "confidence": 1
+  },
+  "sangli|maharashtra": {
+    "geoDistrict": "SANGLI",
+    "geoState": "MAHARASHTRA",
+    "geoId": 122,
+    "confidence": 1
+  },
+  "kolhapur|maharashtra": {
+    "geoDistrict": "KOLHAPUR",
+    "geoState": "MAHARASHTRA",
+    "geoId": 114,
+    "confidence": 1
+  },
+  "buldhana|maharashtra": {
+    "geoDistrict": "BULDHANA",
+    "geoState": "MAHARASHTRA",
+    "geoId": 197,
+    "confidence": 1
+  },
+  "gondia|maharashtra": {
+    "geoDistrict": "GONDIA",
+    "geoState": "MAHARASHTRA",
+    "geoId": 202,
+    "confidence": 1
+  },
+  "palghar|maharashtra": {
+    "geoDistrict": "PALGHAR",
+    "geoState": "MAHARASHTRA",
+    "geoId": 172,
+    "confidence": 1
+  },
+  "thoubal|manipur": {
+    "geoDistrict": "THOUBAL",
+    "geoState": "MANIPUR",
+    "geoId": 347,
+    "confidence": 1
+  },
+  "kamjong|manipur": {
+    "geoDistrict": "KAMJONG",
+    "geoState": "MANIPUR",
+    "geoId": 664,
+    "confidence": 1
+  },
+  "west khasi hills|meghalaya": {
+    "geoDistrict": "WEST KHASI HILLS",
+    "geoState": "MEGHALAYA",
+    "geoId": 4,
+    "confidence": 1
+  },
+  "east jaintia hills|meghalaya": {
+    "geoDistrict": "EAST JAINTIA HILLS",
+    "geoState": "MEGHALAYA",
+    "geoId": 3,
+    "confidence": 1
+  },
+  "lunglei|mizoram": {
+    "geoDistrict": "Lunglei",
+    "geoState": "MIZORAM",
+    "geoId": 277,
+    "confidence": 1
+  },
+  "kiphire|nagaland": {
+    "geoDistrict": "KIPHIRE",
+    "geoState": "NAGALAND",
+    "geoId": 627,
+    "confidence": 1
+  },
+  "longleng|nagaland": {
+    "geoDistrict": "LONGLENG",
+    "geoState": "NAGALAND",
+    "geoId": 626,
+    "confidence": 1
+  },
+  "sambalpur|odisha": {
+    "geoDistrict": "SAMBALPUR",
+    "geoState": "ODISHA",
+    "geoId": 217,
+    "confidence": 1
+  },
+  "gajapati|odisha": {
+    "geoDistrict": "GAJAPATI",
+    "geoState": "ODISHA",
+    "geoId": 162,
+    "confidence": 1
+  },
+  "malkangiri|odisha": {
+    "geoDistrict": "MALKANGIRI",
+    "geoState": "ODISHA",
+    "geoId": 142,
+    "confidence": 1
+  },
+  "gurdaspur|punjab": {
+    "geoDistrict": "GURDASPUR",
+    "geoState": "PUNJAB",
+    "geoId": 568,
+    "confidence": 1
+  },
+  "fatehgarh sahib|punjab": {
+    "geoDistrict": "FATEHGARH SAHIB",
+    "geoState": "PUNJAB",
+    "geoId": 544,
+    "confidence": 1
+  },
+  "churu|rajasthan": {
+    "geoDistrict": "CHURU",
+    "geoState": "RAJASTHAN",
+    "geoId": 503,
+    "confidence": 1
+  },
+  "barmer|rajasthan": {
+    "geoDistrict": "BARMER",
+    "geoState": "RAJASTHAN",
+    "geoId": 419,
+    "confidence": 1
+  },
+  "pali|rajasthan": {
+    "geoDistrict": "PALI",
+    "geoState": "RAJASTHAN",
+    "geoId": 406,
+    "confidence": 1
+  },
+  "bhilwara|rajasthan": {
+    "geoDistrict": "BHILWARA",
+    "geoState": "RAJASTHAN",
+    "geoId": 711,
+    "confidence": 1
+  },
+  "ramanathapuram|tamil nadu": {
+    "geoDistrict": "RAMANATHAPURAM",
+    "geoState": "TAMIL NADU",
+    "geoId": 32,
+    "confidence": 1
+  },
+  "tiruppur|tamil nadu": {
+    "geoDistrict": "TIRUPPUR",
+    "geoState": "TAMIL NADU",
+    "geoId": 52,
+    "confidence": 1
+  },
+  "sepahijala|tripura": {
+    "geoDistrict": "SEPAHIJALA",
+    "geoState": "TRIPURA",
+    "geoId": 704,
+    "confidence": 1
+  },
+  "aligarh|uttar pradesh": {
+    "geoDistrict": "ALIGARH",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 469,
+    "confidence": 1
+  },
+  "firozabad|uttar pradesh": {
+    "geoDistrict": "FIROZABAD",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 445,
+    "confidence": 1
+  },
+  "shahjahanpur|uttar pradesh": {
+    "geoDistrict": "SHAHJAHANPUR",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 477,
+    "confidence": 1
+  },
+  "deoria|uttar pradesh": {
+    "geoDistrict": "DEORIA",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 417,
+    "confidence": 1
+  },
+  "mirzapur|uttar pradesh": {
+    "geoDistrict": "MIRZAPUR",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 336,
+    "confidence": 1
+  },
+  "baghpat|uttar pradesh": {
+    "geoDistrict": "BAGHPAT",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 511,
+    "confidence": 1
+  },
+  "durg|chhattisgarh": {
+    "geoDistrict": "DURG",
+    "geoState": "CHHATTISGARH",
+    "geoId": 199,
+    "confidence": 1
+  },
+  "mahasamund|chhattisgarh": {
+    "geoDistrict": "MAHASAMUND",
+    "geoState": "CHHATTISGARH",
+    "geoId": 200,
+    "confidence": 1
+  },
+  "simdega|jharkhand": {
+    "geoDistrict": "SIMDEGA",
+    "geoState": "JHARKHAND",
+    "geoId": 596,
+    "confidence": 1
+  },
+  "hazaribagh|jharkhand": {
+    "geoDistrict": "HAZARIBAGH",
+    "geoState": "JHARKHAND",
+    "geoId": 296,
+    "confidence": 1
+  },
+  "dhanbad|jharkhand": {
+    "geoDistrict": "DHANBAD",
+    "geoState": "JHARKHAND",
+    "geoId": 289,
+    "confidence": 1
+  },
+  "deoghar|jharkhand": {
+    "geoDistrict": "DEOGHAR",
+    "geoState": "JHARKHAND",
+    "geoId": 309,
+    "confidence": 1
+  },
+  "almora|uttarakhand": {
+    "geoDistrict": "ALMORA",
+    "geoState": "UTTARAKHAND",
+    "geoId": 522,
+    "confidence": 1
+  },
+  "champawat|uttarakhand": {
+    "geoDistrict": "CHAMPAWAT",
+    "geoState": "UTTARAKHAND",
+    "geoId": 514,
+    "confidence": 1
+  },
+  "kamareddy|telangana": {
+    "geoDistrict": "KAMAREDDY",
+    "geoState": "TELANGANA",
+    "geoId": 708,
+    "confidence": 1
+  },
+  "rangareddy|telangana": {
+    "geoDistrict": "RANGAREDDY",
+    "geoState": "TELANGANA",
+    "geoId": 118,
+    "confidence": 1
+  },
+  "siddipet|telangana": {
+    "geoDistrict": "SIDDIPET",
+    "geoState": "TELANGANA",
+    "geoId": 136,
+    "confidence": 1
+  },
+  "mulugu|telangana": {
+    "geoDistrict": "MULUGU",
+    "geoState": "TELANGANA",
+    "geoId": 145,
+    "confidence": 1
+  },
+  "vizianagaram|andhra pradesh": {
+    "geoDistrict": "VIZIANAGARAM",
+    "geoState": "ANDHRA PRADESH",
+    "geoId": 150,
+    "confidence": 1
+  },
+  "bapatla|andhra pradesh": {
+    "geoDistrict": "BAPATLA",
+    "geoState": "ANDHRA PRADESH",
+    "geoId": 738,
+    "confidence": 1
+  },
+  "nandyal|andhra pradesh": {
+    "geoDistrict": "NANDYAL",
+    "geoState": "ANDHRA PRADESH",
+    "geoId": 742,
+    "confidence": 1
+  },
+  "kakinada|andhra pradesh": {
+    "geoDistrict": "KAKINADA",
+    "geoState": "ANDHRA PRADESH",
+    "geoId": 740,
+    "confidence": 1
+  },
+  "upper siang|arunachal pradesh": {
+    "geoDistrict": "UPPER SIANG",
+    "geoState": "ARUNACHAL PRADESH",
+    "geoId": 524,
+    "confidence": 1
+  },
+  "siang|arunachal pradesh": {
+    "geoDistrict": "SIANG",
+    "geoState": "ARUNACHAL PRADESH",
+    "geoId": 577,
+    "confidence": 1
+  },
+  "goalpara|assam": {
+    "geoDistrict": "GOALPARA",
+    "geoState": "ASSAM",
+    "geoId": 12,
+    "confidence": 1
+  },
+  "sonitpur|assam": {
+    "geoDistrict": "SONITPUR",
+    "geoState": "ASSAM",
+    "geoId": 23,
+    "confidence": 1
+  },
+  "nagaon|assam": {
+    "geoDistrict": "NAGAON",
+    "geoState": "ASSAM",
+    "geoId": 19,
+    "confidence": 1
+  },
+  "cachar|assam": {
+    "geoDistrict": "CACHAR",
+    "geoState": "ASSAM",
+    "geoId": 360,
+    "confidence": 1
+  },
+  "kamrup (metro)|assam": {
+    "geoDistrict": "KAMRUP METRO",
+    "geoState": "ASSAM",
+    "geoId": 10,
+    "confidence": 1
+  },
+  "udalguri|assam": {
+    "geoDistrict": "UDALGURI",
+    "geoState": "ASSAM",
+    "geoId": 22,
+    "confidence": 1
+  },
+  "rohtas|bihar": {
+    "geoDistrict": "ROHTAS",
+    "geoState": "BIHAR",
+    "geoId": 344,
+    "confidence": 1
+  },
+  "nawada|bihar": {
+    "geoDistrict": "NAWADA",
+    "geoState": "BIHAR",
+    "geoId": 330,
+    "confidence": 1
+  },
+  "purbi champaran|bihar": {
+    "geoDistrict": "PURBI CHAMPARAN",
+    "geoState": "BIHAR",
+    "geoId": 430,
+    "confidence": 1
+  },
+  "madhubani|bihar": {
+    "geoDistrict": "MADHUBANI",
+    "geoState": "BIHAR",
+    "geoId": 416,
+    "confidence": 1
+  },
+  "araria|bihar": {
+    "geoDistrict": "ARARIA",
+    "geoState": "BIHAR",
+    "geoId": 413,
+    "confidence": 1
+  },
+  "kishanganj|bihar": {
+    "geoDistrict": "KISHANGANJ",
+    "geoState": "BIHAR",
+    "geoId": 415,
+    "confidence": 1
+  },
+  "banka |bihar": {
+    "geoDistrict": "BANKA",
+    "geoState": "BIHAR",
+    "geoId": 333,
+    "confidence": 1
+  },
+  "arwal|bihar": {
+    "geoDistrict": "ARWAL",
+    "geoState": "BIHAR",
+    "geoId": 339,
+    "confidence": 1
+  },
+  "south goa|goa": {
+    "geoDistrict": "SOUTH GOA",
+    "geoState": "GOA",
+    "geoId": 95,
+    "confidence": 1
+  },
+  "jamnagar|gujarat": {
+    "geoDistrict": "JAMNAGAR",
+    "geoState": "GUJARAT",
+    "geoId": 257,
+    "confidence": 1
+  },
+  "kaithal|haryana": {
+    "geoDistrict": "KAITHAL",
+    "geoState": "HARYANA",
+    "geoId": 528,
+    "confidence": 1
+  },
+  "rewari|haryana": {
+    "geoDistrict": "REWARI",
+    "geoState": "HARYANA",
+    "geoId": 481,
+    "confidence": 1
+  },
+  "jhajjar|haryana": {
+    "geoDistrict": "JHAJJAR",
+    "geoState": "HARYANA",
+    "geoId": 499,
+    "confidence": 1
+  },
+  "kangra|himachal pradesh": {
+    "geoDistrict": "KANGRA",
+    "geoState": "HIMACHAL PRADESH",
+    "geoId": 567,
+    "confidence": 1
+  },
+  "kinnaur|himachal pradesh": {
+    "geoDistrict": "KINNAUR",
+    "geoState": "HIMACHAL PRADESH",
+    "geoId": 562,
+    "confidence": 1
+  },
+  "shimla|himachal pradesh": {
+    "geoDistrict": "SHIMLA",
+    "geoState": "HIMACHAL PRADESH",
+    "geoId": 559,
+    "confidence": 1
+  },
+  "sirmaur|himachal pradesh": {
+    "geoDistrict": "SIRMAUR",
+    "geoState": "HIMACHAL PRADESH",
+    "geoId": 548,
+    "confidence": 1
+  },
+  "tumakuru|karnataka": {
+    "geoDistrict": "TUMAKURU",
+    "geoState": "KARNATAKA",
+    "geoId": 87,
+    "confidence": 1
+  },
+  "alappuzha|kerala": {
+    "geoDistrict": "ALAPPUZHA",
+    "geoState": "KERALA",
+    "geoId": 38,
+    "confidence": 1
+  },
+  "guna|madhya pradesh": {
+    "geoDistrict": "GUNA",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 326,
+    "confidence": 1
+  },
+  "sagar|madhya pradesh": {
+    "geoDistrict": "SAGAR",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 299,
+    "confidence": 1
+  },
+  "rewa|madhya pradesh": {
+    "geoDistrict": "REWA",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 634,
+    "confidence": 1
+  },
+  "mandsaur|madhya pradesh": {
+    "geoDistrict": "MANDSAUR",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 312,
+    "confidence": 1
+  },
+  "bhopal|madhya pradesh": {
+    "geoDistrict": "BHOPAL",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 280,
+    "confidence": 1
+  },
+  "mandla|madhya pradesh": {
+    "geoDistrict": "MANDLA",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 249,
+    "confidence": 1
+  },
+  "umaria|madhya pradesh": {
+    "geoDistrict": "UMARIA",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 285,
+    "confidence": 1
+  },
+  "burhanpur|madhya pradesh": {
+    "geoDistrict": "BURHANPUR",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 203,
+    "confidence": 1
+  },
+  "thane|maharashtra": {
+    "geoDistrict": "THANE",
+    "geoState": "MAHARASHTRA",
+    "geoId": 585,
+    "confidence": 1
+  },
+  "akola|maharashtra": {
+    "geoDistrict": "AKOLA",
+    "geoState": "MAHARASHTRA",
+    "geoId": 194,
+    "confidence": 1
+  },
+  "yavatmal|maharashtra": {
+    "geoDistrict": "YAVATMAL",
+    "geoState": "MAHARASHTRA",
+    "geoId": 180,
+    "confidence": 1
+  },
+  "bhandara|maharashtra": {
+    "geoDistrict": "BHANDARA",
+    "geoState": "MAHARASHTRA",
+    "geoId": 593,
+    "confidence": 1
+  },
+  "chandrapur|maharashtra": {
+    "geoDistrict": "CHANDRAPUR",
+    "geoState": "MAHARASHTRA",
+    "geoId": 617,
+    "confidence": 1
+  },
+  "bishnupur|manipur": {
+    "geoDistrict": "BISHNUPUR",
+    "geoState": "MANIPUR",
+    "geoId": 332,
+    "confidence": 1
+  },
+  "imphal west|manipur": {
+    "geoDistrict": "IMPHAL WEST",
+    "geoState": "MANIPUR",
+    "geoId": 350,
+    "confidence": 1
+  },
+  "kangpokpi|manipur": {
+    "geoDistrict": "KANGPOKPI",
+    "geoState": "MANIPUR",
+    "geoId": 668,
+    "confidence": 1
+  },
+  "west jaintia hills|meghalaya": {
+    "geoDistrict": "WEST JAINTIA HILLS",
+    "geoState": "MEGHALAYA",
+    "geoId": 575,
+    "confidence": 1
+  },
+  "east khasi hills|meghalaya": {
+    "geoDistrict": "EAST KHASI HILLS",
+    "geoState": "MEGHALAYA",
+    "geoId": 2,
+    "confidence": 1
+  },
+  "serchhip|mizoram": {
+    "geoDistrict": "Serchhip",
+    "geoState": "MIZORAM",
+    "geoId": 282,
+    "confidence": 1
+  },
+  "lawngtlai|mizoram": {
+    "geoDistrict": "Lawngtlai",
+    "geoState": "MIZORAM",
+    "geoId": 247,
+    "confidence": 1
+  },
+  "sundargarh|odisha": {
+    "geoDistrict": "SUNDARGARH",
+    "geoState": "ODISHA",
+    "geoId": 228,
+    "confidence": 1
+  },
+  "cuttack|odisha": {
+    "geoDistrict": "CUTTACK",
+    "geoState": "ODISHA",
+    "geoId": 182,
+    "confidence": 1
+  },
+  "bhadrak|odisha": {
+    "geoDistrict": "BHADRAK",
+    "geoState": "ODISHA",
+    "geoId": 196,
+    "confidence": 1
+  },
+  "karaikal|puducherry": {
+    "geoDistrict": "KARAIKAL",
+    "geoState": "PUDUCHERRY",
+    "geoId": 675,
+    "confidence": 1
+  },
+  "barnala|punjab": {
+    "geoDistrict": "BARNALA",
+    "geoState": "PUNJAB",
+    "geoId": 536,
+    "confidence": 1
+  },
+  "karauli|rajasthan": {
+    "geoDistrict": "KARAULI",
+    "geoState": "RAJASTHAN",
+    "geoId": 428,
+    "confidence": 1
+  },
+  "nagaur|rajasthan": {
+    "geoDistrict": "NAGAUR",
+    "geoState": "RAJASTHAN",
+    "geoId": 463,
+    "confidence": 1
+  },
+  "sirohi|rajasthan": {
+    "geoDistrict": "SIROHI",
+    "geoState": "RAJASTHAN",
+    "geoId": 353,
+    "confidence": 1
+  },
+  "tonk|rajasthan": {
+    "geoDistrict": "TONK",
+    "geoState": "RAJASTHAN",
+    "geoId": 582,
+    "confidence": 1
+  },
+  "baran|rajasthan": {
+    "geoDistrict": "BARAN",
+    "geoState": "RAJASTHAN",
+    "geoId": 349,
+    "confidence": 1
+  },
+  "jhalawar|rajasthan": {
+    "geoDistrict": "JHALAWAR",
+    "geoState": "RAJASTHAN",
+    "geoId": 316,
+    "confidence": 1
+  },
+  "villupuram|tamil nadu": {
+    "geoDistrict": "VILLUPURAM",
+    "geoState": "TAMIL NADU",
+    "geoId": 69,
+    "confidence": 1
+  },
+  "krishna|andhra pradesh": {
+    "geoDistrict": "KRISHNA",
+    "geoState": "ANDHRA PRADESH",
+    "geoId": 113,
+    "confidence": 1
+  },
+  "alluri sitharama raju|andhra pradesh": {
+    "geoDistrict": "ALLURI SITHARAMA RAJU",
+    "geoState": "ANDHRA PRADESH",
+    "geoId": 735,
+    "confidence": 1
+  },
+  "anjaw|arunachal pradesh": {
+    "geoDistrict": "ANJAW",
+    "geoState": "ARUNACHAL PRADESH",
+    "geoId": 513,
+    "confidence": 1
+  },
+  "namsai|arunachal pradesh": {
+    "geoDistrict": "NAMSAI",
+    "geoState": "ARUNACHAL PRADESH",
+    "geoId": 611,
+    "confidence": 1
+  },
+  "pakke kessang|arunachal pradesh": {
+    "geoDistrict": "PAKKE KESSANG",
+    "geoState": "ARUNACHAL PRADESH",
+    "geoId": 580,
+    "confidence": 1
+  },
+  "dhubri|assam": {
+    "geoDistrict": "DHUBRI",
+    "geoState": "ASSAM",
+    "geoId": 9,
+    "confidence": 1
+  },
+  "barpeta|assam": {
+    "geoDistrict": "BARPETA",
+    "geoState": "ASSAM",
+    "geoId": 27,
+    "confidence": 1
+  },
+  "darrang|assam": {
+    "geoDistrict": "DARRANG",
+    "geoState": "ASSAM",
+    "geoId": 16,
+    "confidence": 1
+  },
+  "golaghat|assam": {
+    "geoDistrict": "GOLAGHAT",
+    "geoState": "ASSAM",
+    "geoId": 446,
+    "confidence": 1
+  },
+  "charaideo|assam": {
+    "geoDistrict": "CHARAIDEO",
+    "geoState": "ASSAM",
+    "geoId": 621,
+    "confidence": 1
+  },
+  "bhojpur|bihar": {
+    "geoDistrict": "BHOJPUR",
+    "geoState": "BIHAR",
+    "geoId": 365,
+    "confidence": 1
+  },
+  "muzaffarpur|bihar": {
+    "geoDistrict": "MUZAFFARPUR",
+    "geoState": "BIHAR",
+    "geoId": 399,
+    "confidence": 1
+  },
+  "katihar|bihar": {
+    "geoDistrict": "KATIHAR",
+    "geoState": "BIHAR",
+    "geoId": 378,
+    "confidence": 1
+  },
+  "khagaria|bihar": {
+    "geoDistrict": "KHAGARIA",
+    "geoState": "BIHAR",
+    "geoId": 368,
+    "confidence": 1
+  },
+  "sheohar|bihar": {
+    "geoDistrict": "SHEOHAR",
+    "geoState": "BIHAR",
+    "geoId": 605,
+    "confidence": 1
+  },
+  "jamui|bihar": {
+    "geoDistrict": "JAMUI",
+    "geoState": "BIHAR",
+    "geoId": 334,
+    "confidence": 1
+  },
+  "junagadh|gujarat": {
+    "geoDistrict": "JUNAGADH",
+    "geoState": "GUJARAT",
+    "geoId": 212,
+    "confidence": 1
+  },
+  "sabar kantha|gujarat": {
+    "geoDistrict": "SABAR KANTHA",
+    "geoState": "GUJARAT",
+    "geoId": 670,
+    "confidence": 1
+  },
+  "kheda|gujarat": {
+    "geoDistrict": "KHEDA",
+    "geoState": "GUJARAT",
+    "geoId": 263,
+    "confidence": 1
+  },
+  "vellore|tamil nadu": {
+    "geoDistrict": "VELLORE",
+    "geoState": "TAMIL NADU",
+    "geoId": 79,
+    "confidence": 1
+  },
+  "namakkal|tamil nadu": {
+    "geoDistrict": "NAMAKKAL",
+    "geoState": "TAMIL NADU",
+    "geoId": 59,
+    "confidence": 1
+  },
+  "erode|tamil nadu": {
+    "geoDistrict": "ERODE",
+    "geoState": "TAMIL NADU",
+    "geoId": 64,
+    "confidence": 1
+  },
+  "madurai|tamil nadu": {
+    "geoDistrict": "MADURAI",
+    "geoState": "TAMIL NADU",
+    "geoId": 41,
+    "confidence": 1
+  },
+  "dindigul|tamil nadu": {
+    "geoDistrict": "DINDIGUL",
+    "geoState": "TAMIL NADU",
+    "geoId": 46,
+    "confidence": 1
+  },
+  "dhalai|tripura": {
+    "geoDistrict": "DHALAI",
+    "geoState": "TRIPURA",
+    "geoId": 305,
+    "confidence": 1
+  },
+  "bijnor|uttar pradesh": {
+    "geoDistrict": "BIJNOR",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 519,
+    "confidence": 1
+  },
+  "etah|uttar pradesh": {
+    "geoDistrict": "ETAH",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 453,
+    "confidence": 1
+  },
+  "jalaun|uttar pradesh": {
+    "geoDistrict": "JALAUN",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 397,
+    "confidence": 1
+  },
+  "barabanki|uttar pradesh": {
+    "geoDistrict": "BARABANKI",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 440,
+    "confidence": 1
+  },
+  "ayodhya|uttar pradesh": {
+    "geoDistrict": "AYODHYA",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 420,
+    "confidence": 1
+  },
+  "sultanpur|uttar pradesh": {
+    "geoDistrict": "SULTANPUR",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 401,
+    "confidence": 1
+  },
+  "jaunpur|uttar pradesh": {
+    "geoDistrict": "JAUNPUR",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 384,
+    "confidence": 1
+  },
+  "ballia|uttar pradesh": {
+    "geoDistrict": "BALLIA",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 386,
+    "confidence": 1
+  },
+  "amroha|uttar pradesh": {
+    "geoDistrict": "AMROHA",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 505,
+    "confidence": 1
+  },
+  "chandauli|uttar pradesh": {
+    "geoDistrict": "CHANDAULI",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 355,
+    "confidence": 1
+  },
+  "chitrakoot|uttar pradesh": {
+    "geoDistrict": "CHITRAKOOT",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 687,
+    "confidence": 1
+  },
+  "hapur|uttar pradesh": {
+    "geoDistrict": "HAPUR",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 727,
+    "confidence": 1
+  },
+  "korea|chhattisgarh": {
+    "geoDistrict": "KOREA",
+    "geoState": "CHHATTISGARH",
+    "geoId": 603,
+    "confidence": 1
+  },
+  "kondagaon|chhattisgarh": {
+    "geoDistrict": "KONDAGAON",
+    "geoState": "CHHATTISGARH",
+    "geoId": 169,
+    "confidence": 1
+  },
+  "dumka|jharkhand": {
+    "geoDistrict": "DUMKA",
+    "geoState": "JHARKHAND",
+    "geoId": 311,
+    "confidence": 1
+  },
+  "godda|jharkhand": {
+    "geoDistrict": "GODDA",
+    "geoState": "JHARKHAND",
+    "geoId": 341,
+    "confidence": 1
+  },
+  "karimnagar|telangana": {
+    "geoDistrict": "KARIMNAGAR",
+    "geoState": "TELANGANA",
+    "geoId": 141,
+    "confidence": 1
+  },
+  "nalgonda|telangana": {
+    "geoDistrict": "NALGONDA",
+    "geoState": "TELANGANA",
+    "geoId": 115,
+    "confidence": 1
+  },
+  "jangaon|telangana": {
+    "geoDistrict": "JANGAON",
+    "geoState": "TELANGANA",
+    "geoId": 126,
+    "confidence": 1
+  },
+  "nagarkurnool|telangana": {
+    "geoDistrict": "NAGARKURNOOL",
+    "geoState": "TELANGANA",
+    "geoId": 109,
+    "confidence": 1
+  },
+  "peddapalli|telangana": {
+    "geoDistrict": "PEDDAPALLI",
+    "geoState": "TELANGANA",
+    "geoId": 144,
+    "confidence": 1
+  },
+  "tawang|arunachal pradesh": {
+    "geoDistrict": "TAWANG",
+    "geoState": "ARUNACHAL PRADESH",
+    "geoId": 25,
+    "confidence": 1
+  },
+  "west siang|arunachal pradesh": {
+    "geoDistrict": "WEST SIANG",
+    "geoState": "ARUNACHAL PRADESH",
+    "geoId": 517,
+    "confidence": 1
+  },
+  "tirap|arunachal pradesh": {
+    "geoDistrict": "TIRAP",
+    "geoState": "ARUNACHAL PRADESH",
+    "geoId": 466,
+    "confidence": 1
+  },
+  "kurung kumey|arunachal pradesh": {
+    "geoDistrict": "KURUNG KUMEY",
+    "geoState": "ARUNACHAL PRADESH",
+    "geoId": 500,
+    "confidence": 1
+  },
+  "hailakandi|assam": {
+    "geoDistrict": "HAILAKANDI",
+    "geoState": "ASSAM",
+    "geoId": 337,
+    "confidence": 1
+  },
+  "baksa|assam": {
+    "geoDistrict": "BAKSA",
+    "geoState": "ASSAM",
+    "geoId": 21,
+    "confidence": 1
+  },
+  "botad|gujarat": {
+    "geoDistrict": "BOTAD",
+    "geoState": "GUJARAT",
+    "geoId": 233,
+    "confidence": 1
+  },
+  "panipat|haryana": {
+    "geoDistrict": "PANIPAT",
+    "geoState": "HARYANA",
+    "geoId": 515,
+    "confidence": 1
+  },
+  "hisar|haryana": {
+    "geoDistrict": "HISAR",
+    "geoState": "HARYANA",
+    "geoId": 714,
+    "confidence": 1
+  },
+  "hamirpur|himachal pradesh": {
+    "geoDistrict": "HAMIRPUR",
+    "geoState": "HIMACHAL PRADESH",
+    "geoId": 561,
+    "confidence": 1
+  },
+  "kullu|himachal pradesh": {
+    "geoDistrict": "KULLU",
+    "geoState": "HIMACHAL PRADESH",
+    "geoId": 566,
+    "confidence": 1
+  },
+  "una|himachal pradesh": {
+    "geoDistrict": "UNA",
+    "geoState": "HIMACHAL PRADESH",
+    "geoId": 560,
+    "confidence": 1
+  },
+  "chitradurga|karnataka": {
+    "geoDistrict": "CHITRADURGA",
+    "geoState": "KARNATAKA",
+    "geoId": 90,
+    "confidence": 1
+  },
+  "kalaburagi|karnataka": {
+    "geoDistrict": "KALABURAGI",
+    "geoState": "KARNATAKA",
+    "geoId": 124,
+    "confidence": 1
+  },
+  "koppal|karnataka": {
+    "geoDistrict": "KOPPAL",
+    "geoState": "KARNATAKA",
+    "geoId": 101,
+    "confidence": 1
+  },
+  "kannur|kerala": {
+    "geoDistrict": "KANNUR",
+    "geoState": "KERALA",
+    "geoId": 68,
+    "confidence": 1
+  },
+  "palakkad|kerala": {
+    "geoDistrict": "PALAKKAD",
+    "geoState": "KERALA",
+    "geoId": 51,
+    "confidence": 1
+  },
+  "imphal east|manipur": {
+    "geoDistrict": "IMPHAL EAST",
+    "geoState": "MANIPUR",
+    "geoId": 357,
+    "confidence": 1
+  },
+  "siaha|mizoram": {
+    "geoDistrict": "Siaha",
+    "geoState": "MIZORAM",
+    "geoId": 251,
+    "confidence": 1
+  },
+  "saitual|mizoram": {
+    "geoDistrict": "Saitual",
+    "geoState": "MIZORAM",
+    "geoId": 802,
+    "confidence": 1
+  },
+  "phek|nagaland": {
+    "geoDistrict": "PHEK",
+    "geoState": "NAGALAND",
+    "geoId": 403,
+    "confidence": 1
+  },
+  "zunheboto|nagaland": {
+    "geoDistrict": "ZUNHEBOTO",
+    "geoState": "NAGALAND",
+    "geoId": 423,
+    "confidence": 1
+  },
+  "deogarh|odisha": {
+    "geoDistrict": "DEOGARH",
+    "geoState": "ODISHA",
+    "geoId": 205,
+    "confidence": 1
+  },
+  "alwar|rajasthan": {
+    "geoDistrict": "ALWAR",
+    "geoState": "RAJASTHAN",
+    "geoId": 471,
+    "confidence": 1
+  },
+  "banswara|rajasthan": {
+    "geoDistrict": "BANSWARA",
+    "geoState": "RAJASTHAN",
+    "geoId": 28,
+    "confidence": 1
+  },
+  "west tripura|tripura": {
+    "geoDistrict": "WEST TRIPURA",
+    "geoState": "TRIPURA",
+    "geoId": 303,
+    "confidence": 1
+  },
+  "pilibhit|uttar pradesh": {
+    "geoDistrict": "PILIBHIT",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 498,
+    "confidence": 1
+  },
+  "prayagraj|uttar pradesh": {
+    "geoDistrict": "PRAYAGRAJ",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 685,
+    "confidence": 1
+  },
+  "kannauj|uttar pradesh": {
+    "geoDistrict": "KANNAUJ",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 438,
+    "confidence": 1
+  },
+  "purba medinipur|west bengal": {
+    "geoDistrict": "PURBA MEDINIPUR",
+    "geoState": "WEST BENGAL",
+    "geoId": 231,
+    "confidence": 1
+  },
+  "bilaspur|chhattisgarh": {
+    "geoDistrict": "BILASPUR",
+    "geoState": "CHHATTISGARH",
+    "geoId": 248,
+    "confidence": 1
+  },
+  "chatra|jharkhand": {
+    "geoDistrict": "CHATRA",
+    "geoState": "JHARKHAND",
+    "geoId": 302,
+    "confidence": 1
+  },
+  "giridih|jharkhand": {
+    "geoDistrict": "GIRIDIH",
+    "geoState": "JHARKHAND",
+    "geoId": 314,
+    "confidence": 1
+  },
+  "y.s.r|andhra pradesh": {
+    "geoDistrict": "YSR",
+    "geoState": "ANDHRA PRADESH",
+    "geoId": 92,
+    "confidence": 1
+  },
+  "bongaigaon|assam": {
+    "geoDistrict": "BONGAIGAON",
+    "geoState": "ASSAM",
+    "geoId": 26,
+    "confidence": 1
+  },
+  "gopalganj|bihar": {
+    "geoDistrict": "GOPALGANJ",
+    "geoState": "BIHAR",
+    "geoId": 409,
+    "confidence": 1
+  },
+  "sitamarhi|bihar": {
+    "geoDistrict": "SITAMARHI",
+    "geoState": "BIHAR",
+    "geoId": 424,
+    "confidence": 1
+  },
+  "purnia|bihar": {
+    "geoDistrict": "PURNIA",
+    "geoState": "BIHAR",
+    "geoId": 390,
+    "confidence": 1
+  },
+  "munger|bihar": {
+    "geoDistrict": "MUNGER",
+    "geoState": "BIHAR",
+    "geoId": 352,
+    "confidence": 1
+  },
+  "bhagalpur|bihar": {
+    "geoDistrict": "BHAGALPUR",
+    "geoState": "BIHAR",
+    "geoId": 361,
+    "confidence": 1
+  },
+  "banas kantha|gujarat": {
+    "geoDistrict": "BANAS KANTHA",
+    "geoState": "GUJARAT",
+    "geoId": 320,
+    "confidence": 1
+  },
+  "narmada|gujarat": {
+    "geoDistrict": "NARMADA",
+    "geoState": "GUJARAT",
+    "geoId": 683,
+    "confidence": 1
+  },
+  "morbi|gujarat": {
+    "geoDistrict": "MORBI",
+    "geoState": "GUJARAT",
+    "geoId": 583,
+    "confidence": 1
+  },
+  "yamunanagar|haryana": {
+    "geoDistrict": "YAMUNANAGAR",
+    "geoState": "HARYANA",
+    "geoId": 534,
+    "confidence": 1
+  },
+  "sirsa|haryana": {
+    "geoDistrict": "SIRSA",
+    "geoState": "HARYANA",
+    "geoId": 525,
+    "confidence": 1
+  },
+  "mandi|himachal pradesh": {
+    "geoDistrict": "MANDI",
+    "geoState": "HIMACHAL PRADESH",
+    "geoId": 563,
+    "confidence": 1
+  },
+  "solan|himachal pradesh": {
+    "geoDistrict": "SOLAN",
+    "geoState": "HIMACHAL PRADESH",
+    "geoId": 553,
+    "confidence": 1
+  },
+  "rajauri|jammu and kashmir": {
+    "geoDistrict": "RAJAURI",
+    "geoState": "JAMMU AND KASHMIR",
+    "geoId": 650,
+    "confidence": 1
+  },
+  "kulgam|jammu and kashmir": {
+    "geoDistrict": "KULGAM",
+    "geoState": "JAMMU AND KASHMIR",
+    "geoId": 646,
+    "confidence": 1
+  },
+  "bidar|karnataka": {
+    "geoDistrict": "BIDAR",
+    "geoState": "KARNATAKA",
+    "geoId": 137,
+    "confidence": 1
+  },
+  "dakshina kannada|karnataka": {
+    "geoDistrict": "DAKSHINA  KANNADA",
+    "geoState": "KARNATAKA",
+    "geoId": 80,
+    "confidence": 1
+  },
+  "mysuru|karnataka": {
+    "geoDistrict": "MYSURU",
+    "geoState": "KARNATAKA",
+    "geoId": 71,
+    "confidence": 1
+  },
+  "sidhi|madhya pradesh": {
+    "geoDistrict": "SIDHI",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 304,
+    "confidence": 1
+  },
+  "sheopur|madhya pradesh": {
+    "geoDistrict": "SHEOPUR",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 389,
+    "confidence": 1
+  },
+  "barwani|madhya pradesh": {
+    "geoDistrict": "BARWANI",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 219,
+    "confidence": 1
+  },
+  "alirajpur|madhya pradesh": {
+    "geoDistrict": "ALIRAJPUR",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 234,
+    "confidence": 1
+  },
+  "jalgaon|maharashtra": {
+    "geoDistrict": "JALGAON",
+    "geoState": "MAHARASHTRA",
+    "geoId": 198,
+    "confidence": 1
+  },
+  "latur|maharashtra": {
+    "geoDistrict": "LATUR",
+    "geoState": "MAHARASHTRA",
+    "geoId": 146,
+    "confidence": 1
+  },
+  "tamenglong|manipur": {
+    "geoDistrict": "TAMENGLONG",
+    "geoState": "MANIPUR",
+    "geoId": 376,
+    "confidence": 1
+  },
+  "churachandpur|manipur": {
+    "geoDistrict": "CHURACHANDPUR",
+    "geoState": "MANIPUR",
+    "geoId": 329,
+    "confidence": 1
+  },
+  "chandel|manipur": {
+    "geoDistrict": "CHANDEL",
+    "geoState": "MANIPUR",
+    "geoId": 331,
+    "confidence": 1
+  },
+  "ukhrul|manipur": {
+    "geoDistrict": "UKHRUL",
+    "geoState": "MANIPUR",
+    "geoId": 395,
+    "confidence": 1
+  },
+  "khawzawl|mizoram": {
+    "geoDistrict": "Khawzawl",
+    "geoState": "MIZORAM",
+    "geoId": 803,
+    "confidence": 1
+  },
+  "kohima|nagaland": {
+    "geoDistrict": "KOHIMA",
+    "geoState": "NAGALAND",
+    "geoId": 624,
+    "confidence": 1
+  },
+  "nabarangapur|odisha": {
+    "geoDistrict": "NABARANGAPUR",
+    "geoState": "ODISHA",
+    "geoId": 167,
+    "confidence": 1
+  },
+  "sangrur|punjab": {
+    "geoDistrict": "SANGRUR",
+    "geoState": "PUNJAB",
+    "geoId": 538,
+    "confidence": 1
+  },
+  "hanumangarh|rajasthan": {
+    "geoDistrict": "HANUMANGARH",
+    "geoState": "RAJASTHAN",
+    "geoId": 710,
+    "confidence": 1
+  },
+  "jodhpur|rajasthan": {
+    "geoDistrict": "JODHPUR",
+    "geoState": "RAJASTHAN",
+    "geoId": 460,
+    "confidence": 1
+  },
+  "jaisalmer|rajasthan": {
+    "geoDistrict": "JAISALMER",
+    "geoState": "RAJASTHAN",
+    "geoId": 476,
+    "confidence": 1
+  },
+  "bundi|rajasthan": {
+    "geoDistrict": "BUNDI",
+    "geoState": "RAJASTHAN",
+    "geoId": 373,
+    "confidence": 1
+  },
+  "karur|tamil nadu": {
+    "geoDistrict": "KARUR",
+    "geoState": "TAMIL NADU",
+    "geoId": 49,
+    "confidence": 1
+  },
+  "perambalur|tamil nadu": {
+    "geoDistrict": "PERAMBALUR",
+    "geoState": "TAMIL NADU",
+    "geoId": 57,
+    "confidence": 1
+  },
+  "tirunelveli|tamil nadu": {
+    "geoDistrict": "TIRUNELVELI",
+    "geoState": "TAMIL NADU",
+    "geoId": 35,
+    "confidence": 1
+  },
+  "ariyalur|tamil nadu": {
+    "geoDistrict": "ARIYALUR",
+    "geoState": "TAMIL NADU",
+    "geoId": 56,
+    "confidence": 1
+  },
+  "south tripura|tripura": {
+    "geoDistrict": "SOUTH TRIPURA",
+    "geoState": "TRIPURA",
+    "geoId": 287,
+    "confidence": 1
+  },
+  "north tripura|tripura": {
+    "geoDistrict": "NORTH TRIPURA",
+    "geoState": "TRIPURA",
+    "geoId": 318,
+    "confidence": 1
+  },
+  "rampur|uttar pradesh": {
+    "geoDistrict": "RAMPUR",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 684,
+    "confidence": 1
+  },
+  "kheri|uttar pradesh": {
+    "geoDistrict": "KHERI",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 493,
+    "confidence": 1
+  },
+  "hardoi|uttar pradesh": {
+    "geoDistrict": "HARDOI",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 454,
+    "confidence": 1
+  },
+  "jhansi|uttar pradesh": {
+    "geoDistrict": "JHANSI",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 374,
+    "confidence": 1
+  },
+  "mahoba|uttar pradesh": {
+    "geoDistrict": "MAHOBA",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 359,
+    "confidence": 1
+  },
+  "korba|chhattisgarh": {
+    "geoDistrict": "KORBA",
+    "geoState": "CHHATTISGARH",
+    "geoId": 243,
+    "confidence": 1
+  },
+  "mungeli|chhattisgarh": {
+    "geoDistrict": "MUNGELI",
+    "geoState": "CHHATTISGARH",
+    "geoId": 601,
+    "confidence": 1
+  },
+  "gumla|jharkhand": {
+    "geoDistrict": "GUMLA",
+    "geoState": "JHARKHAND",
+    "geoId": 271,
+    "confidence": 1
+  },
+  "bageshwar|uttarakhand": {
+    "geoDistrict": "BAGESHWAR",
+    "geoState": "UTTARAKHAND",
+    "geoId": 530,
+    "confidence": 1
+  },
+  "vikarabad|telangana": {
+    "geoDistrict": "VIKARABAD",
+    "geoState": "TELANGANA",
+    "geoId": 121,
+    "confidence": 1
+  },
+  "nizamabad|telangana": {
+    "geoDistrict": "NIZAMABAD",
+    "geoState": "TELANGANA",
+    "geoId": 147,
+    "confidence": 1
+  },
+  "khammam|telangana": {
+    "geoDistrict": "KHAMMAM",
+    "geoState": "TELANGANA",
+    "geoId": 120,
+    "confidence": 1
+  },
+  "east kameng|arunachal pradesh": {
+    "geoDistrict": "EAST KAMENG",
+    "geoState": "ARUNACHAL PRADESH",
+    "geoId": 480,
+    "confidence": 1
+  },
+  "begusarai|bihar": {
+    "geoDistrict": "BEGUSARAI",
+    "geoState": "BIHAR",
+    "geoId": 369,
+    "confidence": 1
+  },
+  "darbhanga|bihar": {
+    "geoDistrict": "DARBHANGA",
+    "geoState": "BIHAR",
+    "geoId": 400,
+    "confidence": 1
+  },
+  "buxar |bihar": {
+    "geoDistrict": "BUXAR",
+    "geoState": "BIHAR",
+    "geoId": 363,
+    "confidence": 1
+  },
+  "bhavnagar|gujarat": {
+    "geoDistrict": "BHAVNAGAR",
+    "geoState": "GUJARAT",
+    "geoId": 210,
+    "confidence": 1
+  },
+  "vadodara|gujarat": {
+    "geoDistrict": "VADODARA",
+    "geoState": "GUJARAT",
+    "geoId": 244,
+    "confidence": 1
+  },
+  "bhiwani|haryana": {
+    "geoDistrict": "BHIWANI",
+    "geoState": "HARYANA",
+    "geoId": 504,
+    "confidence": 1
+  },
+  "fatehabad|haryana": {
+    "geoDistrict": "FATEHABAD",
+    "geoState": "HARYANA",
+    "geoId": 520,
+    "confidence": 1
+  },
+  "chamba|himachal pradesh": {
+    "geoDistrict": "CHAMBA",
+    "geoState": "HIMACHAL PRADESH",
+    "geoId": 569,
+    "confidence": 1
+  },
+  "srinagar|jammu and kashmir": {
+    "geoDistrict": "SRINAGAR",
+    "geoState": "JAMMU AND KASHMIR",
+    "geoId": 654,
+    "confidence": 1
+  },
+  "doda|jammu and kashmir": {
+    "geoDistrict": "DODA",
+    "geoState": "JAMMU AND KASHMIR",
+    "geoId": 656,
+    "confidence": 1
+  },
+  "dewas|madhya pradesh": {
+    "geoDistrict": "DEWAS",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 258,
+    "confidence": 1
+  },
+  "wardha|maharashtra": {
+    "geoDistrict": "WARDHA",
+    "geoState": "MAHARASHTRA",
+    "geoId": 622,
+    "confidence": 1
+  },
+  "jiribam|manipur": {
+    "geoDistrict": "JIRIBAM",
+    "geoState": "MANIPUR",
+    "geoId": 663,
+    "confidence": 1
+  },
+  "south garo hills|meghalaya": {
+    "geoDistrict": "SOUTH GARO HILLS",
+    "geoState": "MEGHALAYA",
+    "geoId": 1,
+    "confidence": 1
+  },
+  "south west khasi hills|meghalaya": {
+    "geoDistrict": "SOUTH WEST KHASI HILLS",
+    "geoState": "MEGHALAYA",
+    "geoId": 672,
+    "confidence": 1
+  },
+  "ganjam|odisha": {
+    "geoDistrict": "GANJAM",
+    "geoState": "ODISHA",
+    "geoId": 171,
+    "confidence": 1
+  },
+  "tiruvannamalai|tamil nadu": {
+    "geoDistrict": "TIRUVANNAMALAI",
+    "geoState": "TAMIL NADU",
+    "geoId": 74,
+    "confidence": 1
+  },
+  "dharmapuri|tamil nadu": {
+    "geoDistrict": "DHARMAPURI",
+    "geoState": "TAMIL NADU",
+    "geoId": 70,
+    "confidence": 1
+  },
+  "pudukkottai|tamil nadu": {
+    "geoDistrict": "PUDUKKOTTAI",
+    "geoState": "TAMIL NADU",
+    "geoId": 44,
+    "confidence": 1
+  },
+  "meerut|uttar pradesh": {
+    "geoDistrict": "MEERUT",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 509,
+    "confidence": 1
+  },
+  "bareilly|uttar pradesh": {
+    "geoDistrict": "BAREILLY",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 497,
+    "confidence": 1
+  },
+  "sitapur|uttar pradesh": {
+    "geoDistrict": "SITAPUR",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 461,
+    "confidence": 1
+  },
+  "lucknow|uttar pradesh": {
+    "geoDistrict": "LUCKNOW",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 435,
+    "confidence": 1
+  },
+  "maharajganj|uttar pradesh": {
+    "geoDistrict": "MAHARAJGANJ",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 715,
+    "confidence": 1
+  },
+  "basti|uttar pradesh": {
+    "geoDistrict": "BASTI",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 432,
+    "confidence": 1
+  },
+  "shamli|uttar pradesh": {
+    "geoDistrict": "SHAMLI",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 729,
+    "confidence": 1
+  },
+  "surguja|chhattisgarh": {
+    "geoDistrict": "SURGUJA",
+    "geoState": "CHHATTISGARH",
+    "geoId": 604,
+    "confidence": 1
+  },
+  "jashpur|chhattisgarh": {
+    "geoDistrict": "JASHPUR",
+    "geoState": "CHHATTISGARH",
+    "geoId": 255,
+    "confidence": 1
+  },
+  "dhamtari|chhattisgarh": {
+    "geoDistrict": "DHAMTARI",
+    "geoState": "CHHATTISGARH",
+    "geoId": 185,
+    "confidence": 1
+  },
+  "bijapur|chhattisgarh": {
+    "geoDistrict": "BIJAPUR",
+    "geoState": "CHHATTISGARH",
+    "geoId": 156,
+    "confidence": 1
+  },
+  "gariyaband|chhattisgarh": {
+    "geoDistrict": "GARIYABAND",
+    "geoState": "CHHATTISGARH",
+    "geoId": 201,
+    "confidence": 1
+  },
+  "bemetara|chhattisgarh": {
+    "geoDistrict": "BEMETARA",
+    "geoState": "CHHATTISGARH",
+    "geoId": 214,
+    "confidence": 1
+  },
+  "balod|chhattisgarh": {
+    "geoDistrict": "BALOD",
+    "geoState": "CHHATTISGARH",
+    "geoId": 187,
+    "confidence": 1
+  },
+  "lohardaga|jharkhand": {
+    "geoDistrict": "LOHARDAGA",
+    "geoState": "JHARKHAND",
+    "geoId": 597,
+    "confidence": 1
+  },
+  "pithoragarh|uttarakhand": {
+    "geoDistrict": "PITHORAGARH",
+    "geoState": "UTTARAKHAND",
+    "geoId": 540,
+    "confidence": 1
+  },
+  "bhadradri kothagudem|telangana": {
+    "geoDistrict": "BHADRADRI KOTHAGUDEM",
+    "geoState": "TELANGANA",
+    "geoId": 707,
+    "confidence": 1
+  },
+  "nirmal|telangana": {
+    "geoDistrict": "NIRMAL",
+    "geoState": "TELANGANA",
+    "geoId": 706,
+    "confidence": 1
+  },
+  "suryapet|telangana": {
+    "geoDistrict": "SURYAPET",
+    "geoState": "TELANGANA",
+    "geoId": 117,
+    "confidence": 1
+  },
+  "kargil|ladakh": {
+    "geoDistrict": "KARGIL",
+    "geoState": "LADAKH",
+    "geoId": 660,
+    "confidence": 1
+  },
+  "eluru|andhra pradesh": {
+    "geoDistrict": "ELURU",
+    "geoState": "ANDHRA PRADESH",
+    "geoId": 739,
+    "confidence": 1
+  },
+  "lower dibang valley|arunachal pradesh": {
+    "geoDistrict": "LOWER DIBANG VALLEY",
+    "geoState": "ARUNACHAL PRADESH",
+    "geoId": 657,
+    "confidence": 1
+  },
+  "longding|arunachal pradesh": {
+    "geoDistrict": "LONGDING",
+    "geoState": "ARUNACHAL PRADESH",
+    "geoId": 620,
+    "confidence": 1
+  },
+  "shi yomi|arunachal pradesh": {
+    "geoDistrict": "SHI YOMI",
+    "geoState": "ARUNACHAL PRADESH",
+    "geoId": 578,
+    "confidence": 1
+  },
+  "dibrugarh|assam": {
+    "geoDistrict": "DIBRUGARH",
+    "geoState": "ASSAM",
+    "geoId": 475,
+    "confidence": 1
+  },
+  "karbi anglong|assam": {
+    "geoDistrict": "KARBI ANGLONG",
+    "geoState": "ASSAM",
+    "geoId": 8,
+    "confidence": 1
+  },
+  "karimganj|assam": {
+    "geoDistrict": "KARIMGANJ",
+    "geoState": "ASSAM",
+    "geoId": 340,
+    "confidence": 1
+  },
+  "biswanath|assam": {
+    "geoDistrict": "BISWANATH",
+    "geoState": "ASSAM",
+    "geoId": 630,
+    "confidence": 1
+  },
+  "mahesana|gujarat": {
+    "geoDistrict": "MAHESANA",
+    "geoState": "GUJARAT",
+    "geoId": 293,
+    "confidence": 1
+  },
+  "ernakulam|kerala": {
+    "geoDistrict": "ERNAKULAM",
+    "geoState": "KERALA",
+    "geoId": 40,
+    "confidence": 1
+  },
+  "datia|madhya pradesh": {
+    "geoDistrict": "DATIA",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 391,
+    "confidence": 1
+  },
+  "chhatarpur|madhya pradesh": {
+    "geoDistrict": "CHHATARPUR",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 343,
+    "confidence": 1
+  },
+  "damoh|madhya pradesh": {
+    "geoDistrict": "DAMOH",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 298,
+    "confidence": 1
+  },
+  "rajgarh|madhya pradesh": {
+    "geoDistrict": "RAJGARH",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 292,
+    "confidence": 1
+  },
+  "seoni|madhya pradesh": {
+    "geoDistrict": "SEONI",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 239,
+    "confidence": 1
+  },
+  "balaghat|madhya pradesh": {
+    "geoDistrict": "BALAGHAT",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 223,
+    "confidence": 1
+  },
+  "katni |madhya pradesh": {
+    "geoDistrict": "KATNI",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 286,
+    "confidence": 1
+  },
+  "singrauli|madhya pradesh": {
+    "geoDistrict": "SINGRAULI",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 602,
+    "confidence": 1
+  },
+  "kakching|manipur": {
+    "geoDistrict": "KAKCHING",
+    "geoState": "MANIPUR",
+    "geoId": 671,
+    "confidence": 1
+  },
+  "tengnoupal|manipur": {
+    "geoDistrict": "TENGNOUPAL",
+    "geoState": "MANIPUR",
+    "geoId": 667,
+    "confidence": 1
+  },
+  "kalahandi|odisha": {
+    "geoDistrict": "KALAHANDI",
+    "geoState": "ODISHA",
+    "geoId": 173,
+    "confidence": 1
+  },
+  "puri|odisha": {
+    "geoDistrict": "PURI",
+    "geoState": "ODISHA",
+    "geoId": 170,
+    "confidence": 1
+  },
+  "nayagarh|odisha": {
+    "geoDistrict": "NAYAGARH",
+    "geoState": "ODISHA",
+    "geoId": 177,
+    "confidence": 1
+  },
+  "kapurthala|punjab": {
+    "geoDistrict": "KAPURTHALA",
+    "geoState": "PUNJAB",
+    "geoId": 554,
+    "confidence": 1
+  },
+  "unnao|uttar pradesh": {
+    "geoDistrict": "UNNAO",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 429,
+    "confidence": 1
+  },
+  "hamirpur|uttar pradesh": {
+    "geoDistrict": "HAMIRPUR",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 382,
+    "confidence": 1
+  },
+  "nadia|west bengal": {
+    "geoDistrict": "NADIA",
+    "geoState": "WEST BENGAL",
+    "geoId": 290,
+    "confidence": 1
+  },
+  "birbhum|west bengal": {
+    "geoDistrict": "BIRBHUM",
+    "geoState": "WEST BENGAL",
+    "geoId": 310,
+    "confidence": 1
+  },
+  "alipurduar|west bengal": {
+    "geoDistrict": "ALIPURDUAR",
+    "geoState": "WEST BENGAL",
+    "geoId": 730,
+    "confidence": 1
+  },
+  "west singhbhum|jharkhand": {
+    "geoDistrict": "WEST SINGHBHUM",
+    "geoState": "JHARKHAND",
+    "geoId": 241,
+    "confidence": 1
+  },
+  "mahabubabad|telangana": {
+    "geoDistrict": "MAHABUBABAD",
+    "geoState": "TELANGANA",
+    "geoId": 128,
+    "confidence": 1
+  },
+  "chittoor|andhra pradesh": {
+    "geoDistrict": "CHITTOOR",
+    "geoState": "ANDHRA PRADESH",
+    "geoId": 85,
+    "confidence": 1
+  },
+  "tapi|gujarat": {
+    "geoDistrict": "TAPI",
+    "geoState": "GUJARAT",
+    "geoId": 586,
+    "confidence": 1
+  },
+  "palwal|haryana": {
+    "geoDistrict": "PALWAL",
+    "geoState": "HARYANA",
+    "geoId": 468,
+    "confidence": 1
+  },
+  "samba|jammu and kashmir": {
+    "geoDistrict": "SAMBA",
+    "geoState": "JAMMU AND KASHMIR",
+    "geoId": 658,
+    "confidence": 1
+  },
+  "shivpuri|madhya pradesh": {
+    "geoDistrict": "SHIVPURI",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 375,
+    "confidence": 1
+  },
+  "dindori|madhya pradesh": {
+    "geoDistrict": "DINDORI",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 261,
+    "confidence": 1
+  },
+  "satara|maharashtra": {
+    "geoDistrict": "SATARA",
+    "geoState": "MAHARASHTRA",
+    "geoId": 135,
+    "confidence": 1
+  },
+  "east garo hills|meghalaya": {
+    "geoDistrict": "EAST GARO HILLS",
+    "geoState": "MEGHALAYA",
+    "geoId": 6,
+    "confidence": 1
+  },
+  "mamit|mizoram": {
+    "geoDistrict": "Mamit",
+    "geoState": "MIZORAM",
+    "geoId": 306,
+    "confidence": 1
+  },
+  "hnahthial|mizoram": {
+    "geoDistrict": "Hnahthial",
+    "geoState": "MIZORAM",
+    "geoId": 801,
+    "confidence": 1
+  },
+  "mokokchung|nagaland": {
+    "geoDistrict": "MOKOKCHUNG",
+    "geoState": "NAGALAND",
+    "geoId": 625,
+    "confidence": 1
+  },
+  "kandhamal|odisha": {
+    "geoDistrict": "KANDHAMAL",
+    "geoState": "ODISHA",
+    "geoId": 178,
+    "confidence": 1
+  },
+  "sikar|rajasthan": {
+    "geoDistrict": "SIKAR",
+    "geoState": "RAJASTHAN",
+    "geoId": 472,
+    "confidence": 1
+  },
+  "salem|tamil nadu": {
+    "geoDistrict": "SALEM",
+    "geoState": "TAMIL NADU",
+    "geoId": 66,
+    "confidence": 1
+  },
+  "khowai|tripura": {
+    "geoDistrict": "KHOWAI",
+    "geoState": "TRIPURA",
+    "geoId": 702,
+    "confidence": 1
+  },
+  "etawah|uttar pradesh": {
+    "geoDistrict": "ETAWAH",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 427,
+    "confidence": 1
+  },
+  "varanasi|uttar pradesh": {
+    "geoDistrict": "VARANASI",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 356,
+    "confidence": 1
+  },
+  "murshidabad|west bengal": {
+    "geoDistrict": "MURSHIDABAD",
+    "geoState": "WEST BENGAL",
+    "geoId": 322,
+    "confidence": 1
+  },
+  "latehar|jharkhand": {
+    "geoDistrict": "LATEHAR",
+    "geoState": "JHARKHAND",
+    "geoId": 307,
+    "confidence": 1
+  },
+  "garhwa|jharkhand": {
+    "geoDistrict": "GARHWA",
+    "geoState": "JHARKHAND",
+    "geoId": 301,
+    "confidence": 1
+  },
+  "jamtara|jharkhand": {
+    "geoDistrict": "JAMTARA",
+    "geoState": "JHARKHAND",
+    "geoId": 599,
+    "confidence": 1
+  },
+  "nainital|uttarakhand": {
+    "geoDistrict": "NAINITAL",
+    "geoState": "UTTARAKHAND",
+    "geoId": 516,
+    "confidence": 1
+  },
+  "adilabad|telangana": {
+    "geoDistrict": "ADILABAD",
+    "geoState": "TELANGANA",
+    "geoId": 164,
+    "confidence": 1
+  },
+  "mancherial|telangana": {
+    "geoDistrict": "MANCHERIAL",
+    "geoState": "TELANGANA",
+    "geoId": 153,
+    "confidence": 1
+  },
+  "kurnool|andhra pradesh": {
+    "geoDistrict": "KURNOOL",
+    "geoState": "ANDHRA PRADESH",
+    "geoId": 102,
+    "confidence": 1
+  },
+  "sheikhpura |bihar": {
+    "geoDistrict": "SHEIKHPURA",
+    "geoState": "BIHAR",
+    "geoId": 338,
+    "confidence": 1
+  },
+  "porbandar|gujarat": {
+    "geoDistrict": "PORBANDAR",
+    "geoState": "GUJARAT",
+    "geoId": 222,
+    "confidence": 1
+  },
+  "faridabad|haryana": {
+    "geoDistrict": "FARIDABAD",
+    "geoState": "HARYANA",
+    "geoId": 606,
+    "confidence": 1
+  },
+  "pulwama|jammu and kashmir": {
+    "geoDistrict": "PULWAMA",
+    "geoState": "JAMMU AND KASHMIR",
+    "geoId": 649,
+    "confidence": 1
+  },
+  "ganderbal|jammu and kashmir": {
+    "geoDistrict": "GANDERBAL",
+    "geoState": "JAMMU AND KASHMIR",
+    "geoId": 645,
+    "confidence": 1
+  },
+  "hassan|karnataka": {
+    "geoDistrict": "HASSAN",
+    "geoState": "KARNATAKA",
+    "geoId": 83,
+    "confidence": 1
+  },
+  "gwalior|madhya pradesh": {
+    "geoDistrict": "GWALIOR",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 394,
+    "confidence": 1
+  },
+  "south west garo hills|meghalaya": {
+    "geoDistrict": "SOUTH WEST GARO HILLS",
+    "geoState": "MEGHALAYA",
+    "geoId": 673,
+    "confidence": 1
+  },
+  "sindhudurg|maharashtra": {
+    "geoDistrict": "SINDHUDURG",
+    "geoState": "MAHARASHTRA",
+    "geoId": 107,
+    "confidence": 1
+  },
+  "gadchiroli|maharashtra": {
+    "geoDistrict": "GADCHIROLI",
+    "geoState": "MAHARASHTRA",
+    "geoId": 724,
+    "confidence": 1
+  },
+  "krishnagiri|tamil nadu": {
+    "geoDistrict": "KRISHNAGIRI",
+    "geoState": "TAMIL NADU",
+    "geoId": 75,
+    "confidence": 1
+  },
+  "kaushambi|uttar pradesh": {
+    "geoDistrict": "KAUSHAMBI",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 366,
+    "confidence": 1
+  },
+  "jalpaiguri|west bengal": {
+    "geoDistrict": "JALPAIGURI",
+    "geoState": "WEST BENGAL",
+    "geoId": 20,
+    "confidence": 1
+  },
+  "sukma|chhattisgarh": {
+    "geoDistrict": "SUKMA",
+    "geoState": "CHHATTISGARH",
+    "geoId": 155,
+    "confidence": 1
+  },
+  "palamu|jharkhand": {
+    "geoDistrict": "PALAMU",
+    "geoState": "JHARKHAND",
+    "geoId": 598,
+    "confidence": 1
+  },
+  "ramgarh|jharkhand": {
+    "geoDistrict": "RAMGARH",
+    "geoState": "JHARKHAND",
+    "geoId": 600,
+    "confidence": 1
+  },
+  "dehradun|uttarakhand": {
+    "geoDistrict": "DEHRADUN",
+    "geoState": "UTTARAKHAND",
+    "geoId": 547,
+    "confidence": 1
+  },
+  "medak|telangana": {
+    "geoDistrict": "MEDAK",
+    "geoState": "TELANGANA",
+    "geoId": 129,
+    "confidence": 1
+  },
+  "virudhunagar|tamil nadu": {
+    "geoDistrict": "VIRUDHUNAGAR",
+    "geoState": "TAMIL NADU",
+    "geoId": 36,
+    "confidence": 1
+  },
+  "mathura|uttar pradesh": {
+    "geoDistrict": "MATHURA",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 465,
+    "confidence": 1
+  },
+  "agra|uttar pradesh": {
+    "geoDistrict": "AGRA",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 442,
+    "confidence": 1
+  },
+  "maldah|west bengal": {
+    "geoDistrict": "MALDAH",
+    "geoState": "WEST BENGAL",
+    "geoId": 362,
+    "confidence": 1
+  },
+  "mahabubnagar|telangana": {
+    "geoDistrict": "MAHABUBNAGAR",
+    "geoState": "TELANGANA",
+    "geoId": 112,
+    "confidence": 1
+  },
+  "jogulamba gadwal|telangana": {
+    "geoDistrict": "JOGULAMBA GADWAL",
+    "geoState": "TELANGANA",
+    "geoId": 104,
+    "confidence": 1
+  },
+  "wanaparthy|telangana": {
+    "geoDistrict": "WANAPARTHY",
+    "geoState": "TELANGANA",
+    "geoId": 106,
+    "confidence": 1
+  },
+  "konaseema|andhra pradesh": {
+    "geoDistrict": "KONASEEMA",
+    "geoState": "ANDHRA PRADESH",
+    "geoId": 741,
+    "confidence": 1
+  },
+  "annamayya|andhra pradesh": {
+    "geoDistrict": "ANNAMAYYA",
+    "geoState": "ANDHRA PRADESH",
+    "geoId": 737,
+    "confidence": 1
+  },
+  "vaishali|bihar": {
+    "geoDistrict": "VAISHALI",
+    "geoState": "BIHAR",
+    "geoId": 379,
+    "confidence": 1
+  },
+  "hoshiarpur|punjab": {
+    "geoDistrict": "HOSHIARPUR",
+    "geoState": "PUNJAB",
+    "geoId": 565,
+    "confidence": 1
+  },
+  "guntur|andhra pradesh": {
+    "geoDistrict": "GUNTUR",
+    "geoState": "ANDHRA PRADESH",
+    "geoId": 108,
+    "confidence": 1
+  },
+  "lower subansiri|arunachal pradesh": {
+    "geoDistrict": "LOWER SUBANSIRI",
+    "geoState": "ARUNACHAL PRADESH",
+    "geoId": 484,
+    "confidence": 1
+  },
+  "east siang|arunachal pradesh": {
+    "geoDistrict": "EAST SIANG",
+    "geoState": "ARUNACHAL PRADESH",
+    "geoId": 507,
+    "confidence": 1
+  },
+  "dima hasao|assam": {
+    "geoDistrict": "DIMA HASAO",
+    "geoState": "ASSAM",
+    "geoId": 393,
+    "confidence": 1
+  },
+  "amreli|gujarat": {
+    "geoDistrict": "AMRELI",
+    "geoState": "GUJARAT",
+    "geoId": 221,
+    "confidence": 1
+  },
+  "ambala|haryana": {
+    "geoDistrict": "AMBALA",
+    "geoState": "HARYANA",
+    "geoId": 613,
+    "confidence": 1
+  },
+  "kolar|karnataka": {
+    "geoDistrict": "KOLAR",
+    "geoState": "KARNATAKA",
+    "geoId": 659,
+    "confidence": 1
+  },
+  "udupi|karnataka": {
+    "geoDistrict": "UDUPI",
+    "geoState": "KARNATAKA",
+    "geoId": 86,
+    "confidence": 1
+  },
+  "morena|madhya pradesh": {
+    "geoDistrict": "MORENA",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 421,
+    "confidence": 1
+  },
+  "vidisha|madhya pradesh": {
+    "geoDistrict": "VIDISHA",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 294,
+    "confidence": 1
+  },
+  "raisen|madhya pradesh": {
+    "geoDistrict": "RAISEN",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 276,
+    "confidence": 1
+  },
+  "solapur|maharashtra": {
+    "geoDistrict": "SOLAPUR",
+    "geoState": "MAHARASHTRA",
+    "geoId": 139,
+    "confidence": 1
+  },
+  "nandurbar|maharashtra": {
+    "geoDistrict": "NANDURBAR",
+    "geoState": "MAHARASHTRA",
+    "geoId": 216,
+    "confidence": 1
+  },
+  "mayurbhanj|odisha": {
+    "geoDistrict": "MAYURBHANJ",
+    "geoState": "ODISHA",
+    "geoId": 232,
+    "confidence": 1
+  },
+  "mansa|punjab": {
+    "geoDistrict": "MANSA",
+    "geoState": "PUNJAB",
+    "geoId": 615,
+    "confidence": 1
+  },
+  "tehri garhwal|uttarakhand": {
+    "geoDistrict": "TEHRI GARHWAL",
+    "geoState": "UTTARAKHAND",
+    "geoId": 542,
+    "confidence": 1
+  },
+  "prakasam|andhra pradesh": {
+    "geoDistrict": "PRAKASAM",
+    "geoState": "ANDHRA PRADESH",
+    "geoId": 103,
+    "confidence": 1
+  },
+  "palnadu|andhra pradesh": {
+    "geoDistrict": "PALNADU",
+    "geoState": "ANDHRA PRADESH",
+    "geoId": 744,
+    "confidence": 1
+  },
+  "kokrajhar|assam": {
+    "geoDistrict": "KOKRAJHAR",
+    "geoState": "ASSAM",
+    "geoId": 17,
+    "confidence": 1
+  },
+  "gaya|bihar": {
+    "geoDistrict": "GAYA",
+    "geoState": "BIHAR",
+    "geoId": 324,
+    "confidence": 1
+  },
+  "madhepura|bihar": {
+    "geoDistrict": "MADHEPURA",
+    "geoState": "BIHAR",
+    "geoId": 387,
+    "confidence": 1
+  },
+  "gandhinagar|gujarat": {
+    "geoDistrict": "GANDHINAGAR",
+    "geoState": "GUJARAT",
+    "geoId": 267,
+    "confidence": 1
+  },
+  "ahmadabad|gujarat": {
+    "geoDistrict": "AHMADABAD",
+    "geoState": "GUJARAT",
+    "geoId": 273,
+    "confidence": 1
+  },
+  "karnal|haryana": {
+    "geoDistrict": "KARNAL",
+    "geoState": "HARYANA",
+    "geoId": 523,
+    "confidence": 1
+  },
+  "bengaluru rural|karnataka": {
+    "geoDistrict": "BENGALURU RURAL",
+    "geoState": "KARNATAKA",
+    "geoId": 612,
+    "confidence": 1
+  },
+  "ratlam|madhya pradesh": {
+    "geoDistrict": "RATLAM",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 281,
+    "confidence": 1
+  },
+  "dhar|madhya pradesh": {
+    "geoDistrict": "DHAR",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 253,
+    "confidence": 1
+  },
+  "nashik|maharashtra": {
+    "geoDistrict": "NASHIK",
+    "geoState": "MAHARASHTRA",
+    "geoId": 186,
+    "confidence": 1
+  },
+  "hingoli|maharashtra": {
+    "geoDistrict": "HINGOLI",
+    "geoState": "MAHARASHTRA",
+    "geoId": 589,
+    "confidence": 1
+  },
+  "lakhisarai|bihar": {
+    "geoDistrict": "LAKHISARAI",
+    "geoState": "BIHAR",
+    "geoId": 345,
+    "confidence": 1
+  },
+  "north goa|goa": {
+    "geoDistrict": "NORTH GOA",
+    "geoState": "GOA",
+    "geoId": 98,
+    "confidence": 1
+  },
+  "navsari  |gujarat": {
+    "geoDistrict": "NAVSARI",
+    "geoState": "GUJARAT",
+    "geoId": 643,
+    "confidence": 1
+  },
+  "jind|haryana": {
+    "geoDistrict": "JIND",
+    "geoState": "HARYANA",
+    "geoId": 521,
+    "confidence": 1
+  },
+  "belagavi|karnataka": {
+    "geoDistrict": "BELAGAVI",
+    "geoState": "KARNATAKA",
+    "geoId": 111,
+    "confidence": 1
+  },
+  "ratnagiri|maharashtra": {
+    "geoDistrict": "RATNAGIRI",
+    "geoState": "MAHARASHTRA",
+    "geoId": 131,
+    "confidence": 1
+  },
+  "nagpur|maharashtra": {
+    "geoDistrict": "NAGPUR",
+    "geoState": "MAHARASHTRA",
+    "geoId": 206,
+    "confidence": 1
+  },
+  "khordha|odisha": {
+    "geoDistrict": "KHORDHA",
+    "geoState": "ODISHA",
+    "geoId": 174,
+    "confidence": 1
+  },
+  "muzaffarnagar|uttar pradesh": {
+    "geoDistrict": "MUZAFFARNAGAR",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 518,
+    "confidence": 1
+  },
+  "farrukhabad|uttar pradesh": {
+    "geoDistrict": "FARRUKHABAD",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 452,
+    "confidence": 1
+  },
+  "bokaro|jharkhand": {
+    "geoDistrict": "BOKARO",
+    "geoState": "JHARKHAND",
+    "geoId": 284,
+    "confidence": 1
+  },
+  "narayanpet|telangana": {
+    "geoDistrict": "NARAYANPET",
+    "geoState": "TELANGANA",
+    "geoId": 700,
+    "confidence": 1
+  },
+  "ntr|andhra pradesh": {
+    "geoDistrict": "NTR",
+    "geoState": "ANDHRA PRADESH",
+    "geoId": 743,
+    "confidence": 1
+  },
+  "kamle|arunachal pradesh": {
+    "geoDistrict": "KAMLE",
+    "geoState": "ARUNACHAL PRADESH",
+    "geoId": 619,
+    "confidence": 1
+  },
+  "kupwara|jammu and kashmir": {
+    "geoDistrict": "KUPWARA",
+    "geoState": "JAMMU AND KASHMIR",
+    "geoId": 648,
+    "confidence": 1
+  },
+  "kodagu|karnataka": {
+    "geoDistrict": "KODAGU",
+    "geoState": "KARNATAKA",
+    "geoId": 73,
+    "confidence": 1
+  },
+  "bikaner|rajasthan": {
+    "geoDistrict": "BIKANER",
+    "geoState": "RAJASTHAN",
+    "geoId": 506,
+    "confidence": 1
+  },
+  "west kameng|arunachal pradesh": {
+    "geoDistrict": "WEST KAMENG",
+    "geoState": "ARUNACHAL PRADESH",
+    "geoId": 24,
+    "confidence": 1
+  },
+  "nalbari|assam": {
+    "geoDistrict": "NALBARI",
+    "geoState": "ASSAM",
+    "geoId": 13,
+    "confidence": 1
+  },
+  "saran|bihar": {
+    "geoDistrict": "SARAN",
+    "geoState": "BIHAR",
+    "geoId": 392,
+    "confidence": 1
+  },
+  "rajkot|gujarat": {
+    "geoDistrict": "RAJKOT",
+    "geoState": "GUJARAT",
+    "geoId": 266,
+    "confidence": 1
+  },
+  "surat|gujarat": {
+    "geoDistrict": "SURAT",
+    "geoState": "GUJARAT",
+    "geoId": 207,
+    "confidence": 1
+  },
+  "bilaspur|himachal pradesh": {
+    "geoDistrict": "BILASPUR",
+    "geoState": "HIMACHAL PRADESH",
+    "geoId": 556,
+    "confidence": 1
+  },
+  "chikkamagaluru|karnataka": {
+    "geoDistrict": "CHIKKAMAGALURU",
+    "geoState": "KARNATAKA",
+    "geoId": 84,
+    "confidence": 1
+  },
+  "wayanad|kerala": {
+    "geoDistrict": "WAYANAD",
+    "geoState": "KERALA",
+    "geoId": 65,
+    "confidence": 1
+  },
+  "jaipur|rajasthan": {
+    "geoDistrict": "JAIPUR",
+    "geoState": "RAJASTHAN",
+    "geoId": 614,
+    "confidence": 1
+  },
+  "srikakulam|andhra pradesh": {
+    "geoDistrict": "SRIKAKULAM",
+    "geoState": "ANDHRA PRADESH",
+    "geoId": 149,
+    "confidence": 1
+  },
+  "hojai|assam": {
+    "geoDistrict": "HOJAI",
+    "geoState": "ASSAM",
+    "geoId": 632,
+    "confidence": 1
+  },
+  "badgam|jammu and kashmir": {
+    "geoDistrict": "BADGAM",
+    "geoState": "JAMMU AND KASHMIR",
+    "geoId": 642,
+    "confidence": 1
+  },
+  "thiruvananthapuram|kerala": {
+    "geoDistrict": "THIRUVANANTHAPURAM",
+    "geoState": "KERALA",
+    "geoId": 31,
+    "confidence": 1
+  },
+  "jhabua|madhya pradesh": {
+    "geoDistrict": "JHABUA",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 260,
+    "confidence": 1
+  },
+  "west garo hills|meghalaya": {
+    "geoDistrict": "WEST GARO HILLS",
+    "geoState": "MEGHALAYA",
+    "geoId": 5,
+    "confidence": 1
+  },
+  "mainpuri|uttar pradesh": {
+    "geoDistrict": "MAINPURI",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 444,
+    "confidence": 1
+  },
+  "sonbhadra|uttar pradesh": {
+    "geoDistrict": "SONBHADRA",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 716,
+    "confidence": 1
+  },
+  "amethi|uttar pradesh": {
+    "geoDistrict": "AMETHI",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 410,
+    "confidence": 1
+  },
+  "chirang|assam": {
+    "geoDistrict": "CHIRANG",
+    "geoState": "ASSAM",
+    "geoId": 18,
+    "confidence": 1
+  },
+  "jhargram|west bengal": {
+    "geoDistrict": "JHARGRAM",
+    "geoState": "WEST BENGAL",
+    "geoId": 731,
+    "confidence": 1
+  },
+  "anakapalli|andhra pradesh": {
+    "geoDistrict": "ANAKAPALLI",
+    "geoState": "ANDHRA PRADESH",
+    "geoId": 736,
+    "confidence": 1
+  },
+  "mewat|haryana": {
+    "geoDistrict": "MEWAT",
+    "geoState": "HARYANA",
+    "geoId": 607,
+    "confidence": 1
+  },
+  "indore|madhya pradesh": {
+    "geoDistrict": "INDORE",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 250,
+    "confidence": 1
+  },
+  "surendranagar|gujarat": {
+    "geoDistrict": "SURENDRANAGAR",
+    "geoState": "GUJARAT",
+    "geoId": 275,
+    "confidence": 1
+  },
+  "panch mahals|gujarat": {
+    "geoDistrict": "PANCH MAHALS",
+    "geoState": "GUJARAT",
+    "geoId": 256,
+    "confidence": 1
+  },
+  "rohtak|haryana": {
+    "geoDistrict": "ROHTAK",
+    "geoState": "HARYANA",
+    "geoId": 721,
+    "confidence": 1
+  },
+  "nanded|maharashtra": {
+    "geoDistrict": "NANDED",
+    "geoState": "MAHARASHTRA",
+    "geoId": 163,
+    "confidence": 1
+  },
+  "fazilka|punjab": {
+    "geoDistrict": "FAZILKA",
+    "geoState": "PUNJAB",
+    "geoId": 678,
+    "confidence": 1
+  },
+  "udhampur|jammu and kashmir": {
+    "geoDistrict": "UDHAMPUR",
+    "geoState": "JAMMU AND KASHMIR",
+    "geoId": 695,
+    "confidence": 1
+  },
+  "kathua|jammu and kashmir": {
+    "geoDistrict": "KATHUA",
+    "geoState": "JAMMU AND KASHMIR",
+    "geoId": 691,
+    "confidence": 1
+  },
+  "bhind|madhya pradesh": {
+    "geoDistrict": "BHIND",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 418,
+    "confidence": 1
+  },
+  "anuppur|madhya pradesh": {
+    "geoDistrict": "ANUPPUR",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 264,
+    "confidence": 1
+  },
+  "kolasib|mizoram": {
+    "geoDistrict": "Kolasib",
+    "geoState": "MIZORAM",
+    "geoId": 317,
+    "confidence": 1
+  },
+  "mau|uttar pradesh": {
+    "geoDistrict": "MAU",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 717,
+    "confidence": 1
+  },
+  "bankura|west bengal": {
+    "geoDistrict": "BANKURA",
+    "geoState": "WEST BENGAL",
+    "geoId": 274,
+    "confidence": 1
+  },
+  "yadadri bhuvanagiri|telangana": {
+    "geoDistrict": "YADADRI BHUVANAGIRI",
+    "geoState": "TELANGANA",
+    "geoId": 125,
+    "confidence": 1
+  },
+  "lower siang|arunachal pradesh": {
+    "geoDistrict": "LOWER SIANG",
+    "geoState": "ARUNACHAL PRADESH",
+    "geoId": 53,
+    "confidence": 1
+  },
+  "jabalpur|madhya pradesh": {
+    "geoDistrict": "JABALPUR",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 268,
+    "confidence": 1
+  },
+  "champhai |mizoram": {
+    "geoDistrict": "Champhai",
+    "geoState": "MIZORAM",
+    "geoId": 300,
+    "confidence": 1
+  },
+  "balrampur|uttar pradesh": {
+    "geoDistrict": "BALRAMPUR",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 288,
+    "confidence": 1
+  },
+  "patan|gujarat": {
+    "geoDistrict": "PATAN",
+    "geoState": "GUJARAT",
+    "geoId": 297,
+    "confidence": 1
+  },
+  "sawai madhopur|rajasthan": {
+    "geoDistrict": "SAWAI MADHOPUR",
+    "geoState": "RAJASTHAN",
+    "geoId": 414,
+    "confidence": 1
+  },
+  "thanjavur|tamil nadu": {
+    "geoDistrict": "THANJAVUR",
+    "geoState": "TAMIL NADU",
+    "geoId": 50,
+    "confidence": 1
+  },
+  "siwan|bihar": {
+    "geoDistrict": "SIWAN",
+    "geoState": "BIHAR",
+    "geoId": 396,
+    "confidence": 1
+  },
+  "changlang|arunachal pradesh": {
+    "geoDistrict": "CHANGLANG",
+    "geoState": "ARUNACHAL PRADESH",
+    "geoId": 482,
+    "confidence": 1
+  },
+  "saharsa|bihar": {
+    "geoDistrict": "SAHARSA",
+    "geoState": "BIHAR",
+    "geoId": 383,
+    "confidence": 1
+  },
+  "ramban|jammu and kashmir": {
+    "geoDistrict": "RAMBAN",
+    "geoState": "JAMMU AND KASHMIR",
+    "geoId": 651,
+    "confidence": 1
+  },
+  "paschim medinipur|west bengal": {
+    "geoDistrict": "PASCHIM MEDINIPUR",
+    "geoState": "WEST BENGAL",
+    "geoId": 246,
+    "confidence": 1
+  },
+  "tuensang|nagaland": {
+    "geoDistrict": "TUENSANG",
+    "geoState": "NAGALAND",
+    "geoId": 443,
+    "confidence": 1
+  },
+  "ujjain|madhya pradesh": {
+    "geoDistrict": "UJJAIN",
+    "geoState": "MADHYA PRADESH",
+    "geoId": 279,
+    "confidence": 1
+  },
+  "panchkula|haryana": {
+    "geoDistrict": "PANCHKULA",
+    "geoState": "HARYANA",
+    "geoId": 545,
+    "confidence": 1
+  },
+  "kanchipuram|tamil nadu": {
+    "geoDistrict": "KANCHIPURAM",
+    "geoState": "TAMIL NADU",
+    "geoId": 76,
+    "confidence": 1
+  },
+  "nagapattinam|tamil nadu": {
+    "geoDistrict": "NAGAPATTINAM",
+    "geoState": "TAMIL NADU",
+    "geoId": 47,
+    "confidence": 1
+  },
+  "ghaziabad|uttar pradesh": {
+    "geoDistrict": "GHAZIABAD",
+    "geoState": "UTTAR PRADESH",
+    "geoId": 501,
+    "confidence": 1
+  },
+  "surajpur|chhattisgarh": {
+    "geoDistrict": "SURAJPUR",
+    "geoState": "CHHATTISGARH",
+    "geoId": 308,
+    "confidence": 1
+  },
+  "kalimpong|west bengal": {
+    "geoDistrict": "KALIMPONG",
+    "geoState": "WEST BENGAL",
+    "geoId": 732,
+    "confidence": 1
+  },
+  "lakshadweep district|lakshadweep": {
+    "geoDistrict": "LAKSHADWEEP",
+    "geoState": "LAKSHADWEEP",
+    "geoId": 574,
+    "confidence": 1
+  }
+}

@@ -1,0 +1,226 @@
+================================================================================
+GOVERNMENT API DATA SCHEMA ANALYSIS
+================================================================================
+
+EXECUTIVE SUMMARY
+-----------------
+CRITICAL FINDING: The MGNREGA ETL pipeline has a severe data loss issue - it 
+only stores 3 out of 36 API fields (8.3% of available data). This represents
+a significant waste of rich government data.
+
+
+API SCHEMA OVERVIEW
+-------------------
+Endpoint: https://api.data.gov.in/resource/ee03643a-ee4c-48c2-ac30-9f2ff26ab722
+
+Total Fields: 36
+
+Breakdown:
+- Identification Fields (6): fin_year, month, state_code, state_name, 
+  district_code, district_name
+- Employment Metrics (9): Total_Households_Worked, Total_Individuals_Worked,
+  Average_days_of_employment_provided_per_Household, etc.
+- Financial Metrics (5): Wages, Total_Exp, Material_and_skilled_Wages, etc.
+- Work Execution (5): Total_No_of_Works_Takenup, Number_of_Completed_Works, etc.
+- Social Inclusion (6): Women_Persondays, SC_persondays, ST_persondays, etc.
+- Performance Indicators (4): percentage_payments_gererated_within_15_days, etc.
+- Additional (1): Remarks (always "NA")
+
+
+FIELD MAPPING IN CODE
+---------------------
+
+data-fetcher.js:
+  - Fetches with API key
+  - Uses filters[state_name] for state filtering
+  - Returns all 36 fields
+
+data-transformer.js:
+  district_name:district_name/districtName/district
+  state_name:state_name/stateName/state (⚠️ Title case applied!)
+  month:month/Month
+  fin_year:fin_year/finYear/financial_year
+  total_households_worked:Total_Households_Worked/...
+  avg_days_employment_per_hh:Average_days_of_employment_provided_per_Household/...
+  payment_percentage_15_days:percentage_payments_gererated_within_15_days (⚠️ typo!)
+
+dataCleaner.js:
+  - Caps percentage fields 0-100
+  - ⚠️ BUG: Looks for women_persondays but API has Women_Persondays
+
+
+DATABASE SCHEMA
+---------------
+Table: monthly_performance (ONLY 7 FIELDS!)
+
+Fields:
+  1. district_name
+  2. month
+  3. fin_year
+  4. total_households_worked
+  5. avg_days_employment_per_hh
+  6. payment_percentage_15_days
+  7. last_updated
+
+CRITICAL ISSUE: Only 3 metrics out of 36 available fields!
+
+
+CRITICAL ISSUES FOUND
+----------------------
+
+Issue #1: SEVERE DATA LOSS (91.7% of fields ignored)
+  - API provides: 36 fields
+  - Database stores: 7 fields (3 metrics)
+  - Lost: 33 fields including Women_Persondays, SC/ST persondays, Wages,
+    Total_Exp, Works statistics, etc.
+
+Issue #2: Title Case Transformation
+  - Location: data-transformer.js line 222-224
+  - Converts "MADHYA PRADESH" → "Madhya Pradesh"
+  - API uses ALL CAPS consistently
+  - May break name matching
+
+Issue #3: Typo in API Field
+  - API: percentage_payments_gererated_within_15_days
+  - "gererated" should be "generated"
+  - Code handles with fallbacks
+
+Issue #4: Women's Participation Calculation Bug
+  - Location: dataCleaner.js line 72
+  - Code looks for: women_persondays (snake_case)
+  - API has: Women_Persondays (camelCase)
+  - Field mismatch prevents calculation
+
+Issue #5: Overly Strict Validation
+  - Location: data-transformer.js line 288-291
+  - Rejects records with payment % > 100
+  - Should cap instead of reject
+
+
+MISSING FIELDS NOT STORED
+--------------------------
+
+Social Inclusion:
+  ❌ Women_Persondays (critical for women participation)
+  ❌ SC_persondays
+  ❌ ST_persondays
+  ❌ SC_workers_against_active_workers
+  ❌ ST_workers_against_active_workers
+  ❌ Differently_abled_persons_worked
+
+Financial:
+  ❌ Wages (total disbursed)
+  ❌ Total_Exp (total expenditure)
+  ❌ Material_and_skilled_Wages
+  ❌ Total_Adm_Expenditure
+  ❌ Average_Wage_rate_per_day_per_person
+
+Work Execution:
+  ❌ Total_No_of_Works_Takenup
+  ❌ Number_of_Completed_Works
+  ❌ Number_of_Ongoing_Works
+  ❌ Number_of_GPs_with_NIL_exp
+
+Other:
+  ❌ Total_Individuals_Worked
+  ❌ Persondays_of_Central_Liability_so_far
+  ❌ percent_of_Category_B_Works
+  ❌ percent_of_Expenditure_on_Agriculture_Allied_Works
+  ❌ percent_of_NRM_Expenditure
+
+
+DATA RETENTION RATE
+-------------------
+7/36 = 19.4% (including metadata)
+3/36 = 8.3% (actual metrics stored)
+
+
+SAMPLE API RECORD
+-----------------
+{
+  "fin_year": "2024-2025",
+  "month": "Dec",
+  "state_name": "MADHYA PRADESH",
+  "district_name": "NIWARI",
+  "Total_Households_Worked": "17219",
+  "Average_days_of_employment_provided_per_Household": "43",
+  "percentage_payments_gererated_within_15_days": "99.92",
+  "Women_Persondays": "288446",
+  "SC_persondays": "82041",
+  "ST_persondays": "65379",
+  "Wages": "1819.19",
+  "Total_Exp": "3884.10",
+  "Total_No_of_Works_Takenup": "6583",
+  "Number_of_Completed_Works": "2640",
+  "Number_of_Ongoing_Works": "3943",
+  "Persondays_of_Central_Liability_so_far": "741282",
+  ... (21 more fields not stored)
+}
+
+
+RECOMMENDED FIXES
+-----------------
+
+1. Expand Database Schema
+   Add columns for missing fields:
+   - women_persondays BIGINT
+   - sc_persondays BIGINT
+   - st_persondays BIGINT
+   - wages DECIMAL(15,2)
+   - total_expenditure DECIMAL(15,2)
+   - women_participation_percent DECIMAL(8,2)
+   - (and 10+ more fields)
+
+2. Fix Field Name Mismatch
+   In dataCleaner.js line 72:
+   FROM: record.women_persondays
+   TO:   record.Women_Persondays
+
+3. Remove Title Case Transformation
+   Don't apply title case to API data (state/district names)
+   Keep API format (ALL CAPS)
+
+4. Cap Instead of Reject
+   In data-transformer.js: Cap payment % at 100 instead of rejecting
+
+5. Update UPSERT Query
+   Add missing fields to INSERT in data-loader.js
+
+
+CURRENT CAPABILITIES (Limited)
+-------------------------------
+✅ Basic district performance:
+  - Total households worked
+  - Average days of employment
+  - Payment percentage
+
+
+LOST CAPABILITIES (Major)
+--------------------------
+❌ Cannot show:
+  - Women's participation in MGNREGA
+  - SC/ST person-days and worker participation
+  - Wage rates and financial metrics
+  - Work completion rates
+  - Administrative expenditure
+  - Focus on agriculture/NRM
+  - Job card statistics
+  - Worker demographics
+  - Many other critical metrics
+
+
+CONCLUSION
+----------
+The ETL pipeline is well-structured but severely limited in scope. Primary issues:
+
+1. Narrow scope - Only 3/36 metrics extracted (8.3%)
+2. Field name mismatches - Preventing correct extraction
+3. Unnecessary transformations - Title case breaking API format
+4. Overly strict validation - Rejecting valid data
+
+Priority Recommendation: Expand database schema to store 15-20 key fields 
+for comprehensive analytics instead of just 3.
+
+================================================================================
+END OF ANALYSIS
+================================================================================

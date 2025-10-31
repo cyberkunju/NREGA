@@ -1,0 +1,73 @@
+================================================================================
+DETAILED FIELD MAPPING TABLE
+================================================================================
+
+API Field                          → Database Field                Status
+================================================================================
+
+IDENTIFICATION FIELDS:
+--------------------------------------------------------------------------------
+fin_year                           → fin_year                      ✅ Stored
+month                              → month                         ✅ Stored
+state_code                         → (NOT STORED)                  ❌ Lost
+state_name                         → state_name                    ⚠️ Stored (Title Case Applied)
+district_code                      → (NOT STORED)                  ❌ Lost
+district_name                      → district_name                 ⚠️ Stored (Title Case Applied)
+
+EMPLOYMENT METRICS:
+--------------------------------------------------------------------------------
+Total_Households_Worked            → total_households_worked       ✅ Stored
+Total_Individuals_Worked           → (NOT STORED)                  ❌ Lost
+Average_days_of_employment...      → avg_days_employment_per_hh    ✅ Stored
+Total_No_of_Active_Job_Cards       → (NOT STORED)                  ❌ Lost
+Total_No_of_Active_Workers         → (NOT STORED)                  ❌ Lost
+Total_No_of_JobCards_issued        → (NOT STORED)                  ❌ Lost
+Total_No_of_Workers                → (NOT STORED)                  ❌ Lost
+Total_No_of_HHs_completed_100...   → (NOT STORED)                  ❌ Lost
+Approved_Labour_Budget             → (NOT STORED)                  ❌ Lost
+
+FINANCIAL METRICS:
+--------------------------------------------------------------------------------
+Average_Wage_rate_per_day...       → (NOT STORED)                  ❌ Lost
+Wages                              → (NOT STORED)                  ❌ Lost
+Material_and_skilled_Wages         → (NOT STORED)                  ❌ Lost
+Total_Adm_Expenditure              → (NOT STORED)                  ❌ Lost
+Total_Exp                          → (NOT STORED)                  ❌ Lost
+
+WORK EXECUTION:
+--------------------------------------------------------------------------------
+Total_No_of_Works_Takenup          → (NOT STORED)                  ❌ Lost
+Number_of_Completed_Works          → (NOT STORED)                  ❌ Lost
+Number_of_Ongoing_Works            → (NOT STORED)                  ❌ Lost
+Number_of_GPs_with_NIL_exp         → (NOT STORED)                  ❌ Lost
+Persondays_of_Central_Liab...      → (NOT STORED)                  ❌ Lost
+
+SOCIAL INCLUSION:
+--------------------------------------------------------------------------------
+SC_persondays                      → (NOT STORED)                  ❌ Lost
+SC_workers_against_active_...      → (NOT STORED)                  ❌ Lost
+ST_persondays                      → (NOT STORED)                  ❌ Lost
+ST_workers_against_active_...      → (NOT STORED)                  ❌ Lost
+Women_Persondays                   → (NOT STORED)                  ❌ Lost*
+Differently_abled_persons_...      → (NOT STORED)                  ❌ Lost
+
+PERFORMANCE INDICATORS:
+--------------------------------------------------------------------------------
+percentage_payments_gererated...   → payment_percentage_15_days    ✅ Stored (typo in name)
+percent_of_Category_B_Works        → (NOT STORED)                  ❌ Lost
+percent_of_Expenditure_on_Agr...   → (NOT STORED)                  ❌ Lost
+percent_of_NRM_Expenditure         → (NOT STORED)                  ❌ Lost
+
+ADDITIONAL:
+--------------------------------------------------------------------------------
+Remarks                            → (NOT STORED)                  ❌ Lost (always "NA")
+
+================================================================================
+
+* Women_Persondays is NOT stored in database, but IS used to calculate 
+  women_participation_percent in dataCleaner.js - however this calculation 
+  FAILS due to field name mismatch (see dataCleaner.js line 72)
+
+✅ Stored     = Field is extracted and stored in database
+⚠️ Stored     = Field is stored but with transformation issues
+❌ Lost       = Field is ignored, not stored

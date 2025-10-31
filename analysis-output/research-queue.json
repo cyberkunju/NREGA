@@ -1,0 +1,2574 @@
+{
+  "generated": "2025-10-31T12:49:20.742Z",
+  "count": 160,
+  "instructions": "For each item, research the correct mapping and update status to MATCHED or EXCLUDED",
+  "queue": [
+    {
+      "apiDistrict": "Nicobars",
+      "apiState": "Andaman & Nicobar",
+      "compositeKey": "andaman  nicobar:nicobars",
+      "potentialMatches": [
+        {
+          "geoDistrict": "NICOBAR",
+          "geoState": "ANDAMAN & NICOBAR",
+          "geoId": 573,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "North And Middle Andaman",
+      "apiState": "Andaman And Nicobar",
+      "compositeKey": "andaman and nicobar:north and middle andaman",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Anantapur",
+      "apiState": "Andhra Pradesh",
+      "compositeKey": "andhra pradesh:anantapur",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "East Godavari",
+      "apiState": "Andhra Pradesh",
+      "compositeKey": "andhra pradesh:east godavari",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Nellore",
+      "apiState": "Andhra Pradesh",
+      "compositeKey": "andhra pradesh:nellore",
+      "potentialMatches": [
+        {
+          "geoDistrict": "SRIPOTTISRIRAMULUNELLORE",
+          "geoState": "ANDHRA PRADESH",
+          "geoId": 91,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Parvathipuram Manyam",
+      "apiState": "Andhra Pradesh",
+      "compositeKey": "andhra pradesh:parvathipuram manyam",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Sri Sathya Sai",
+      "apiState": "Andhra Pradesh",
+      "compositeKey": "andhra pradesh:sri sathya sai",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Tirupati",
+      "apiState": "Andhra Pradesh",
+      "compositeKey": "andhra pradesh:tirupati",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Visakhapatanam",
+      "apiState": "Andhra Pradesh",
+      "compositeKey": "andhra pradesh:visakhapatanam",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "West Godavari",
+      "apiState": "Andhra Pradesh",
+      "compositeKey": "andhra pradesh:west godavari",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Kra-daadi",
+      "apiState": "Arunachal Pradesh",
+      "compositeKey": "arunachal pradesh:kra-daadi",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Leparada",
+      "apiState": "Arunachal Pradesh",
+      "compositeKey": "arunachal pradesh:leparada",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Papum Pare",
+      "apiState": "Arunachal Pradesh",
+      "compositeKey": "arunachal pradesh:papum pare",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Upper Dibang Valley",
+      "apiState": "Arunachal Pradesh",
+      "compositeKey": "arunachal pradesh:upper dibang valley",
+      "potentialMatches": [
+        {
+          "geoDistrict": "DIBANG VALLEY",
+          "geoState": "ARUNACHAL PRADESH",
+          "geoId": 531,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Bajali",
+      "apiState": "Assam",
+      "compositeKey": "assam:bajali",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Kamrup",
+      "apiState": "Assam",
+      "compositeKey": "assam:kamrup",
+      "potentialMatches": [
+        {
+          "geoDistrict": "KAMRUP RURAL",
+          "geoState": "ASSAM",
+          "geoId": 15,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Morigaon",
+      "apiState": "Assam",
+      "compositeKey": "assam:morigaon",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Sivasagar",
+      "apiState": "Assam",
+      "compositeKey": "assam:sivasagar",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "South Salmara-mankachar",
+      "apiState": "Assam",
+      "compositeKey": "assam:south salmara-mankachar",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Tamulpur",
+      "apiState": "Assam",
+      "compositeKey": "assam:tamulpur",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Auranagabad",
+      "apiState": "Bihar",
+      "compositeKey": "bihar:auranagabad",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Jehanabad",
+      "apiState": "Bihar",
+      "compositeKey": "bihar:jehanabad",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Kaimur (bhabua)",
+      "apiState": "Bihar",
+      "compositeKey": "bihar:kaimur bhabua",
+      "potentialMatches": [
+        {
+          "geoDistrict": "KAIMUR",
+          "geoState": "BIHAR",
+          "geoId": 346,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Pashchim Champaran",
+      "apiState": "Bihar",
+      "compositeKey": "bihar:pashchim champaran",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Sarangarh Bilaigarh",
+      "apiState": "Bihar",
+      "compositeKey": "bihar:sarangarh bilaigarh",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Balrampur",
+      "apiState": "Chhattisgarh",
+      "compositeKey": "chhattisgarh:balrampur",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Dantewada",
+      "apiState": "Chhattisgarh",
+      "compositeKey": "chhattisgarh:dantewada",
+      "potentialMatches": [
+        {
+          "geoDistrict": "DAKSHIN BASTAR DANTEWADA",
+          "geoState": "CHHATTISGARH",
+          "geoId": 591,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Gaurela Pendra Marwahi",
+      "apiState": "Chhattisgarh",
+      "compositeKey": "chhattisgarh:gaurela pendra marwahi",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Janjgir-champa",
+      "apiState": "Chhattisgarh",
+      "compositeKey": "chhattisgarh:janjgir-champa",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Kanker",
+      "apiState": "Chhattisgarh",
+      "compositeKey": "chhattisgarh:kanker",
+      "potentialMatches": [
+        {
+          "geoDistrict": "UTTAR BASTAR KANKER",
+          "geoState": "CHHATTISGARH",
+          "geoId": 176,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Kawardha",
+      "apiState": "Chhattisgarh",
+      "compositeKey": "chhattisgarh:kawardha",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Khairagarh Chhuikhadan Gandai",
+      "apiState": "Chhattisgarh",
+      "compositeKey": "chhattisgarh:khairagarh chhuikhadan gandai",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Manendragarh Chirmiri Bharatpur",
+      "apiState": "Chhattisgarh",
+      "compositeKey": "chhattisgarh:manendragarh chirmiri bharatpur",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Mohla Manpur Ambagarh Chowki",
+      "apiState": "Chhattisgarh",
+      "compositeKey": "chhattisgarh:mohla manpur ambagarh chowki",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Narayanpur",
+      "apiState": "Chhattisgarh",
+      "compositeKey": "chhattisgarh:narayanpur",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Rajnandagon",
+      "apiState": "Chhattisgarh",
+      "compositeKey": "chhattisgarh:rajnandagon",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Sakti",
+      "apiState": "Chhattisgarh",
+      "compositeKey": "chhattisgarh:sakti",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Dadra And Nagar Haveli",
+      "apiState": "Dn Haveli And Dd",
+      "compositeKey": "dn haveli and dd:dadra and nagar haveli",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Arvalli",
+      "apiState": "Gujarat",
+      "compositeKey": "gujarat:arvalli",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Chhotaudepur",
+      "apiState": "Gujarat",
+      "compositeKey": "gujarat:chhotaudepur",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Dang",
+      "apiState": "Gujarat",
+      "compositeKey": "gujarat:dang",
+      "potentialMatches": [
+        {
+          "geoDistrict": "DANGS",
+          "geoState": "GUJARAT",
+          "geoId": 190,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Dohad",
+      "apiState": "Gujarat",
+      "compositeKey": "gujarat:dohad",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Narmadapuram",
+      "apiState": "Gujarat",
+      "compositeKey": "gujarat:narmadapuram",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Charki Dadri",
+      "apiState": "Haryana",
+      "compositeKey": "haryana:charki dadri",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Lahul And Spiti",
+      "apiState": "Himachal Pradesh",
+      "compositeKey": "himachal pradesh:lahul and spiti",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Unakoti",
+      "apiState": "Himachal Pradesh",
+      "compositeKey": "himachal pradesh:unakoti",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Bandipora",
+      "apiState": "Jammu And Kashmir",
+      "compositeKey": "jammu and kashmir:bandipora",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Baramulla",
+      "apiState": "Jammu And Kashmir",
+      "compositeKey": "jammu and kashmir:baramulla",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Poonch",
+      "apiState": "Jammu And Kashmir",
+      "compositeKey": "jammu and kashmir:poonch",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Reasi",
+      "apiState": "Jammu And Kashmir",
+      "compositeKey": "jammu and kashmir:reasi",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Shopian",
+      "apiState": "Jammu And Kashmir",
+      "compositeKey": "jammu and kashmir:shopian",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Chatrapati Sambhaji Nagar",
+      "apiState": "Jharkhand",
+      "compositeKey": "jharkhand:chatrapati sambhaji nagar",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "East Singhbum",
+      "apiState": "Jharkhand",
+      "compositeKey": "jharkhand:east singhbum",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Koderma",
+      "apiState": "Jharkhand",
+      "compositeKey": "jharkhand:koderma",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Sahebganj",
+      "apiState": "Jharkhand",
+      "compositeKey": "jharkhand:sahebganj",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Saraikela Kharsawan",
+      "apiState": "Jharkhand",
+      "compositeKey": "jharkhand:saraikela kharsawan",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Bagalkote",
+      "apiState": "Karnataka",
+      "compositeKey": "karnataka:bagalkote",
+      "potentialMatches": [
+        {
+          "geoDistrict": "BAGALKOT",
+          "geoState": "KARNATAKA",
+          "geoId": 110,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Bengaluru",
+      "apiState": "Karnataka",
+      "compositeKey": "karnataka:bengaluru",
+      "potentialMatches": [
+        {
+          "geoDistrict": "BENGALURU URBAN",
+          "geoState": "KARNATAKA",
+          "geoId": 81,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Chamaraja Nagara",
+      "apiState": "Karnataka",
+      "compositeKey": "karnataka:chamaraja nagara",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Chikkaballapura",
+      "apiState": "Karnataka",
+      "compositeKey": "karnataka:chikkaballapura",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Davanagere",
+      "apiState": "Karnataka",
+      "compositeKey": "karnataka:davanagere",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Dharwar",
+      "apiState": "Karnataka",
+      "compositeKey": "karnataka:dharwar",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Mandya",
+      "apiState": "Karnataka",
+      "compositeKey": "karnataka:mandya",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Ramanagara",
+      "apiState": "Karnataka",
+      "compositeKey": "karnataka:ramanagara",
+      "potentialMatches": [
+        {
+          "geoDistrict": "RAMANAGARAM",
+          "geoState": "KARNATAKA",
+          "geoId": 82,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Vijayanagara",
+      "apiState": "Karnataka",
+      "compositeKey": "karnataka:vijayanagara",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Vijaypura",
+      "apiState": "Karnataka",
+      "compositeKey": "karnataka:vijaypura",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Kasargod",
+      "apiState": "Kerala",
+      "compositeKey": "kerala:kasargod",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Pathanamthitta",
+      "apiState": "Kerala",
+      "compositeKey": "kerala:pathanamthitta",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Thrissur",
+      "apiState": "Kerala",
+      "compositeKey": "kerala:thrissur",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Leh (ladakh)",
+      "apiState": "Ladakh",
+      "compositeKey": "ladakh:leh ladakh",
+      "potentialMatches": [
+        {
+          "geoDistrict": "LEH",
+          "geoState": "LADAKH",
+          "geoId": 703,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Agar-malwa",
+      "apiState": "Madhya Pradesh",
+      "compositeKey": "madhya pradesh:agar-malwa",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Ashok Nagar",
+      "apiState": "Madhya Pradesh",
+      "compositeKey": "madhya pradesh:ashok nagar",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Dharashiv",
+      "apiState": "Madhya Pradesh",
+      "compositeKey": "madhya pradesh:dharashiv",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Jayashanker Bhopalapally",
+      "apiState": "Madhya Pradesh",
+      "compositeKey": "madhya pradesh:jayashanker bhopalapally",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Khandwa",
+      "apiState": "Madhya Pradesh",
+      "compositeKey": "madhya pradesh:khandwa",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Khargone",
+      "apiState": "Madhya Pradesh",
+      "compositeKey": "madhya pradesh:khargone",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Narsinghpur",
+      "apiState": "Madhya Pradesh",
+      "compositeKey": "madhya pradesh:narsinghpur",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Neemuch",
+      "apiState": "Madhya Pradesh",
+      "compositeKey": "madhya pradesh:neemuch",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Niwari",
+      "apiState": "Madhya Pradesh",
+      "compositeKey": "madhya pradesh:niwari",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Siddharth Nagar",
+      "apiState": "Madhya Pradesh",
+      "compositeKey": "madhya pradesh:siddharth nagar",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Ahmednagar",
+      "apiState": "Maharashtra",
+      "compositeKey": "maharashtra:ahmednagar",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Beed",
+      "apiState": "Maharashtra",
+      "compositeKey": "maharashtra:beed",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Raigad",
+      "apiState": "Maharashtra",
+      "compositeKey": "maharashtra:raigad",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Noney",
+      "apiState": "Manipur",
+      "compositeKey": "manipur:noney",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Eastern West Khasi Hills",
+      "apiState": "Meghalaya",
+      "compositeKey": "meghalaya:eastern west khasi hills",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Ri Bhoi",
+      "apiState": "Meghalaya",
+      "compositeKey": "meghalaya:ri bhoi",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Peren",
+      "apiState": "Nagaland",
+      "compositeKey": "nagaland:peren",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Angul",
+      "apiState": "Odisha",
+      "compositeKey": "odisha:angul",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Baleshwar",
+      "apiState": "Odisha",
+      "compositeKey": "odisha:baleshwar",
+      "potentialMatches": [
+        {
+          "geoDistrict": "BALASORE (BALESHWAR)",
+          "geoState": "ODISHA",
+          "geoId": 215,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Bargarh",
+      "apiState": "Odisha",
+      "compositeKey": "odisha:bargarh",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Bolangir",
+      "apiState": "Odisha",
+      "compositeKey": "odisha:bolangir",
+      "potentialMatches": [
+        {
+          "geoDistrict": "BOLANGIR (BALANGIR)",
+          "geoState": "ODISHA",
+          "geoId": 188,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Boudh",
+      "apiState": "Odisha",
+      "compositeKey": "odisha:boudh",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Jagatsinghapur",
+      "apiState": "Odisha",
+      "compositeKey": "odisha:jagatsinghapur",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Jajpur",
+      "apiState": "Odisha",
+      "compositeKey": "odisha:jajpur",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Kendrapara",
+      "apiState": "Odisha",
+      "compositeKey": "odisha:kendrapara",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Kendujhar",
+      "apiState": "Odisha",
+      "compositeKey": "odisha:kendujhar",
+      "potentialMatches": [
+        {
+          "geoDistrict": "KEONJHAR (KENDUJHAR)",
+          "geoState": "ODISHA",
+          "geoId": 218,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Nuapada",
+      "apiState": "Odisha",
+      "compositeKey": "odisha:nuapada",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Rayagada",
+      "apiState": "Odisha",
+      "compositeKey": "odisha:rayagada",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Sonepur",
+      "apiState": "Odisha",
+      "compositeKey": "odisha:sonepur",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Pondicherry",
+      "apiState": "Puducherry",
+      "compositeKey": "puducherry:pondicherry",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Bhatinda",
+      "apiState": "Punjab",
+      "compositeKey": "punjab:bhatinda",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Ferozepur",
+      "apiState": "Punjab",
+      "compositeKey": "punjab:ferozepur",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Malerkotla",
+      "apiState": "Punjab",
+      "compositeKey": "punjab:malerkotla",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Mukatsar",
+      "apiState": "Punjab",
+      "compositeKey": "punjab:mukatsar",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Nawanshahr",
+      "apiState": "Punjab",
+      "compositeKey": "punjab:nawanshahr",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Ropar",
+      "apiState": "Punjab",
+      "compositeKey": "punjab:ropar",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Sas Nagar Mohali",
+      "apiState": "Punjab",
+      "compositeKey": "punjab:sas nagar mohali",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Chittorgarh",
+      "apiState": "Rajasthan",
+      "compositeKey": "rajasthan:chittorgarh",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Dholpur",
+      "apiState": "Rajasthan",
+      "compositeKey": "rajasthan:dholpur",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Jalore",
+      "apiState": "Rajasthan",
+      "compositeKey": "rajasthan:jalore",
+      "potentialMatches": [
+        {
+          "geoDistrict": "JALOR",
+          "geoState": "RAJASTHAN",
+          "geoId": 669,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Jhunjhunu",
+      "apiState": "Rajasthan",
+      "compositeKey": "rajasthan:jhunjhunu",
+      "potentialMatches": [
+        {
+          "geoDistrict": "JHUNJHUNUN",
+          "geoState": "RAJASTHAN",
+          "geoId": 485,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Pratapgarh",
+      "apiState": "Rajasthan",
+      "compositeKey": "rajasthan:pratapgarh",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Rajsamand",
+      "apiState": "Rajasthan",
+      "compositeKey": "rajasthan:rajsamand",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Sri Ganganagar",
+      "apiState": "Rajasthan",
+      "compositeKey": "rajasthan:sri ganganagar",
+      "potentialMatches": [
+        {
+          "geoDistrict": "GANGANAGAR",
+          "geoState": "RAJASTHAN",
+          "geoId": 532,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Gangtok District",
+      "apiState": "Sikkim",
+      "compositeKey": "sikkim:gangtok",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Gyalshing District",
+      "apiState": "Sikkim",
+      "compositeKey": "sikkim:gyalshing",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Mangan District",
+      "apiState": "Sikkim",
+      "compositeKey": "sikkim:mangan",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Namchi District",
+      "apiState": "Sikkim",
+      "compositeKey": "sikkim:namchi",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Pakyong",
+      "apiState": "Sikkim",
+      "compositeKey": "sikkim:pakyong",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Soreng",
+      "apiState": "Sikkim",
+      "compositeKey": "sikkim:soreng",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Kallakurichi",
+      "apiState": "Tamil Nadu",
+      "compositeKey": "tamil nadu:kallakurichi",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Kanniyakumari",
+      "apiState": "Tamil Nadu",
+      "compositeKey": "tamil nadu:kanniyakumari",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Mayiladuthurai",
+      "apiState": "Tamil Nadu",
+      "compositeKey": "tamil nadu:mayiladuthurai",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Ranipet",
+      "apiState": "Tamil Nadu",
+      "compositeKey": "tamil nadu:ranipet",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Sivagangai",
+      "apiState": "Tamil Nadu",
+      "compositeKey": "tamil nadu:sivagangai",
+      "potentialMatches": [
+        {
+          "geoDistrict": "SIVAGANGA",
+          "geoState": "TAMIL NADU",
+          "geoId": 43,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "The Nilgiris",
+      "apiState": "Tamil Nadu",
+      "compositeKey": "tamil nadu:the nilgiris",
+      "potentialMatches": [
+        {
+          "geoDistrict": "NILGIRIS",
+          "geoState": "TAMIL NADU",
+          "geoId": 60,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Theni",
+      "apiState": "Tamil Nadu",
+      "compositeKey": "tamil nadu:theni",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Thoothukkudi",
+      "apiState": "Tamil Nadu",
+      "compositeKey": "tamil nadu:thoothukkudi",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Tiruchirappalli",
+      "apiState": "Tamil Nadu",
+      "compositeKey": "tamil nadu:tiruchirappalli",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Tirupathur",
+      "apiState": "Tamil Nadu",
+      "compositeKey": "tamil nadu:tirupathur",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Tiruvarur",
+      "apiState": "Tamil Nadu",
+      "compositeKey": "tamil nadu:tiruvarur",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Hanumakonda",
+      "apiState": "Telangana",
+      "compositeKey": "telangana:hanumakonda",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Kumram Bheem(asifabad)",
+      "apiState": "Telangana",
+      "compositeKey": "telangana:kumram bheemasifabad",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Medchal",
+      "apiState": "Telangana",
+      "compositeKey": "telangana:medchal",
+      "potentialMatches": [
+        {
+          "geoDistrict": "MEDCHAL-MALKAJGIRI",
+          "geoState": "TELANGANA",
+          "geoId": 123,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Rajanna Sirsilla",
+      "apiState": "Telangana",
+      "compositeKey": "telangana:rajanna sirsilla",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Warangal",
+      "apiState": "Telangana",
+      "compositeKey": "telangana:warangal",
+      "potentialMatches": [
+        {
+          "geoDistrict": "WARANGAL (URBAN)",
+          "geoState": "TELANGANA",
+          "geoId": 132,
+          "similarity": "substring-match"
+        },
+        {
+          "geoDistrict": "WARANGAL (RURAL)",
+          "geoState": "TELANGANA",
+          "geoId": 133,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Ambedkar Nagar",
+      "apiState": "Uttar Pradesh",
+      "compositeKey": "uttar pradesh:ambedkar nagar",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Gautam Buddha Nagar",
+      "apiState": "Uttar Pradesh",
+      "compositeKey": "uttar pradesh:gautam buddha nagar",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Ghazipur",
+      "apiState": "Uttar Pradesh",
+      "compositeKey": "uttar pradesh:ghazipur",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Kanpur Nagar",
+      "apiState": "Uttar Pradesh",
+      "compositeKey": "uttar pradesh:kanpur nagar",
+      "potentialMatches": [
+        {
+          "geoDistrict": "KANPUR",
+          "geoState": "UTTAR PRADESH",
+          "geoId": 405,
+          "similarity": "substring-match"
+        }
+      ],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Kashganj",
+      "apiState": "Uttar Pradesh",
+      "compositeKey": "uttar pradesh:kashganj",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Kushi Nagar",
+      "apiState": "Uttar Pradesh",
+      "compositeKey": "uttar pradesh:kushi nagar",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Rae Bareli",
+      "apiState": "Uttar Pradesh",
+      "compositeKey": "uttar pradesh:rae bareli",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Sant Kabeer Nagar",
+      "apiState": "Uttar Pradesh",
+      "compositeKey": "uttar pradesh:sant kabeer nagar",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Sant Ravidas Nagar",
+      "apiState": "Uttar Pradesh",
+      "compositeKey": "uttar pradesh:sant ravidas nagar",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Shravasti",
+      "apiState": "Uttar Pradesh",
+      "compositeKey": "uttar pradesh:shravasti",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Rudra Prayag",
+      "apiState": "Uttarakhand",
+      "compositeKey": "uttarakhand:rudra prayag",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Udam Singh Nagar",
+      "apiState": "Uttarakhand",
+      "compositeKey": "uttarakhand:udam singh nagar",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Uttar Kashi",
+      "apiState": "Uttarakhand",
+      "compositeKey": "uttarakhand:uttar kashi",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "24 Parganas (north)",
+      "apiState": "West Bengal",
+      "compositeKey": "west bengal:24 parganas north",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "24 Parganas South",
+      "apiState": "West Bengal",
+      "compositeKey": "west bengal:24 parganas south",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Coochbehar",
+      "apiState": "West Bengal",
+      "compositeKey": "west bengal:coochbehar",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Dinajpur Dakshin",
+      "apiState": "West Bengal",
+      "compositeKey": "west bengal:dinajpur dakshin",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Dinajpur Uttar",
+      "apiState": "West Bengal",
+      "compositeKey": "west bengal:dinajpur uttar",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Hooghly",
+      "apiState": "West Bengal",
+      "compositeKey": "west bengal:hooghly",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Howrah",
+      "apiState": "West Bengal",
+      "compositeKey": "west bengal:howrah",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Paschim Bardhaman",
+      "apiState": "West Bengal",
+      "compositeKey": "west bengal:paschim bardhaman",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Purba Bardhaman",
+      "apiState": "West Bengal",
+      "compositeKey": "west bengal:purba bardhaman",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Purulia",
+      "apiState": "West Bengal",
+      "compositeKey": "west bengal:purulia",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    },
+    {
+      "apiDistrict": "Siliguri Mahakuma Parisad",
+      "apiState": "West Bengal",
+      "compositeKey": "west bengal:siliguri mahakuma parisad",
+      "potentialMatches": [],
+      "status": "NEEDS_RESEARCH",
+      "notes": "",
+      "action": "MATCH or EXCLUDE",
+      "researchSources": [
+        "Census of India: https://censusindia.gov.in/",
+        "Ministry of Home Affairs",
+        "State Government Website",
+        "District Handbook"
+      ]
+    }
+  ]
+}
