@@ -1,0 +1,834 @@
+{
+  "generated": "2025-10-31T14:30:04.245Z",
+  "totalAPIDistricts": 735,
+  "inPerfectMapping": 693,
+  "usingFallback": 42,
+  "fallbackDistricts": [
+    {
+      "districtName": "North And Middle Andaman",
+      "stateName": "Andaman And Nicobar",
+      "normalizedDistrict": "north and middle andaman",
+      "normalizedState": "andaman and nicobar",
+      "compositeKey": "andaman and nicobar:north and middle andaman"
+    },
+    {
+      "districtName": "Anantapur",
+      "stateName": "Andhra Pradesh",
+      "normalizedDistrict": "anantapur",
+      "normalizedState": "andhra pradesh",
+      "compositeKey": "andhra pradesh:anantapur"
+    },
+    {
+      "districtName": "Bajali",
+      "stateName": "Assam",
+      "normalizedDistrict": "bajali",
+      "normalizedState": "assam",
+      "compositeKey": "assam:bajali"
+    },
+    {
+      "districtName": "Tamulpur",
+      "stateName": "Assam",
+      "normalizedDistrict": "tamulpur",
+      "normalizedState": "assam",
+      "compositeKey": "assam:tamulpur"
+    },
+    {
+      "districtName": "Sarangarh Bilaigarh",
+      "stateName": "Bihar",
+      "normalizedDistrict": "sarangarh bilaigarh",
+      "normalizedState": "bihar",
+      "compositeKey": "bihar:sarangarh bilaigarh"
+    },
+    {
+      "districtName": "Kawardha",
+      "stateName": "Chhattisgarh",
+      "normalizedDistrict": "kawardha",
+      "normalizedState": "chhattisgarh",
+      "compositeKey": "chhattisgarh:kawardha"
+    },
+    {
+      "districtName": "Khairagarh Chhuikhadan Gandai",
+      "stateName": "Chhattisgarh",
+      "normalizedDistrict": "khairagarh chhuikhadan gandai",
+      "normalizedState": "chhattisgarh",
+      "compositeKey": "chhattisgarh:khairagarh chhuikhadan gandai"
+    },
+    {
+      "districtName": "Manendragarh Chirmiri Bharatpur",
+      "stateName": "Chhattisgarh",
+      "normalizedDistrict": "manendragarh chirmiri bharatpur",
+      "normalizedState": "chhattisgarh",
+      "compositeKey": "chhattisgarh:manendragarh chirmiri bharatpur"
+    },
+    {
+      "districtName": "Mohla Manpur Ambagarh Chowki",
+      "stateName": "Chhattisgarh",
+      "normalizedDistrict": "mohla manpur ambagarh chowki",
+      "normalizedState": "chhattisgarh",
+      "compositeKey": "chhattisgarh:mohla manpur ambagarh chowki"
+    },
+    {
+      "districtName": "Sakti",
+      "stateName": "Chhattisgarh",
+      "normalizedDistrict": "sakti",
+      "normalizedState": "chhattisgarh",
+      "compositeKey": "chhattisgarh:sakti"
+    },
+    {
+      "districtName": "Dadra And Nagar Haveli",
+      "stateName": "Dn Haveli And Dd",
+      "normalizedDistrict": "dadra and nagar haveli",
+      "normalizedState": "dn haveli and dd",
+      "compositeKey": "dn haveli and dd:dadra and nagar haveli"
+    },
+    {
+      "districtName": "Dohad",
+      "stateName": "Gujarat",
+      "normalizedDistrict": "dohad",
+      "normalizedState": "gujarat",
+      "compositeKey": "gujarat:dohad"
+    },
+    {
+      "districtName": "Narmadapuram",
+      "stateName": "Gujarat",
+      "normalizedDistrict": "narmadapuram",
+      "normalizedState": "gujarat",
+      "compositeKey": "gujarat:narmadapuram"
+    },
+    {
+      "districtName": "Unakoti",
+      "stateName": "Himachal Pradesh",
+      "normalizedDistrict": "unakoti",
+      "normalizedState": "himachal pradesh",
+      "compositeKey": "himachal pradesh:unakoti"
+    },
+    {
+      "districtName": "Poonch",
+      "stateName": "Jammu And Kashmir",
+      "normalizedDistrict": "poonch",
+      "normalizedState": "jammu and kashmir",
+      "compositeKey": "jammu and kashmir:poonch"
+    },
+    {
+      "districtName": "Chatrapati Sambhaji Nagar",
+      "stateName": "Jharkhand",
+      "normalizedDistrict": "chatrapati sambhaji nagar",
+      "normalizedState": "jharkhand",
+      "compositeKey": "jharkhand:chatrapati sambhaji nagar"
+    },
+    {
+      "districtName": "Vijayanagara",
+      "stateName": "Karnataka",
+      "normalizedDistrict": "vijayanagara",
+      "normalizedState": "karnataka",
+      "compositeKey": "karnataka:vijayanagara"
+    },
+    {
+      "districtName": "Dharashiv",
+      "stateName": "Madhya Pradesh",
+      "normalizedDistrict": "dharashiv",
+      "normalizedState": "madhya pradesh",
+      "compositeKey": "madhya pradesh:dharashiv"
+    },
+    {
+      "districtName": "Jayashanker Bhopalapally",
+      "stateName": "Madhya Pradesh",
+      "normalizedDistrict": "jayashanker bhopalapally",
+      "normalizedState": "madhya pradesh",
+      "compositeKey": "madhya pradesh:jayashanker bhopalapally"
+    },
+    {
+      "districtName": "Khandwa",
+      "stateName": "Madhya Pradesh",
+      "normalizedDistrict": "khandwa",
+      "normalizedState": "madhya pradesh",
+      "compositeKey": "madhya pradesh:khandwa"
+    },
+    {
+      "districtName": "Khargone",
+      "stateName": "Madhya Pradesh",
+      "normalizedDistrict": "khargone",
+      "normalizedState": "madhya pradesh",
+      "compositeKey": "madhya pradesh:khargone"
+    },
+    {
+      "districtName": "Narsinghpur",
+      "stateName": "Madhya Pradesh",
+      "normalizedDistrict": "narsinghpur",
+      "normalizedState": "madhya pradesh",
+      "compositeKey": "madhya pradesh:narsinghpur"
+    },
+    {
+      "districtName": "Neemuch",
+      "stateName": "Madhya Pradesh",
+      "normalizedDistrict": "neemuch",
+      "normalizedState": "madhya pradesh",
+      "compositeKey": "madhya pradesh:neemuch"
+    },
+    {
+      "districtName": "Siddharth Nagar",
+      "stateName": "Madhya Pradesh",
+      "normalizedDistrict": "siddharth nagar",
+      "normalizedState": "madhya pradesh",
+      "compositeKey": "madhya pradesh:siddharth nagar"
+    },
+    {
+      "districtName": "Beed",
+      "stateName": "Maharashtra",
+      "normalizedDistrict": "beed",
+      "normalizedState": "maharashtra",
+      "compositeKey": "maharashtra:beed"
+    },
+    {
+      "districtName": "Eastern West Khasi Hills",
+      "stateName": "Meghalaya",
+      "normalizedDistrict": "eastern west khasi hills",
+      "normalizedState": "meghalaya",
+      "compositeKey": "meghalaya:eastern west khasi hills"
+    },
+    {
+      "districtName": "Boudh",
+      "stateName": "Odisha",
+      "normalizedDistrict": "boudh",
+      "normalizedState": "odisha",
+      "compositeKey": "odisha:boudh"
+    },
+    {
+      "districtName": "Sonepur",
+      "stateName": "Odisha",
+      "normalizedDistrict": "sonepur",
+      "normalizedState": "odisha",
+      "compositeKey": "odisha:sonepur"
+    },
+    {
+      "districtName": "Pondicherry",
+      "stateName": "Puducherry",
+      "normalizedDistrict": "pondicherry",
+      "normalizedState": "puducherry",
+      "compositeKey": "puducherry:pondicherry"
+    },
+    {
+      "districtName": "Malerkotla",
+      "stateName": "Punjab",
+      "normalizedDistrict": "malerkotla",
+      "normalizedState": "punjab",
+      "compositeKey": "punjab:malerkotla"
+    },
+    {
+      "districtName": "Mukatsar",
+      "stateName": "Punjab",
+      "normalizedDistrict": "mukatsar",
+      "normalizedState": "punjab",
+      "compositeKey": "punjab:mukatsar"
+    },
+    {
+      "districtName": "Nawanshahr",
+      "stateName": "Punjab",
+      "normalizedDistrict": "nawanshahr",
+      "normalizedState": "punjab",
+      "compositeKey": "punjab:nawanshahr"
+    },
+    {
+      "districtName": "Ropar",
+      "stateName": "Punjab",
+      "normalizedDistrict": "ropar",
+      "normalizedState": "punjab",
+      "compositeKey": "punjab:ropar"
+    },
+    {
+      "districtName": "Pakyong",
+      "stateName": "Sikkim",
+      "normalizedDistrict": "pakyong",
+      "normalizedState": "sikkim",
+      "compositeKey": "sikkim:pakyong"
+    },
+    {
+      "districtName": "Soreng",
+      "stateName": "Sikkim",
+      "normalizedDistrict": "soreng",
+      "normalizedState": "sikkim",
+      "compositeKey": "sikkim:soreng"
+    },
+    {
+      "districtName": "Mayiladuthurai",
+      "stateName": "Tamil Nadu",
+      "normalizedDistrict": "mayiladuthurai",
+      "normalizedState": "tamil nadu",
+      "compositeKey": "tamil nadu:mayiladuthurai"
+    },
+    {
+      "districtName": "Ranipet",
+      "stateName": "Tamil Nadu",
+      "normalizedDistrict": "ranipet",
+      "normalizedState": "tamil nadu",
+      "compositeKey": "tamil nadu:ranipet"
+    },
+    {
+      "districtName": "Thoothukkudi",
+      "stateName": "Tamil Nadu",
+      "normalizedDistrict": "thoothukkudi",
+      "normalizedState": "tamil nadu",
+      "compositeKey": "tamil nadu:thoothukkudi"
+    },
+    {
+      "districtName": "Hanumakonda",
+      "stateName": "Telangana",
+      "normalizedDistrict": "hanumakonda",
+      "normalizedState": "telangana",
+      "compositeKey": "telangana:hanumakonda"
+    },
+    {
+      "districtName": "Kumram Bheem(asifabad)",
+      "stateName": "Telangana",
+      "normalizedDistrict": "kumram bheemasifabad",
+      "normalizedState": "telangana",
+      "compositeKey": "telangana:kumram bheemasifabad"
+    },
+    {
+      "districtName": "Rae Bareli",
+      "stateName": "Uttar Pradesh",
+      "normalizedDistrict": "rae bareli",
+      "normalizedState": "uttar pradesh",
+      "compositeKey": "uttar pradesh:rae bareli"
+    },
+    {
+      "districtName": "Siliguri Mahakuma Parisad",
+      "stateName": "West Bengal",
+      "normalizedDistrict": "siliguri mahakuma parisad",
+      "normalizedState": "west bengal",
+      "compositeKey": "west bengal:siliguri mahakuma parisad"
+    }
+  ],
+  "suggestions": [
+    {
+      "api": {
+        "districtName": "North And Middle Andaman",
+        "stateName": "Andaman And Nicobar",
+        "normalizedDistrict": "north and middle andaman",
+        "normalizedState": "andaman and nicobar",
+        "compositeKey": "andaman and nicobar:north and middle andaman"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Anantapur",
+        "stateName": "Andhra Pradesh",
+        "normalizedDistrict": "anantapur",
+        "normalizedState": "andhra pradesh",
+        "compositeKey": "andhra pradesh:anantapur"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Bajali",
+        "stateName": "Assam",
+        "normalizedDistrict": "bajali",
+        "normalizedState": "assam",
+        "compositeKey": "assam:bajali"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Tamulpur",
+        "stateName": "Assam",
+        "normalizedDistrict": "tamulpur",
+        "normalizedState": "assam",
+        "compositeKey": "assam:tamulpur"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Sarangarh Bilaigarh",
+        "stateName": "Bihar",
+        "normalizedDistrict": "sarangarh bilaigarh",
+        "normalizedState": "bihar",
+        "compositeKey": "bihar:sarangarh bilaigarh"
+      },
+      "matches": [
+        {
+          "district": "SARAN",
+          "state": "BIHAR",
+          "geoId": 392,
+          "normalized": "saran"
+        }
+      ]
+    },
+    {
+      "api": {
+        "districtName": "Kawardha",
+        "stateName": "Chhattisgarh",
+        "normalizedDistrict": "kawardha",
+        "normalizedState": "chhattisgarh",
+        "compositeKey": "chhattisgarh:kawardha"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Khairagarh Chhuikhadan Gandai",
+        "stateName": "Chhattisgarh",
+        "normalizedDistrict": "khairagarh chhuikhadan gandai",
+        "normalizedState": "chhattisgarh",
+        "compositeKey": "chhattisgarh:khairagarh chhuikhadan gandai"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Manendragarh Chirmiri Bharatpur",
+        "stateName": "Chhattisgarh",
+        "normalizedDistrict": "manendragarh chirmiri bharatpur",
+        "normalizedState": "chhattisgarh",
+        "compositeKey": "chhattisgarh:manendragarh chirmiri bharatpur"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Mohla Manpur Ambagarh Chowki",
+        "stateName": "Chhattisgarh",
+        "normalizedDistrict": "mohla manpur ambagarh chowki",
+        "normalizedState": "chhattisgarh",
+        "compositeKey": "chhattisgarh:mohla manpur ambagarh chowki"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Sakti",
+        "stateName": "Chhattisgarh",
+        "normalizedDistrict": "sakti",
+        "normalizedState": "chhattisgarh",
+        "compositeKey": "chhattisgarh:sakti"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Dadra And Nagar Haveli",
+        "stateName": "Dn Haveli And Dd",
+        "normalizedDistrict": "dadra and nagar haveli",
+        "normalizedState": "dn haveli and dd",
+        "compositeKey": "dn haveli and dd:dadra and nagar haveli"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Dohad",
+        "stateName": "Gujarat",
+        "normalizedDistrict": "dohad",
+        "normalizedState": "gujarat",
+        "compositeKey": "gujarat:dohad"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Narmadapuram",
+        "stateName": "Gujarat",
+        "normalizedDistrict": "narmadapuram",
+        "normalizedState": "gujarat",
+        "compositeKey": "gujarat:narmadapuram"
+      },
+      "matches": [
+        {
+          "district": "NARMADA",
+          "state": "GUJARAT",
+          "geoId": 683,
+          "normalized": "narmada"
+        }
+      ]
+    },
+    {
+      "api": {
+        "districtName": "Unakoti",
+        "stateName": "Himachal Pradesh",
+        "normalizedDistrict": "unakoti",
+        "normalizedState": "himachal pradesh",
+        "compositeKey": "himachal pradesh:unakoti"
+      },
+      "matches": [
+        {
+          "district": "UNA",
+          "state": "HIMACHAL PRADESH",
+          "geoId": 560,
+          "normalized": "una"
+        }
+      ]
+    },
+    {
+      "api": {
+        "districtName": "Poonch",
+        "stateName": "Jammu And Kashmir",
+        "normalizedDistrict": "poonch",
+        "normalizedState": "jammu and kashmir",
+        "compositeKey": "jammu and kashmir:poonch"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Chatrapati Sambhaji Nagar",
+        "stateName": "Jharkhand",
+        "normalizedDistrict": "chatrapati sambhaji nagar",
+        "normalizedState": "jharkhand",
+        "compositeKey": "jharkhand:chatrapati sambhaji nagar"
+      },
+      "matches": [
+        {
+          "district": "CHATRA",
+          "state": "JHARKHAND",
+          "geoId": 302,
+          "normalized": "chatra"
+        }
+      ]
+    },
+    {
+      "api": {
+        "districtName": "Vijayanagara",
+        "stateName": "Karnataka",
+        "normalizedDistrict": "vijayanagara",
+        "normalizedState": "karnataka",
+        "compositeKey": "karnataka:vijayanagara"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Dharashiv",
+        "stateName": "Madhya Pradesh",
+        "normalizedDistrict": "dharashiv",
+        "normalizedState": "madhya pradesh",
+        "compositeKey": "madhya pradesh:dharashiv"
+      },
+      "matches": [
+        {
+          "district": "DHAR",
+          "state": "MADHYA PRADESH",
+          "geoId": 253,
+          "normalized": "dhar"
+        }
+      ]
+    },
+    {
+      "api": {
+        "districtName": "Jayashanker Bhopalapally",
+        "stateName": "Madhya Pradesh",
+        "normalizedDistrict": "jayashanker bhopalapally",
+        "normalizedState": "madhya pradesh",
+        "compositeKey": "madhya pradesh:jayashanker bhopalapally"
+      },
+      "matches": [
+        {
+          "district": "BHOPAL",
+          "state": "MADHYA PRADESH",
+          "geoId": 280,
+          "normalized": "bhopal"
+        }
+      ]
+    },
+    {
+      "api": {
+        "districtName": "Khandwa",
+        "stateName": "Madhya Pradesh",
+        "normalizedDistrict": "khandwa",
+        "normalizedState": "madhya pradesh",
+        "compositeKey": "madhya pradesh:khandwa"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Khargone",
+        "stateName": "Madhya Pradesh",
+        "normalizedDistrict": "khargone",
+        "normalizedState": "madhya pradesh",
+        "compositeKey": "madhya pradesh:khargone"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Narsinghpur",
+        "stateName": "Madhya Pradesh",
+        "normalizedDistrict": "narsinghpur",
+        "normalizedState": "madhya pradesh",
+        "compositeKey": "madhya pradesh:narsinghpur"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Neemuch",
+        "stateName": "Madhya Pradesh",
+        "normalizedDistrict": "neemuch",
+        "normalizedState": "madhya pradesh",
+        "compositeKey": "madhya pradesh:neemuch"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Siddharth Nagar",
+        "stateName": "Madhya Pradesh",
+        "normalizedDistrict": "siddharth nagar",
+        "normalizedState": "madhya pradesh",
+        "compositeKey": "madhya pradesh:siddharth nagar"
+      },
+      "matches": [
+        {
+          "district": "DHAR",
+          "state": "MADHYA PRADESH",
+          "geoId": 253,
+          "normalized": "dhar"
+        }
+      ]
+    },
+    {
+      "api": {
+        "districtName": "Beed",
+        "stateName": "Maharashtra",
+        "normalizedDistrict": "beed",
+        "normalizedState": "maharashtra",
+        "compositeKey": "maharashtra:beed"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Eastern West Khasi Hills",
+        "stateName": "Meghalaya",
+        "normalizedDistrict": "eastern west khasi hills",
+        "normalizedState": "meghalaya",
+        "compositeKey": "meghalaya:eastern west khasi hills"
+      },
+      "matches": [
+        {
+          "district": "EAST GARO HILLS",
+          "state": "MEGHALAYA",
+          "geoId": 6,
+          "normalized": "east garo hills"
+        },
+        {
+          "district": "EAST KHASI HILLS",
+          "state": "MEGHALAYA",
+          "geoId": 2,
+          "normalized": "east khasi hills"
+        },
+        {
+          "district": "EAST JAINTIA HILLS",
+          "state": "MEGHALAYA",
+          "geoId": 3,
+          "normalized": "east jaintia hills"
+        },
+        {
+          "district": "SOUTH GARO HILLS",
+          "state": "MEGHALAYA",
+          "geoId": 1,
+          "normalized": "south garo hills"
+        },
+        {
+          "district": "WEST GARO HILLS",
+          "state": "MEGHALAYA",
+          "geoId": 5,
+          "normalized": "west garo hills"
+        },
+        {
+          "district": "WEST KHASI HILLS",
+          "state": "MEGHALAYA",
+          "geoId": 4,
+          "normalized": "west khasi hills"
+        },
+        {
+          "district": "SOUTH WEST KHASI HILLS",
+          "state": "MEGHALAYA",
+          "geoId": 672,
+          "normalized": "south west khasi hills"
+        },
+        {
+          "district": "SOUTH WEST GARO HILLS",
+          "state": "MEGHALAYA",
+          "geoId": 673,
+          "normalized": "south west garo hills"
+        },
+        {
+          "district": "NORTH GARO HILLS",
+          "state": "MEGHALAYA",
+          "geoId": 674,
+          "normalized": "north garo hills"
+        },
+        {
+          "district": "WEST JAINTIA HILLS",
+          "state": "MEGHALAYA",
+          "geoId": 575,
+          "normalized": "west jaintia hills"
+        }
+      ]
+    },
+    {
+      "api": {
+        "districtName": "Boudh",
+        "stateName": "Odisha",
+        "normalizedDistrict": "boudh",
+        "normalizedState": "odisha",
+        "compositeKey": "odisha:boudh"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Sonepur",
+        "stateName": "Odisha",
+        "normalizedDistrict": "sonepur",
+        "normalizedState": "odisha",
+        "compositeKey": "odisha:sonepur"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Pondicherry",
+        "stateName": "Puducherry",
+        "normalizedDistrict": "pondicherry",
+        "normalizedState": "puducherry",
+        "compositeKey": "puducherry:pondicherry"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Malerkotla",
+        "stateName": "Punjab",
+        "normalizedDistrict": "malerkotla",
+        "normalizedState": "punjab",
+        "compositeKey": "punjab:malerkotla"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Mukatsar",
+        "stateName": "Punjab",
+        "normalizedDistrict": "mukatsar",
+        "normalizedState": "punjab",
+        "compositeKey": "punjab:mukatsar"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Nawanshahr",
+        "stateName": "Punjab",
+        "normalizedDistrict": "nawanshahr",
+        "normalizedState": "punjab",
+        "compositeKey": "punjab:nawanshahr"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Ropar",
+        "stateName": "Punjab",
+        "normalizedDistrict": "ropar",
+        "normalizedState": "punjab",
+        "compositeKey": "punjab:ropar"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Pakyong",
+        "stateName": "Sikkim",
+        "normalizedDistrict": "pakyong",
+        "normalizedState": "sikkim",
+        "compositeKey": "sikkim:pakyong"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Soreng",
+        "stateName": "Sikkim",
+        "normalizedDistrict": "soreng",
+        "normalizedState": "sikkim",
+        "compositeKey": "sikkim:soreng"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Mayiladuthurai",
+        "stateName": "Tamil Nadu",
+        "normalizedDistrict": "mayiladuthurai",
+        "normalizedState": "tamil nadu",
+        "compositeKey": "tamil nadu:mayiladuthurai"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Ranipet",
+        "stateName": "Tamil Nadu",
+        "normalizedDistrict": "ranipet",
+        "normalizedState": "tamil nadu",
+        "compositeKey": "tamil nadu:ranipet"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Thoothukkudi",
+        "stateName": "Tamil Nadu",
+        "normalizedDistrict": "thoothukkudi",
+        "normalizedState": "tamil nadu",
+        "compositeKey": "tamil nadu:thoothukkudi"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Hanumakonda",
+        "stateName": "Telangana",
+        "normalizedDistrict": "hanumakonda",
+        "normalizedState": "telangana",
+        "compositeKey": "telangana:hanumakonda"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Kumram Bheem(asifabad)",
+        "stateName": "Telangana",
+        "normalizedDistrict": "kumram bheemasifabad",
+        "normalizedState": "telangana",
+        "compositeKey": "telangana:kumram bheemasifabad"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Rae Bareli",
+        "stateName": "Uttar Pradesh",
+        "normalizedDistrict": "rae bareli",
+        "normalizedState": "uttar pradesh",
+        "compositeKey": "uttar pradesh:rae bareli"
+      },
+      "matches": []
+    },
+    {
+      "api": {
+        "districtName": "Siliguri Mahakuma Parisad",
+        "stateName": "West Bengal",
+        "normalizedDistrict": "siliguri mahakuma parisad",
+        "normalizedState": "west bengal",
+        "compositeKey": "west bengal:siliguri mahakuma parisad"
+      },
+      "matches": []
+    }
+  ]
+}

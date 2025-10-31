@@ -1,0 +1,233 @@
+{
+  "timestamp": "2025-10-31T16:20:24.244Z",
+  "totalFiles": 16,
+  "valid": 16,
+  "warnings": 0,
+  "invalid": 0,
+  "details": [
+    {
+      "filename": "bajali.geojson",
+      "districtName": "bajali",
+      "valid": true,
+      "issues": [],
+      "warnings": [],
+      "properties": {
+        "District": "BAJALI",
+        "STATE": "ASSAM",
+        "id": 801,
+        "FULL_NAME": "BAJALI, ASSAM"
+      },
+      "pointCount": 9
+    },
+    {
+      "filename": "eastern-west-khasi-hills.geojson",
+      "districtName": "eastern-west-khasi-hills",
+      "valid": true,
+      "issues": [],
+      "warnings": [],
+      "properties": {
+        "District": "EASTERN WEST KHASI HILLS",
+        "STATE": "MEGHALAYA",
+        "id": 814,
+        "FULL_NAME": "EASTERN WEST KHASI HILLS, MEGHALAYA"
+      },
+      "pointCount": 9
+    },
+    {
+      "filename": "hanumakonda.geojson",
+      "districtName": "hanumakonda",
+      "valid": true,
+      "issues": [],
+      "warnings": [],
+      "properties": {
+        "District": "HANUMAKONDA",
+        "STATE": "TELANGANA",
+        "id": 804,
+        "FULL_NAME": "HANUMAKONDA, TELANGANA"
+      },
+      "pointCount": 9
+    },
+    {
+      "filename": "khairagarh-chhuikhadan-gandai.geojson",
+      "districtName": "khairagarh-chhuikhadan-gandai",
+      "valid": true,
+      "issues": [],
+      "warnings": [],
+      "properties": {
+        "District": "KHAIRAGARH CHHUIKHADAN GANDAI",
+        "STATE": "CHHATTISGARH",
+        "id": 810,
+        "FULL_NAME": "KHAIRAGARH CHHUIKHADAN GANDAI, CHHATTISGARH"
+      },
+      "pointCount": 9
+    },
+    {
+      "filename": "malerkotla.geojson",
+      "districtName": "malerkotla",
+      "valid": true,
+      "issues": [],
+      "warnings": [],
+      "properties": {
+        "District": "MALERKOTLA",
+        "STATE": "PUNJAB",
+        "id": 800,
+        "FULL_NAME": "MALERKOTLA, PUNJAB"
+      },
+      "pointCount": 11
+    },
+    {
+      "filename": "manendragarh-chirmiri-bharatpur.geojson",
+      "districtName": "manendragarh-chirmiri-bharatpur",
+      "valid": true,
+      "issues": [],
+      "warnings": [],
+      "properties": {
+        "District": "MANENDRAGARH CHIRMIRI BHARATPUR",
+        "STATE": "CHHATTISGARH",
+        "id": 811,
+        "FULL_NAME": "MANENDRAGARH CHIRMIRI BHARATPUR, CHHATTISGARH"
+      },
+      "pointCount": 9
+    },
+    {
+      "filename": "mayiladuthurai.geojson",
+      "districtName": "mayiladuthurai",
+      "valid": true,
+      "issues": [],
+      "warnings": [],
+      "properties": {
+        "District": "MAYILADUTHURAI",
+        "STATE": "TAMIL NADU",
+        "id": 805,
+        "FULL_NAME": "MAYILADUTHURAI, TAMIL NADU"
+      },
+      "pointCount": 9
+    },
+    {
+      "filename": "mohla-manpur-ambagarh-chowki.geojson",
+      "districtName": "mohla-manpur-ambagarh-chowki",
+      "valid": true,
+      "issues": [],
+      "warnings": [],
+      "properties": {
+        "District": "MOHLA MANPUR AMBAGARH CHOWKI",
+        "STATE": "CHHATTISGARH",
+        "id": 812,
+        "FULL_NAME": "MOHLA MANPUR AMBAGARH CHOWKI, CHHATTISGARH"
+      },
+      "pointCount": 9
+    },
+    {
+      "filename": "pakyong.geojson",
+      "districtName": "pakyong",
+      "valid": true,
+      "issues": [],
+      "warnings": [],
+      "properties": {
+        "District": "PAKYONG",
+        "STATE": "SIKKIM",
+        "id": 806,
+        "FULL_NAME": "PAKYONG, SIKKIM"
+      },
+      "pointCount": 9
+    },
+    {
+      "filename": "rae-bareli.geojson",
+      "districtName": "rae-bareli",
+      "valid": true,
+      "issues": [],
+      "warnings": [],
+      "properties": {
+        "District": "RAE BARELI",
+        "STATE": "UTTAR PRADESH",
+        "id": 815,
+        "FULL_NAME": "RAE BARELI, UTTAR PRADESH"
+      },
+      "pointCount": 9
+    },
+    {
+      "filename": "ranipet.geojson",
+      "districtName": "ranipet",
+      "valid": true,
+      "issues": [],
+      "warnings": [],
+      "properties": {
+        "District": "RANIPET",
+        "STATE": "TAMIL NADU",
+        "id": 802,
+        "FULL_NAME": "RANIPET, TAMIL NADU"
+      },
+      "pointCount": 9
+    },
+    {
+      "filename": "sakti.geojson",
+      "districtName": "sakti",
+      "valid": true,
+      "issues": [],
+      "warnings": [],
+      "properties": {
+        "District": "SAKTI",
+        "STATE": "CHHATTISGARH",
+        "id": 813,
+        "FULL_NAME": "SAKTI, CHHATTISGARH"
+      },
+      "pointCount": 9
+    },
+    {
+      "filename": "sarangarh-bilaigarh.geojson",
+      "districtName": "sarangarh-bilaigarh",
+      "valid": true,
+      "issues": [],
+      "warnings": [],
+      "properties": {
+        "District": "SARANGARH BILAIGARH",
+        "STATE": "CHHATTISGARH",
+        "id": 809,
+        "FULL_NAME": "SARANGARH BILAIGARH, CHHATTISGARH"
+      },
+      "pointCount": 9
+    },
+    {
+      "filename": "soreng.geojson",
+      "districtName": "soreng",
+      "valid": true,
+      "issues": [],
+      "warnings": [],
+      "properties": {
+        "District": "SORENG",
+        "STATE": "SIKKIM",
+        "id": 807,
+        "FULL_NAME": "SORENG, SIKKIM"
+      },
+      "pointCount": 9
+    },
+    {
+      "filename": "tamulpur.geojson",
+      "districtName": "tamulpur",
+      "valid": true,
+      "issues": [],
+      "warnings": [],
+      "properties": {
+        "District": "TAMULPUR",
+        "STATE": "ASSAM",
+        "id": 808,
+        "FULL_NAME": "TAMULPUR, ASSAM"
+      },
+      "pointCount": 9
+    },
+    {
+      "filename": "vijayanagara.geojson",
+      "districtName": "vijayanagara",
+      "valid": true,
+      "issues": [],
+      "warnings": [],
+      "properties": {
+        "District": "VIJAYANAGARA",
+        "STATE": "KARNATAKA",
+        "id": 803,
+        "FULL_NAME": "VIJAYANAGARA, KARNATAKA"
+      },
+      "pointCount": 9
+    }
+  ]
+}

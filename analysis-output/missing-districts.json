@@ -1,0 +1,98 @@
+{
+  "generated": "2025-10-31T14:25:19.307Z",
+  "totalInAllDistricts": 744,
+  "totalInAPI": 735,
+  "missingCount": 18,
+  "missing": [
+    {
+      "district": "NICOBARS",
+      "state": "ANDAMAN AND NICOBAR",
+      "normalized": "andaman and nicobar:nicobars"
+    },
+    {
+      "district": "SOUTH ANDAMAN",
+      "state": "ANDAMAN AND NICOBAR",
+      "normalized": "andaman and nicobar:south andaman"
+    },
+    {
+      "district": "KEYI PANYOR",
+      "state": "ARUNACHAL PRADESH",
+      "normalized": "arunachal pradesh:keyi panyor"
+    },
+    {
+      "district": "Sribhumi",
+      "state": "ASSAM",
+      "normalized": "assam:sribhumi"
+    },
+    {
+      "district": "SARANGARH BILAIGARH",
+      "state": "CHHATTISGARH",
+      "normalized": "chhattisgarh:sarangarh bilaigarh"
+    },
+    {
+      "district": "BILASPUR",
+      "state": "HIMACHAL PRADESH",
+      "normalized": "himachal pradesh:bilaspur"
+    },
+    {
+      "district": "BENGALURU SOUTH",
+      "state": "KARNATAKA",
+      "normalized": "karnataka:bengaluru south"
+    },
+    {
+      "district": "NARMADAPURAM",
+      "state": "MADHYA PRADESH",
+      "normalized": "madhya pradesh:narmadapuram"
+    },
+    {
+      "district": "AHILYANAGAR",
+      "state": "MAHARASHTRA",
+      "normalized": "maharashtra:ahilyanagar"
+    },
+    {
+      "district": "Chatrapati Sambhaji Nagar",
+      "state": "MAHARASHTRA",
+      "normalized": "maharashtra:chatrapati sambhaji nagar"
+    },
+    {
+      "district": "Dharashiv",
+      "state": "MAHARASHTRA",
+      "normalized": "maharashtra:dharashiv"
+    },
+    {
+      "district": "Jayashanker Bhopalapally",
+      "state": "TELANGANA",
+      "normalized": "telangana:jayashanker bhopalapally"
+    },
+    {
+      "district": "Unakoti",
+      "state": "TRIPURA",
+      "normalized": "tripura:unakoti"
+    },
+    {
+      "district": "BALRAMPUR",
+      "state": "UTTAR PRADESH",
+      "normalized": "uttar pradesh:balrampur"
+    },
+    {
+      "district": "HAMIRPUR",
+      "state": "UTTAR PRADESH",
+      "normalized": "uttar pradesh:hamirpur"
+    },
+    {
+      "district": "PRATAPGARH",
+      "state": "UTTAR PRADESH",
+      "normalized": "uttar pradesh:pratapgarh"
+    },
+    {
+      "district": "SIDDHARTH NAGAR",
+      "state": "UTTAR PRADESH",
+      "normalized": "uttar pradesh:siddharth nagar"
+    },
+    {
+      "district": "Darjeeling Gorkha Hill Council (DGHC)",
+      "state": "WEST BENGAL",
+      "normalized": "west bengal:darjeeling gorkha hill council (dghc)"
+    }
+  ]
+}

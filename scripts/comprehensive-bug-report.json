@@ -1,0 +1,31 @@
+{
+  "timestamp": "2025-10-31T19:01:07.700Z",
+  "criticalBugs": [],
+  "warnings": [
+    {
+      "title": "Districts with Multiple Spaces",
+      "description": "Found 2 districts with multiple consecutive spaces: DAKSHINA  KANNADA, UTTARA  KANNADA",
+      "fix": "The normalization function handles this, but consider cleaning the GeoJSON source data"
+    },
+    {
+      "title": "Disputed Districts Found",
+      "description": "Found 9 disputed districts: DISPUTED (RATLAM & MANDSAUR), DISPUTED (ALIRAJPUR & DAHOD), DISPUTED (RATLAM & BANSWARA), DISPUTED (SAHIBGANJ, MALDAH & KATIHAR), DISPUTED (MANDSAUR & JHALAWAR), DISPUTED (NIMACH & CHITTAURGARH ), DISPUTED (BARAN & SHEOPUR, DISPUTED (SABAR KANTHA & UDAIPUR), DISPUTED (SABAR KANTHA & SIROHI)",
+      "fix": "These districts may not have API data. Consider handling them separately or showing a special message."
+    },
+    {
+      "title": "Duplicate Districts in GeoJSON",
+      "description": "Found 6 duplicate districts: BILASPUR (2x), EAST (2x), HAMIRPUR (2x), NORTH (2x), SOUTH (2x)",
+      "fix": "This may cause rendering issues. Verify if these are intentional (e.g., multi-part geometries) or errors."
+    }
+  ],
+  "suggestions": [
+    {
+      "title": "Reduce Coordinate Precision",
+      "description": "99.5% of coordinates have >6 decimal places. Reducing to 6 decimals can reduce file size by ~50% without losing practical accuracy (10cm precision)."
+    },
+    {
+      "title": "Large GeoJSON File",
+      "description": "GeoJSON is 5.15 MB. Consider: 1) Reducing coordinate precision, 2) Removing unused properties, 3) Using vector tiles for production."
+    }
+  ]
+}

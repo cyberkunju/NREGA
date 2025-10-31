@@ -325,13 +325,32 @@ const DISTRICT_NAME_MAPPINGS = {
 export const normalizeDistrictName = (name) => {
     if (!name) return '';
 
-    return name
-        .toLowerCase()
-        .trim()
+    let processedName = name.toLowerCase().normalize('NFC').trim();
+    
+    // Handle parentheses intelligently:
+    // - If parentheses contain directional words (north/south/east/west) or metro/rural, extract and append
+    //   e.g., "24 Parganas (north)" → "24 parganas north"
+    //   e.g., "Kamrup (metro)" → "kamrup metro"
+    // - Otherwise, remove parentheses content (alternate spellings)
+    //   e.g., "KEONJHAR (KENDUJHAR)" → "keonjhar"
+    const parenMatch = processedName.match(/\s*\(([^)]+)\)/);
+    if (parenMatch) {
+        const parenContent = parenMatch[1].trim();
+        // Check if parentheses contain directional words or metro/rural
+        if (/\b(north|south|east|west|metro|rural)\b/i.test(parenContent)) {
+            // Extract and append: "24 parganas (north)" → "24 parganas north"
+            processedName = processedName.replace(/\s*\([^)]*\)/, ' ' + parenContent);
+        } else {
+            // Remove alternate spelling: "keonjhar (kendujhar)" → "keonjhar"
+            processedName = processedName.replace(/\s*\([^)]*\)/, '');
+        }
+    }
+
+    return processedName
+        .replace(/\s*&\s*/g, ' and ')    // Replace & with "and"
         .replace(/\s+/g, ' ')           // Multiple spaces to single space
         .replace(/[^\w\s-]/g, '')       // Remove special characters except hyphens
         .replace(/\bdist(rict)?\b/g, '') // Remove "district" or "dist"
-        .replace(/\b(north|south|east|west)\b/g, (match) => match) // Keep directions
         .trim();
 };
 

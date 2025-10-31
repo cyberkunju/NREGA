@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-10-31T19:04:55.688Z",
+  "allChecksPass": true,
+  "checks": {
+    "unicodeNormalization": true,
+    "ampersandHandling": true,
+    "geojsonExists": true,
+    "mappingExists": true,
+    "dockerComposeExists": true,
+    "criticalFilesPresent": true
+  },
+  "stats": {
+    "totalFeatures": 774,
+    "uniqueDistricts": 768,
+    "duplicateDistricts": 6,
+    "disputedDistricts": 9
+  }
+}

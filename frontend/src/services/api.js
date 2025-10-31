@@ -188,12 +188,13 @@ export const getAllPerformance = async () => {
  * @returns {Promise<Array>} Array of district performance data
  */
 export const getHeatmapData = async () => {
-  const CACHE_KEY = 'mgnrega_heatmap_data_v2'; // UPDATED: v2 to bust old cache
+  const CACHE_KEY = 'mgnrega_heatmap_data_v3'; // UPDATED: v3 to bust cache after Andaman fix
   const CACHE_DURATION = 6 * 60 * 60 * 1000; // 6 hours as per backend cache-control
 
   try {
     // Clear old cache versions
     localStorage.removeItem('mgnrega_heatmap_data_v1');
+    localStorage.removeItem('mgnrega_heatmap_data_v2');
     
     // Check localStorage cache first
     const cachedData = localStorage.getItem(CACHE_KEY);
@@ -211,8 +212,10 @@ export const getHeatmapData = async () => {
     console.log('🔄 Fetching heatmap data from /api/performance/heatmap-data...');
     const startTime = Date.now();
     
+    // Add cache-busting timestamp to force fresh data
+    const cacheBuster = Date.now();
     const response = await retryRequest(() => 
-      apiClient.get('/performance/heatmap-data')
+      apiClient.get(`/performance/heatmap-data?_=${cacheBuster}`)
     );
     
     const loadTime = Date.now() - startTime;

@@ -4,7 +4,7 @@ import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { getHeatmapData } from '../../services/api';
 import { normalizeDistrictName, createLookupKeys, findBestMatch } from '../../utils/districtNameMapping';
-import perfectMapping from '../../data/perfect-district-mapping.json';
+import perfectMapping from '../../data/perfect-district-mapping-v2.json';
 import MetricSelector from './MetricSelector';
 import Legend from './Legend';
 import Tooltip from './Tooltip';
@@ -125,8 +125,11 @@ const MapView = () => {
         console.log('📊 [MapView] Loading data...');
 
         // Fetch heatmap data from API
-        const { data: apiData } = await getHeatmapData();
+        const heatmapResponse = await getHeatmapData();
+        console.log('🔍 Raw heatmap response:', heatmapResponse);
+        const apiData = heatmapResponse.data || heatmapResponse;
         console.log(`✅ Loaded ${apiData.length} districts from API`);
+        console.log('🔍 First 3 districts:', apiData.slice(0, 3));
 
         // Load GeoJSON from public folder
         const geoResponse = await fetch('/india-districts.geojson');
@@ -151,9 +154,20 @@ const MapView = () => {
         const geoIdToApiMap = {};
         
         apiData.forEach(district => {
-          // Create composite key for perfect mapping lookup
-          const compositeKey = `${normalizeDistrictName(district.districtName)}|${normalizeDistrictName(district.stateName)}`;
+          // Create composite key for perfect mapping lookup (using : separator for v2)
+          const compositeKey = `${normalizeDistrictName(district.stateName)}:${normalizeDistrictName(district.districtName)}`;
           const mapping = perfectMapping.mappings[compositeKey];
+          
+          // Debug Andaman districts
+          if (district.districtName && (district.districtName.includes('Andaman') || district.districtName.includes('Nicobar'))) {
+            console.log(`🔍 ANDAMAN DEBUG:`, {
+              districtName: district.districtName,
+              stateName: district.stateName,
+              compositeKey: compositeKey,
+              mappingFound: !!mapping,
+              geoId: mapping?.geoId
+            });
+          }
           
           if (mapping && mapping.geoId) {
             // Map by geoId for perfect matching
@@ -207,23 +221,36 @@ const MapView = () => {
             //   perfectMatchCount++;
             // }
             
-            // Strategy 2: Fallback to lookup keys
+            // Strategy 2: Use perfect mapping to find API key, then lookup data
             if (!perfData) {
-              const lookupKeys = createLookupKeys(districtNameRaw, stateNameRaw);
+              // First, try to find this GeoJSON district in the perfect mapping
+              // The mapping structure is: "api-state:api-district" -> { geoDistrict, geoState, geoId }
+              // We need to reverse lookup: find the key where geoDistrict matches our GeoJSON district
               
-              // Debug first 3 districts
-              if (noMatchCount + fallbackMatchCount + perfectMatchCount < 3) {
-                console.log(`🔍 GeoJSON: "${districtNameRaw}" (${stateNameRaw})`);
-                console.log(`   Lookup keys:`, lookupKeys);
-                console.log(`   Found in dataLookup:`, lookupKeys.map(k => dataLookup[k] ? '✓' : '✗'));
-              }
+              let apiKey = null;
+              const normalizedState = normalizeDistrictName(stateNameRaw);
+              const normalizedDistrict = normalizeDistrictName(districtNameRaw);
               
-              for (const key of lookupKeys) {
-                if (dataLookup[key]) {
-                  perfData = dataLookup[key];
-                  fallbackMatchCount++;
+              // Search through perfect mapping for a match
+              for (const [key, value] of Object.entries(perfectMapping.mappings)) {
+                if (value.geoDistrict === districtNameRaw && value.geoState === stateNameRaw) {
+                  apiKey = key;
                   break;
                 }
+              }
+              
+              // Debug first 3 districts 
+              if (noMatchCount + fallbackMatchCount + perfectMatchCount < 3) {
+                console.log(`🔍 GeoJSON: "${districtNameRaw}" (${stateNameRaw})`);
+                console.log(`   Normalized: "${normalizedState}:${normalizedDistrict}"`);
+                console.log(`   API key from mapping: ${apiKey || 'NOT FOUND'}`);
+                console.log(`   Data in lookup: ${apiKey && dataLookup[apiKey] ? '✓' : '✗'}`);
+              }
+              
+              // If we found the API key, use it to lookup the data
+              if (apiKey && dataLookup[apiKey]) {
+                perfData = dataLookup[apiKey];
+                fallbackMatchCount++;
               }
             }
             

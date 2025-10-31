@@ -1,0 +1,52 @@
+{
+  "type": "Feature",
+  "properties": {
+    "District": "SAKTI",
+    "STATE": "CHHATTISGARH",
+    "id": 813,
+    "FULL_NAME": "SAKTI, CHHATTISGARH"
+  },
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          83.9,
+          21.75
+        ],
+        [
+          84.15,
+          21.75
+        ],
+        [
+          84.25,
+          21.9
+        ],
+        [
+          84.25,
+          22.05
+        ],
+        [
+          84.05,
+          22.15
+        ],
+        [
+          83.9,
+          22.15
+        ],
+        [
+          83.8,
+          22.05
+        ],
+        [
+          83.8,
+          21.9
+        ],
+        [
+          83.9,
+          21.75
+        ]
+      ]
+    ]
+  }
+}

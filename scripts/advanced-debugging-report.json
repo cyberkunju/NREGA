@@ -1,0 +1,227 @@
+{
+  "timestamp": "2025-10-31T18:53:48.951Z",
+  "stats": {
+    "totalChecks": 14,
+    "passedChecks": 3,
+    "failedChecks": 0,
+    "warningChecks": 11
+  },
+  "issues": [],
+  "warnings": [
+    {
+      "category": "GeoJSON Properties",
+      "severity": "WARNING",
+      "message": "Feature 23 has no recognizable identifier field",
+      "details": {
+        "context": "india-districts.geojson",
+        "featureIndex": 23,
+        "properties": [
+          "District",
+          "Shape_Leng",
+          "Shape_Area",
+          "STATE",
+          "REMARKS",
+          "State_LGD",
+          "layer",
+          "id",
+          "FULL_NAME"
+        ]
+      },
+      "timestamp": "2025-10-31T18:53:48.853Z"
+    },
+    {
+      "category": "GeoJSON Properties",
+      "severity": "WARNING",
+      "message": "Feature 29 has no recognizable identifier field",
+      "details": {
+        "context": "india-districts.geojson",
+        "featureIndex": 29,
+        "properties": [
+          "District",
+          "Shape_Leng",
+          "Shape_Area",
+          "STATE",
+          "REMARKS",
+          "State_LGD",
+          "layer",
+          "id",
+          "FULL_NAME"
+        ]
+      },
+      "timestamp": "2025-10-31T18:53:48.854Z"
+    },
+    {
+      "category": "GeoJSON Properties",
+      "severity": "WARNING",
+      "message": "Feature 189 has no recognizable identifier field",
+      "details": {
+        "context": "india-districts.geojson",
+        "featureIndex": 189,
+        "properties": [
+          "District",
+          "Shape_Leng",
+          "Shape_Area",
+          "STATE",
+          "REMARKS",
+          "State_LGD",
+          "layer",
+          "id",
+          "FULL_NAME"
+        ]
+      },
+      "timestamp": "2025-10-31T18:53:48.864Z"
+    },
+    {
+      "category": "GeoJSON Properties",
+      "severity": "WARNING",
+      "message": "Feature 245 has no recognizable identifier field",
+      "details": {
+        "context": "india-districts.geojson",
+        "featureIndex": 245,
+        "properties": [
+          "District",
+          "Shape_Leng",
+          "Shape_Area",
+          "STATE",
+          "REMARKS",
+          "State_LGD",
+          "layer",
+          "id",
+          "FULL_NAME"
+        ]
+      },
+      "timestamp": "2025-10-31T18:53:48.866Z"
+    },
+    {
+      "category": "GeoJSON Properties",
+      "severity": "WARNING",
+      "message": "Feature 288 has no recognizable identifier field",
+      "details": {
+        "context": "india-districts.geojson",
+        "featureIndex": 288,
+        "properties": [
+          "District",
+          "Shape_Leng",
+          "Shape_Area",
+          "STATE",
+          "REMARKS",
+          "State_LGD",
+          "layer",
+          "id",
+          "FULL_NAME"
+        ]
+      },
+      "timestamp": "2025-10-31T18:53:48.867Z"
+    },
+    {
+      "category": "GeoJSON Properties",
+      "severity": "WARNING",
+      "message": "Feature 694 has no recognizable identifier field",
+      "details": {
+        "context": "india-districts.geojson",
+        "featureIndex": 694,
+        "properties": [
+          "District",
+          "Shape_Leng",
+          "Shape_Area",
+          "STATE",
+          "REMARKS",
+          "State_LGD",
+          "layer",
+          "id",
+          "FULL_NAME"
+        ]
+      },
+      "timestamp": "2025-10-31T18:53:48.881Z"
+    },
+    {
+      "category": "GeoJSON Properties",
+      "severity": "WARNING",
+      "message": "Feature 695 has no recognizable identifier field",
+      "details": {
+        "context": "india-districts.geojson",
+        "featureIndex": 695,
+        "properties": [
+          "District",
+          "Shape_Leng",
+          "Shape_Area",
+          "STATE",
+          "REMARKS",
+          "State_LGD",
+          "layer",
+          "id",
+          "FULL_NAME"
+        ]
+      },
+      "timestamp": "2025-10-31T18:53:48.881Z"
+    },
+    {
+      "category": "GeoJSON Properties",
+      "severity": "WARNING",
+      "message": "Feature 696 has no recognizable identifier field",
+      "details": {
+        "context": "india-districts.geojson",
+        "featureIndex": 696,
+        "properties": [
+          "District",
+          "Shape_Leng",
+          "Shape_Area",
+          "STATE",
+          "REMARKS",
+          "State_LGD",
+          "layer",
+          "id",
+          "FULL_NAME"
+        ]
+      },
+      "timestamp": "2025-10-31T18:53:48.881Z"
+    },
+    {
+      "category": "GeoJSON Properties",
+      "severity": "WARNING",
+      "message": "Feature 697 has no recognizable identifier field",
+      "details": {
+        "context": "india-districts.geojson",
+        "featureIndex": 697,
+        "properties": [
+          "District",
+          "Shape_Leng",
+          "Shape_Area",
+          "STATE",
+          "REMARKS",
+          "State_LGD",
+          "layer",
+          "id",
+          "FULL_NAME"
+        ]
+      },
+      "timestamp": "2025-10-31T18:53:48.881Z"
+    },
+    {
+      "category": "Coordinate Precision",
+      "severity": "WARNING",
+      "message": "33935 coordinates (99.87%) have >6 decimal places - consider reducing precision to optimize file size",
+      "details": {
+        "context": "india-districts.geojson",
+        "totalCoords": 33980,
+        "highPrecisionCoords": 33935
+      },
+      "timestamp": "2025-10-31T18:53:48.894Z"
+    },
+    {
+      "category": "Performance",
+      "severity": "WARNING",
+      "message": "GeoJSON file is 5.15 MB - consider optimization",
+      "details": {
+        "size": 5398926,
+        "suggestions": [
+          "Reduce coordinate precision to 6 decimal places",
+          "Remove unused properties",
+          "Simplify geometries",
+          "Consider vector tiles for large datasets"
+        ]
+      },
+      "timestamp": "2025-10-31T18:53:48.900Z"
+    }
+  ]
+}
