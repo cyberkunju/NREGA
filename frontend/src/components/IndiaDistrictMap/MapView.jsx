@@ -354,6 +354,15 @@ const MapView = () => {
     // Add heatmap fill layer with initial metric
     addHeatmapLayer(selectedMetric);
 
+    // Placeholder districts to hide (new 2022 Chhattisgarh districts with only geometric placeholders)
+    const PLACEHOLDER_DISTRICTS = [
+      'khairagarh chhuikhadan gandai',
+      'manendragarh chirmiri bharatpur',
+      'mohla manpur ambagarh chowki',
+      'sakti',
+      'sarangarh bilaigarh'
+    ];
+
     // Add India background (all districts combined) - lighter color
     map.current.addLayer({
       id: 'india-background',
@@ -361,7 +370,13 @@ const MapView = () => {
       source: 'districts',
       paint: {
         'fill-color': '#ffffff',
-        'fill-opacity': 1
+        'fill-opacity': [
+          'case',
+          // Hide placeholder districts
+          ['in', ['downcase', ['coalesce', ['get', 'district_name'], ['get', 'district'], ['get', 'DISTRICT'], '']], ['literal', PLACEHOLDER_DISTRICTS]],
+          0,  // Completely transparent for placeholders
+          1   // Normal for real districts
+        ]
       }
     }, 'district-heatmap'); // Add below heatmap layer
 
@@ -383,7 +398,13 @@ const MapView = () => {
           2.5,
           0.8
         ],
-        'line-opacity': 1
+        'line-opacity': [
+          'case',
+          // Hide borders for placeholder districts
+          ['in', ['downcase', ['coalesce', ['get', 'district_name'], ['get', 'district'], ['get', 'DISTRICT'], '']], ['literal', PLACEHOLDER_DISTRICTS]],
+          0,  // Invisible border for placeholders
+          1   // Normal border for real districts
+        ]
       }
     });
 
@@ -393,6 +414,10 @@ const MapView = () => {
       type: 'symbol',
       source: 'districts',
       minzoom: 5, // Labels appear at zoom level 5+ (changed from 6)
+      filter: [
+        '!',
+        ['in', ['downcase', ['coalesce', ['get', 'district_name'], ['get', 'district'], ['get', 'DISTRICT'], '']], ['literal', PLACEHOLDER_DISTRICTS]]
+      ],
       layout: {
         'text-field': ['get', 'district_name'], // Use the normalized property name
         'text-font': ['Open Sans Regular', 'Arial Unicode MS Regular'],
@@ -437,6 +462,15 @@ const MapView = () => {
     const metricConfig = METRICS[metric];
     const metricKey = metricConfig.key;
 
+    // Placeholder districts to hide (new 2022 Chhattisgarh districts with only geometric placeholders)
+    const PLACEHOLDER_DISTRICTS = [
+      'khairagarh chhuikhadan gandai',
+      'manendragarh chirmiri bharatpur',
+      'mohla manpur ambagarh chowki',
+      'sakti',
+      'sarangarh bilaigarh'
+    ];
+
     map.current.addLayer({
       id: 'district-heatmap',
       type: 'fill',
@@ -455,9 +489,15 @@ const MapView = () => {
         ],
         'fill-opacity': [
           'case',
-          ['boolean', ['feature-state', 'hover'], false],
-          0.9,
-          0.7
+          // Hide placeholder districts completely
+          ['in', ['downcase', ['coalesce', ['get', 'district_name'], ['get', 'district'], ['get', 'DISTRICT'], '']], ['literal', PLACEHOLDER_DISTRICTS]],
+          0,  // Completely transparent for placeholders
+          [
+            'case',
+            ['boolean', ['feature-state', 'hover'], false],
+            0.9,
+            0.7
+          ]
         ]
       }
     });
