@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
+import * as turf from '@turf/turf';
 import { getHeatmapData } from '../../services/api';
 import { normalizeDistrictName, createLookupKeys, findBestMatch } from '../../utils/districtNameMapping';
 import perfectMapping from '../../data/perfect-district-mapping-v2.json';
@@ -79,11 +80,9 @@ const MapView = () => {
           ],
           glyphs: 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf'
         },
-        center: [78.9629, 20.5937], // India center
-        zoom: 4.5,
+        zoom: 4,
         minZoom: 4,
         maxZoom: 10,
-        maxBounds: [[68, 6], [97, 37]], // Strict India bounds
         renderWorldCopies: false, // Prevent world duplication
         dragRotate: false, // Disable rotation
         touchZoomRotate: false
@@ -351,6 +350,14 @@ const MapView = () => {
       data: enrichedGeoJSON,
       generateId: true // ESSENTIAL for feature-state interactions
     });
+
+    if (map.current && enrichedGeoJSON.features.length > 0) {
+      const bbox = turf.bbox(enrichedGeoJSON);
+      map.current.fitBounds(bbox, {
+        padding: 40,
+        duration: 0
+      });
+    }
 
     // Add heatmap fill layer with initial metric
     addHeatmapLayer(selectedMetric);
