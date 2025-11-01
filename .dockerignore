@@ -1,14 +1,20 @@
-# Dependencies
-**/node_modules
-**/npm-debug.log
+# Node modules
+node_modules
+npm-debug.log
 
-# Build outputs
-**/build
-**/dist
+# Environment files
+.env
+.env.local
+.env.*.local
 
 # Git
 .git
 .gitignore
+
+# Documentation
+*.md
+docs/
+Enhancement/
 
 # IDE
 .vscode
@@ -20,38 +26,17 @@
 .DS_Store
 Thumbs.db
 
-# Logs
+# Build artifacts
+build
+dist
 *.log
-logs
 
-# Test coverage
+# Test files
+*.test.js
+__tests__
 coverage
 
-# Environment
-.env.local
-.env.*.local
-
-# Documentation
-*.md
-!README.md
-
-# Python
-__pycache__
-*.pyc
-*.pyo
-*.pyd
-.Python
-*.py[cod]
-*$py.class
-
-# Translation scripts (not needed in container)
-translate_to_5_languages.py
-ENGLISH_STRINGS_FOR_TRANSLATION.txt
-
-# Enhancement docs
-Enhancement/
-scripts/
-
 # Docker
-docker-compose.yml
 Dockerfile
+docker-compose*.yml
+.dockerignore
