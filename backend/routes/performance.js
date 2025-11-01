@@ -443,6 +443,17 @@ router.get('/:district_name', async (req, res, next) => {
           mp.total_households_worked,
           mp.avg_days_employment_per_hh,
           mp.payment_percentage_15_days,
+          mp.women_persondays,
+          mp.persondays_of_central_liability,
+          mp.sc_persondays,
+          mp.st_persondays,
+          mp.households_100_days,
+          mp.average_wage_rate,
+          mp.total_works_completed,
+          mp.total_works_ongoing,
+          mp.agriculture_works_percent,
+          mp.nrm_expenditure_percent,
+          mp.category_b_works_percent,
           mp.last_updated,
           -- Create sortable month order
           CASE LOWER(mp.month)
@@ -486,6 +497,17 @@ router.get('/:district_name', async (req, res, next) => {
         total_households_worked,
         avg_days_employment_per_hh,
         payment_percentage_15_days,
+        women_persondays,
+        persondays_of_central_liability,
+        sc_persondays,
+        st_persondays,
+        households_100_days,
+        average_wage_rate,
+        total_works_completed,
+        total_works_ongoing,
+        agriculture_works_percent,
+        nrm_expenditure_percent,
+        category_b_works_percent,
         last_updated,
         rn
       FROM ranked_data
@@ -532,6 +554,21 @@ router.get('/:district_name', async (req, res, next) => {
     // Calculate trend using capped data
     const trend = calculateTrend(cappedCurrentData, cappedPreviousData);
     
+    // Calculate women participation percentage
+    const womenParticipation = (cappedCurrentData.women_persondays && cappedCurrentData.persondays_of_central_liability)
+      ? (parseFloat(cappedCurrentData.women_persondays) / parseFloat(cappedCurrentData.persondays_of_central_liability)) * 100
+      : null;
+
+    // Calculate SC/ST participation percentage
+    const scstParticipation = (cappedCurrentData.sc_persondays && cappedCurrentData.st_persondays && cappedCurrentData.persondays_of_central_liability)
+      ? ((parseFloat(cappedCurrentData.sc_persondays) + parseFloat(cappedCurrentData.st_persondays)) / parseFloat(cappedCurrentData.persondays_of_central_liability)) * 100
+      : null;
+
+    // Calculate work completion percentage
+    const workCompletion = (cappedCurrentData.total_works_completed && cappedCurrentData.total_works_ongoing)
+      ? (parseFloat(cappedCurrentData.total_works_completed) / (parseFloat(cappedCurrentData.total_works_completed) + parseFloat(cappedCurrentData.total_works_ongoing))) * 100
+      : null;
+
     // Format response
     const response = {
       district: cappedCurrentData.district_name,
@@ -542,6 +579,18 @@ router.get('/:district_name', async (req, res, next) => {
         paymentPercentage: parseFloat(cappedCurrentData.payment_percentage_15_days),
         totalHouseholds: parseInt(cappedCurrentData.total_households_worked, 10),
         averageDays: parseFloat(cappedCurrentData.avg_days_employment_per_hh),
+        // Additional primary metrics
+        womenParticipation: womenParticipation,
+        averageWage: cappedCurrentData.average_wage_rate ? parseFloat(cappedCurrentData.average_wage_rate) : null,
+        households100Days: cappedCurrentData.households_100_days ? parseInt(cappedCurrentData.households_100_days, 10) : null,
+        workCompletion: workCompletion,
+        // Advanced metrics
+        scstParticipation: scstParticipation,
+        agricultureWorks: cappedCurrentData.agriculture_works_percent ? parseFloat(cappedCurrentData.agriculture_works_percent) : null,
+        nrmExpenditure: cappedCurrentData.nrm_expenditure_percent ? parseFloat(cappedCurrentData.nrm_expenditure_percent) : null,
+        categoryBWorks: cappedCurrentData.category_b_works_percent ? parseFloat(cappedCurrentData.category_b_works_percent) : null,
+        worksCompleted: cappedCurrentData.total_works_completed ? parseInt(cappedCurrentData.total_works_completed, 10) : null,
+        worksOngoing: cappedCurrentData.total_works_ongoing ? parseInt(cappedCurrentData.total_works_ongoing, 10) : null,
       },
       previousMonth: cappedPreviousData ? {
         month: formatMonth(cappedPreviousData.month),

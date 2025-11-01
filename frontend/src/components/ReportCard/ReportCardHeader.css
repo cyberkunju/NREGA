@@ -29,9 +29,9 @@
 }
 
 .back-to-map-link:hover {
-  background: #26a69a; /* Accent color on hover */
+  background: #2196F3;
   color: #ffffff;
-  border-color: #26a69a;
+  border-color: #2196F3;
   transform: translateX(-2px);
 }
 

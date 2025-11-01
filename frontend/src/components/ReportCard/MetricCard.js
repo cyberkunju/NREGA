@@ -18,7 +18,7 @@ const MetricCard = ({
       <header className="metric-card-header">
         {icon && (
           <span className="metric-icon" aria-hidden="true">
-            {icon}
+            {typeof icon === 'string' ? icon : icon}
           </span>
         )}
         <h3 className="metric-title">{title}</h3>

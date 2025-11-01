@@ -3,8 +3,9 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { getPerformance } from '../services/api';
 import ReportCardHeader from '../components/ReportCard/ReportCardHeader';
 import NaturalLanguageSummary from '../components/ReportCard/NaturalLanguageSummary';
-import DetailedMetricsSection from '../components/ReportCard/DetailedMetricsSection';
 import { MetricCard, TrendIndicator } from '../components/ReportCard';
+import { MetricIcons } from '../components/ReportCard/MetricIcons';
+import AdvancedMetricsDropdown from '../components/ReportCard/AdvancedMetricsDropdown';
 import {
   formatNumber,
   formatDate,
@@ -171,7 +172,7 @@ const ReportCard = () => {
             <MetricCard
               title="Payments on time"
               value={formatPercentage(currentMonth.paymentPercentage)}
-              icon="₹"
+              icon={MetricIcons.rupee}
               indicator={paymentIndicator}
               accentColor={paymentColor}
               description="Share of wages paid within 15 days."
@@ -180,7 +181,7 @@ const ReportCard = () => {
             <MetricCard
               title="Families who got work"
               value={formatNumber(currentMonth.totalHouseholds)}
-              icon="👥"
+              icon={MetricIcons.users}
               indicator="neutral"
               description="Households that received employment this month."
             />
@@ -189,7 +190,7 @@ const ReportCard = () => {
               title="Average days of work"
               value={currentMonth.averageDays?.toFixed(1) ?? '0.0'}
               unit=" days"
-              icon="📅"
+              icon={MetricIcons.calendar}
               indicator="neutral"
               description="Average number of days of work provided per household."
             />
@@ -197,18 +198,50 @@ const ReportCard = () => {
             <MetricCard
               title="Performance trend"
               value={trendConfig.label}
-              icon={trendConfig.icon}
+              icon={trend === 'improving' ? MetricIcons.trendUp : trend === 'declining' ? MetricIcons.trendDown : MetricIcons.trendStable}
               indicator={trendConfig.indicator}
               description={trendConfig.description}
+            />
+
+            <MetricCard
+              title="Women's participation"
+              value={currentMonth.womenParticipation ? formatPercentage(currentMonth.womenParticipation) : 'N/A'}
+              icon={MetricIcons.women}
+              indicator={currentMonth.womenParticipation >= 50 ? 'positive' : 'neutral'}
+              description="Percentage of work done by women."
+            />
+
+            <MetricCard
+              title="Average wage rate"
+              value={currentMonth.averageWage ? `₹${currentMonth.averageWage.toFixed(0)}` : 'N/A'}
+              icon={MetricIcons.wage}
+              indicator="neutral"
+              description="Average daily wage paid to workers."
+            />
+
+            <MetricCard
+              title="100-day households"
+              value={currentMonth.households100Days ? formatNumber(currentMonth.households100Days) : 'N/A'}
+              icon={MetricIcons.target}
+              indicator={currentMonth.households100Days > 0 ? 'positive' : 'neutral'}
+              description="Households that completed 100 days of work."
+            />
+
+            <MetricCard
+              title="Work completion rate"
+              value={currentMonth.workCompletion ? formatPercentage(currentMonth.workCompletion) : 'N/A'}
+              icon={MetricIcons.checkmark}
+              indicator={currentMonth.workCompletion >= 70 ? 'positive' : 'neutral'}
+              description="Percentage of works completed vs ongoing."
             />
           </div>
         </section>
 
+        <AdvancedMetricsDropdown performanceData={performanceData} />
+
         <section className="trend-indicator-section" aria-label="Trend indicator">
           <TrendIndicator trend={trend} />
         </section>
-
-        <DetailedMetricsSection performanceData={performanceData} />
 
         <footer className="report-card-footer">
           <p className="last-updated">Last updated: {formatDate(lastUpdated)}</p>

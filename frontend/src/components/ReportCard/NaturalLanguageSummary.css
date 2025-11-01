@@ -1,44 +1,47 @@
 /* Natural Language Summary Component Styles - Minimalist Monochrome Design */
 
 .natural-language-summary {
-  margin: 2.5rem 0;
+  margin: 0;
   padding: 0;
   position: relative;
 }
 
 .summary-content {
-  background: #fafafa; /* Light grey background for subtle separation */
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 2rem;
+  background: #ffffff;
+  border: 1px solid rgba(38, 166, 154, 0.35);
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
   transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(38, 166, 154, 0.08);
+  color: #000000;
 }
 
 .summary-content:hover {
-  border-color: #bdbdbd; /* Slightly darker on hover for subtle interactivity */
+  border-color: rgba(38, 166, 154, 0.5);
+  box-shadow: 0 4px 12px rgba(38, 166, 154, 0.12);
 }
 
 .summary-text {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-size: 1.125rem; /* 18px - larger for readability */
-  line-height: 1.8; /* Generous line height for better readability */
-  color: #212121; /* Dark grey for main text */
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #000000 !important;
   margin: 0;
   font-weight: 400;
-  letter-spacing: 0.02em; /* Slight letter spacing for clarity */
+  letter-spacing: 0.01em;
 }
 
-/* Performance-based subtle styling */
-.summary-content.good {
-  border-left: 4px solid #424242; /* Dark grey accent for good performance */
-}
-
-.summary-content.average {
-  border-left: 4px solid #757575; /* Medium grey for average */
-}
-
+/* Performance-based styling - removed left border accent */
+.summary-content.good,
+.summary-content.average,
 .summary-content.poor {
-  border-left: 4px solid #9e9e9e; /* Light grey for poor */
+  border: 1px solid rgba(38, 166, 154, 0.35);
+  background: #ffffff;
+  color: #000000;
+}
+
+.summary-content p {
+  color: #000000 !important;
 }
 
 /* Summary notice for missing data */
@@ -48,20 +51,19 @@
   gap: 0.75rem;
   margin-top: 1rem;
   padding: 0.75rem 1rem;
-  background: #f5f5f5;
-  border-radius: 6px;
+  background: #ffffff;
+  border-radius: 8px;
   border: 1px solid #e0e0e0;
 }
 
 .notice-icon {
   font-size: 1.125rem;
-  filter: grayscale(100%); /* Make emoji monochrome */
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .notice-text {
-  font-size: 0.875rem; /* 14px */
-  color: #616161;
+  font-size: 0.875rem;
+  color: #424242;
   line-height: 1.4;
 }
 
