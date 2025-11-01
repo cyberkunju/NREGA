@@ -7,9 +7,11 @@
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   padding: 1.25rem;
-  z-index: 10;
+  z-index: 15;
   width: 240px;
   border: 1px solid rgba(0, 0, 0, 0.05);
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
 }
 
 .metric-selector-title {
@@ -49,14 +51,14 @@
   top: 0;
   height: 100%;
   width: 3px;
-  background: #10b981;
+  background: linear-gradient(180deg, rgba(59, 130, 246, 0.8) 0%, rgba(37, 99, 235, 0.8) 100%);
   transform: scaleY(0);
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .metric-button:hover {
   border-color: #cbd5e1;
-  background: #f8fafc;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
   transform: translateX(2px);
 }
 
@@ -65,12 +67,18 @@
 }
 
 .metric-button.active {
-  border-color: #10b981;
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
-  color: white;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  color: #1e293b;
   font-weight: 600;
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+  box-shadow: 
+    0 8px 32px rgba(31, 38, 135, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    0 0 0 2px rgba(59, 130, 246, 0.4);
   transform: translateX(0);
+  border: 1.5px solid rgba(59, 130, 246, 0.5);
 }
 
 .metric-button.active::before {
@@ -106,6 +114,96 @@
   font-weight: 600;
 }
 
+/* Selected Advanced Metric (shown when collapsed) */
+.selected-advanced-metric {
+  margin-top: 0.75rem;
+  animation: slideDown 0.3s ease;
+}
+
+.selected-advanced-metric .metric-button {
+  cursor: pointer;
+}
+
+.selected-advanced-metric .metric-button:hover {
+  transform: translateX(2px);
+}
+
+/* Advanced Metrics Toggle */
+.advanced-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-top: 0.75rem;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.advanced-toggle:hover {
+  border-color: #cbd5e1;
+  background: #f8fafc;
+}
+
+.advanced-toggle-text {
+  flex: 1;
+  text-align: left;
+}
+
+.advanced-toggle-icon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.advanced-toggle-icon.expanded {
+  transform: rotate(180deg);
+}
+
+/* Advanced Metrics Section */
+.advanced-metrics {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #e2e8f0;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom scrollbar for overflow */
+.metric-selector::-webkit-scrollbar {
+  width: 6px;
+}
+
+.metric-selector::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.metric-selector::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 10px;
+}
+
+.metric-selector::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .metric-selector {
@@ -113,6 +211,7 @@
     top: 10px;
     max-width: 200px;
     padding: 0.75rem;
+    max-height: calc(100vh - 30px);
   }
 
   .metric-selector-title {
@@ -128,5 +227,10 @@
     font-size: 1rem;
     width: 20px;
     height: 20px;
+  }
+  
+  .advanced-toggle {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.75rem;
   }
 }

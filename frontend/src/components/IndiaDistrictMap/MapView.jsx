@@ -14,31 +14,82 @@ import SearchBar from './SearchBar';
 import Logo from './Logo';
 import './MapView.css';
 
-// Metric configurations with color ramps (Gray -> Emerald)
+// Metric configurations with color ramps
 const METRICS = {
+  // Primary Metrics
   paymentPercentage: {
     key: 'paymentPercentage',
     title: 'Payment Timeliness',
     unit: '%',
     format: (val) => `${val.toFixed(1)}%`,
-    colorStops: [0, '#e5e7eb', 25, '#d1d5db', 50, '#9ca3af', 75, '#6ee7b7', 100, '#10b981'], // Gray to Emerald
-    icon: '💰'
+    colorStops: [0, '#dc2626', 0.1, '#ef4444', 25, '#f59e0b', 50, '#eab308', 75, '#84cc16', 100, '#10b981'],
+    icon: '⏱️',
+    category: 'primary'
   },
   averageDays: {
     key: 'averageDays',
     title: 'Average Payment Days',
     unit: ' days',
     format: (val) => `${Math.round(val)} days`,
-    colorStops: [0, '#10b981', 25, '#6ee7b7', 50, '#9ca3af', 75, '#d1d5db', 100, '#e5e7eb'], // Emerald to Gray (inverse)
-    icon: '📅'
+    colorStops: [0, '#10b981', 25, '#84cc16', 50, '#eab308', 75, '#f59e0b', 100, '#ef4444', 105, '#dc2626'],
+    icon: '📅',
+    category: 'primary'
   },
   womenParticipation: {
     key: 'womenParticipationPercent',
     title: 'Women Participation',
     unit: '%',
     format: (val) => `${val.toFixed(1)}%`,
-    colorStops: [0, '#e5e7eb', 25, '#d1d5db', 50, '#9ca3af', 75, '#6ee7b7', 100, '#10b981'], // Gray to Emerald
-    icon: '👩'
+    colorStops: [0, '#dc2626', 0.1, '#ef4444', 25, '#f59e0b', 50, '#eab308', 75, '#84cc16', 100, '#10b981'],
+    icon: '👤',
+    category: 'primary'
+  },
+  
+  // Advanced Metrics
+  households100Days: {
+    key: 'households100DaysPercent',
+    title: '100-Day Employment',
+    unit: '%',
+    format: (val) => `${val.toFixed(1)}%`,
+    colorStops: [0, '#dc2626', 0.1, '#ef4444', 5, '#f59e0b', 10, '#eab308', 15, '#84cc16', 20, '#10b981'],
+    icon: '💯',
+    category: 'advanced'
+  },
+  scstParticipation: {
+    key: 'scstParticipationPercent',
+    title: 'SC/ST Participation',
+    unit: '%',
+    format: (val) => `${val.toFixed(1)}%`,
+    colorStops: [0, '#dc2626', 0.1, '#ef4444', 15, '#f59e0b', 30, '#eab308', 45, '#84cc16', 60, '#10b981'],
+    icon: '🤝',
+    category: 'advanced'
+  },
+  workCompletion: {
+    key: 'workCompletionPercent',
+    title: 'Work Completion Rate',
+    unit: '%',
+    format: (val) => `${val.toFixed(1)}%`,
+    colorStops: [0, '#dc2626', 0.1, '#ef4444', 25, '#f59e0b', 50, '#eab308', 75, '#84cc16', 100, '#10b981'],
+    icon: '✅',
+    category: 'advanced'
+  },
+  averageWage: {
+    key: 'averageWageRate',
+    title: 'Average Wage Rate',
+    unit: '/day',
+    format: (val) => `₹${Math.round(val)}`,
+    colorStops: [0, '#dc2626', 150, '#ef4444', 200, '#f59e0b', 250, '#eab308', 300, '#84cc16', 350, '#10b981'],
+    icon: '💵',
+    category: 'advanced'
+  },
+  agricultureWorks: {
+    key: 'agricultureWorksPercent',
+    title: 'Agriculture Works',
+    unit: '%',
+    format: (val) => `${val.toFixed(1)}%`,
+    colorStops: [0, '#dc2626', 0.1, '#ef4444', 20, '#f59e0b', 40, '#eab308', 60, '#84cc16', 80, '#10b981'],
+    icon: '🌾',
+    category: 'advanced'
   }
 };
 
@@ -53,6 +104,7 @@ const MapView = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [tooltip, setTooltip] = useState({ show: false, x: 0, y: 0, data: null });
+  const [showAdvancedMetrics, setShowAdvancedMetrics] = useState(false);
   
   const hoveredDistrictId = useRef(null);
   const enrichedDataRef = useRef(null); // Store enriched data for property lookups
@@ -352,6 +404,12 @@ const MapView = () => {
                 averageDays: perfData?.averageDays ?? null,
                 womenParticipationPercent: perfData?.womenParticipationPercent ?? null,
                 totalHouseholds: perfData?.totalHouseholds ?? null,
+                // Advanced metrics
+                households100DaysPercent: perfData?.households100DaysPercent ?? null,
+                scstParticipationPercent: perfData?.scstParticipationPercent ?? null,
+                workCompletionPercent: perfData?.workCompletionPercent ?? null,
+                averageWageRate: perfData?.averageWageRate ?? null,
+                agricultureWorksPercent: perfData?.agricultureWorksPercent ?? null,
                 month: perfData?.month ?? null,
                 year: perfData?.finYear ?? null,
                 // Store API district name for navigation
@@ -561,14 +619,17 @@ const MapView = () => {
       paint: {
         'fill-color': [
           'case',
-          ['has', metricKey],
+          // Check if district has no data at all (null value, but NOT 0)
+          // Use typeof to distinguish null from 0
+          ['==', ['typeof', ['get', metricKey]], 'null'],
+          '#bdbdbd', // Gray for no data
+          // Otherwise use color scale (includes 0 values which will be red)
           [
             'interpolate',
             ['linear'],
-            ['coalesce', ['get', metricKey], 0], // Handle nulls
+            ['get', metricKey],
             ...metricConfig.colorStops
-          ],
-          '#bdbdbd' // Gray for districts without data
+          ]
         ],
         'fill-opacity': [
           'case',
@@ -597,14 +658,17 @@ const MapView = () => {
 
     map.current.setPaintProperty('district-heatmap', 'fill-color', [
       'case',
-      ['has', metricKey],
+      // Check if district has no data at all (null value, but NOT 0)
+      // Use typeof to distinguish null from 0
+      ['==', ['typeof', ['get', metricKey]], 'null'],
+      '#bdbdbd', // Gray for no data
+      // Otherwise use color scale (includes 0 values which will be red)
       [
         'interpolate',
         ['linear'],
-        ['coalesce', ['get', metricKey], 0],
+        ['get', metricKey],
         ...metricConfig.colorStops
-      ],
-      '#bdbdbd'
+      ]
     ]);
   }, []);
 
@@ -679,11 +743,15 @@ const MapView = () => {
         data: {
           districtName: districtName,
           stateName: stateName,
-          metric: metricConfig.title,
-          value: metricValue !== null && metricValue !== undefined 
+          currentMetric: metricConfig.title,
+          currentValue: metricValue !== null && metricValue !== undefined 
             ? metricConfig.format(Math.min(100, metricValue)) // Cap display at 100
             : 'No data',
-          hasData: fullProps.hasData
+          hasData: fullProps.hasData,
+          // All 3 primary metrics
+          paymentPercentage: fullProps.paymentPercentage,
+          averageDays: fullProps.averageDays,
+          womenParticipationPercent: fullProps.womenParticipationPercent
         }
       });
 
@@ -761,11 +829,14 @@ const MapView = () => {
             selectedMetric={selectedMetric} 
             onChange={handleMetricChange}
             metrics={METRICS}
+            onAdvancedToggle={setShowAdvancedMetrics}
           />
-          <Legend 
-            selectedMetric={selectedMetric}
-            metricConfig={METRICS[selectedMetric]}
-          />
+          {!showAdvancedMetrics && (
+            <Legend 
+              selectedMetric={selectedMetric}
+              metricConfig={METRICS[selectedMetric]}
+            />
+          )}
           <Tooltip {...tooltip} />
         </>
       )}

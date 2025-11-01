@@ -85,6 +85,15 @@ function transformSingleRecord(record) {
   const scPersondays = extractSCPersondays(record);
   const stPersondays = extractSTPersondays(record);
 
+  // Extract advanced metrics
+  const households100Days = extractHouseholds100Days(record);
+  const averageWageRate = extractAverageWageRate(record);
+  const totalWorksCompleted = extractTotalWorksCompleted(record);
+  const totalWorksOngoing = extractTotalWorksOngoing(record);
+  const agricultureWorksPercent = extractAgricultureWorksPercent(record);
+  const nrmExpenditurePercent = extractNRMExpenditurePercent(record);
+  const categoryBWorksPercent = extractCategoryBWorksPercent(record);
+
   return {
     district_name: districtName,
     state_name: stateName,
@@ -97,6 +106,13 @@ function transformSingleRecord(record) {
     persondays_of_central_liability: persondaysOfCentralLiability,
     sc_persondays: scPersondays,
     st_persondays: stPersondays,
+    households_100_days: households100Days,
+    average_wage_rate: averageWageRate,
+    total_works_completed: totalWorksCompleted,
+    total_works_ongoing: totalWorksOngoing,
+    agriculture_works_percent: agricultureWorksPercent,
+    nrm_expenditure_percent: nrmExpenditurePercent,
+    category_b_works_percent: categoryBWorksPercent,
   };
 }
 
@@ -400,6 +416,92 @@ function getSummaryStats(records) {
       latest: months[months.length - 1],
     },
   };
+}
+
+/**
+ * Extract and parse households that completed 100 days
+ * @param {Object} record - Raw record
+ * @returns {number|null} Parsed number or null if invalid
+ */
+function extractHouseholds100Days(record) {
+  const value = record.Total_No_of_HHs_completed_100_Days_of_Wage_Employment ||
+                record.households_100_days ||
+                record.hhs_100_days;
+  return parseNumber(value);
+}
+
+/**
+ * Extract and parse average wage rate
+ * @param {Object} record - Raw record
+ * @returns {number|null} Parsed number or null if invalid
+ */
+function extractAverageWageRate(record) {
+  const value = record.Average_Wage_rate_per_day_per_person ||
+                record.average_wage_rate ||
+                record.avgWageRate;
+  return parseNumber(value);
+}
+
+/**
+ * Extract and parse total works completed
+ * @param {Object} record - Raw record
+ * @returns {number|null} Parsed number or null if invalid
+ */
+function extractTotalWorksCompleted(record) {
+  const value = record.Number_of_Completed_Works ||
+                record.Total_No_of_Works_Completed ||
+                record.total_works_completed ||
+                record.worksCompleted;
+  return parseNumber(value);
+}
+
+/**
+ * Extract and parse total works ongoing
+ * @param {Object} record - Raw record
+ * @returns {number|null} Parsed number or null if invalid
+ */
+function extractTotalWorksOngoing(record) {
+  const value = record.Number_of_Ongoing_Works ||
+                record.Total_No_of_Works_Ongoing ||
+                record.total_works_ongoing ||
+                record.worksOngoing;
+  return parseNumber(value);
+}
+
+/**
+ * Extract and parse agriculture works percentage
+ * @param {Object} record - Raw record
+ * @returns {number|null} Parsed number or null if invalid
+ */
+function extractAgricultureWorksPercent(record) {
+  const value = record.percent_of_Expenditure_on_Agriculture_Allied_Works ||
+                record.agriculture_works_percent ||
+                record.agriculturePercent;
+  return parseNumber(value);
+}
+
+/**
+ * Extract and parse NRM expenditure percentage
+ * @param {Object} record - Raw record
+ * @returns {number|null} Parsed number or null if invalid
+ */
+function extractNRMExpenditurePercent(record) {
+  const value = record.percent_of_NRM_Expenditure ||
+                record.nrm_expenditure_percent ||
+                record.nrmPercent;
+  return parseNumber(value);
+}
+
+/**
+ * Extract and parse Category B works percentage
+ * @param {Object} record - Raw record
+ * @returns {number|null} Parsed number or null if invalid
+ */
+function extractCategoryBWorksPercent(record) {
+  const value = record.percent_of_Category_B_Works ||
+                record.category_b_works_percent ||
+                record.categoryBPercent;
+  return parseNumber(value);
 }
 
 module.exports = {

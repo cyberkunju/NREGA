@@ -272,6 +272,13 @@ router.get('/heatmap-data', async (req, res, next) => {
         mp.persondays_of_central_liability,
         mp.sc_persondays,
         mp.st_persondays,
+        mp.households_100_days,
+        mp.average_wage_rate,
+        mp.total_works_completed,
+        mp.total_works_ongoing,
+        mp.agriculture_works_percent,
+        mp.nrm_expenditure_percent,
+        mp.category_b_works_percent,
         mp.last_updated,
         -- Month order for proper sorting
         CASE LOWER(mp.month)
@@ -311,26 +318,53 @@ router.get('/heatmap-data', async (req, res, next) => {
     
     // Format response for heatmap consumption
     const heatmapData = cappedRecords.map(row => {
-      // Calculate women participation percentage if data available
-      const womenParticipation = row.women_persondays && row.persondays_of_central_liability
-        ? calculateWomenParticipation(row)
+      // Use the women_participation_percent already calculated by cleanRecords
+      const womenParticipation = row.women_participation_percent !== undefined 
+        ? row.women_participation_percent 
+        : null;
+      
+      // Calculate SC/ST participation percentage
+      const scstParticipation = (row.sc_persondays && row.st_persondays && row.persondays_of_central_liability)
+        ? ((parseFloat(row.sc_persondays) + parseFloat(row.st_persondays)) / parseFloat(row.persondays_of_central_liability)) * 100
+        : null;
+      
+      // Calculate 100-day households percentage
+      const households100DaysPercent = (row.households_100_days && row.total_households_worked)
+        ? (parseFloat(row.households_100_days) / parseFloat(row.total_households_worked)) * 100
+        : null;
+      
+      // Calculate work completion percentage
+      const workCompletionPercent = (row.total_works_completed && row.total_works_ongoing)
+        ? (parseFloat(row.total_works_completed) / (parseFloat(row.total_works_completed) + parseFloat(row.total_works_ongoing))) * 100
         : null;
       
       return {
         districtId: row.district_id || `${row.district_name}_${(row.state_name || 'INDIA').toUpperCase().replace(/\s+/g, '_')}`,
         districtName: row.district_name,
         stateName: row.state_name || 'India',
-        paymentPercentage: parseFloat(row.payment_percentage_15_days), // Capped at 100
+        paymentPercentage: parseFloat(row.payment_percentage_15_days),
         averageDays: parseFloat(row.avg_days_employment_per_hh),
         totalHouseholds: parseInt(row.total_households_worked, 10),
-        womenParticipationPercent: womenParticipation, // Will be null if source data unavailable
+        womenParticipationPercent: womenParticipation,
+        // Advanced metrics
+        households100DaysPercent: households100DaysPercent,
+        scstParticipationPercent: scstParticipation,
+        workCompletionPercent: workCompletionPercent,
+        averageWageRate: row.average_wage_rate ? parseFloat(row.average_wage_rate) : null,
+        agricultureWorksPercent: row.agriculture_works_percent ? parseFloat(row.agriculture_works_percent) : null,
         finYear: row.fin_year,
         month: formatMonth(row.month),
         lastUpdated: row.last_updated
       };
     });
     
+    // Debug: Check women participation data
+    const withWomenData = heatmapData.filter(d => d.womenParticipationPercent !== null).length;
     console.log(`✅ Returned heatmap data for ${heatmapData.length} districts in ${queryTime}ms`);
+    console.log(`📊 Women participation data: ${withWomenData}/${heatmapData.length} districts (${((withWomenData/heatmapData.length)*100).toFixed(1)}%)`);
+    if (withWomenData > 0) {
+      console.log(`📊 Sample women participation values:`, heatmapData.filter(d => d.womenParticipationPercent !== null).slice(0, 3).map(d => `${d.districtName}: ${d.womenParticipationPercent}%`));
+    }
     
     // Set cache headers (cache for 6 hours)
     res.set({
