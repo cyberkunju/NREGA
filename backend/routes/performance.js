@@ -380,6 +380,59 @@ router.get('/heatmap-data', async (req, res, next) => {
 });
 
 /**
+ * GET /api/performance/:district_name/periods
+ * Returns available time periods for a district
+ * Used by timeline selector to show available historical data
+ */
+router.get('/:district_name/periods', async (req, res, next) => {
+  try {
+    const districtName = req.params.district_name;
+    const decodedDistrictName = decodeURIComponent(districtName);
+    
+    console.log(`Fetching available periods for district: ${decodedDistrictName}`);
+    
+    const query = `
+      SELECT DISTINCT
+        mp.month,
+        mp.fin_year,
+        mp.last_updated,
+        CASE LOWER(mp.month)
+          WHEN 'january' THEN 1
+          WHEN 'february' THEN 2
+          WHEN 'march' THEN 3
+          WHEN 'april' THEN 4
+          WHEN 'may' THEN 5
+          WHEN 'june' THEN 6
+          WHEN 'july' THEN 7
+          WHEN 'august' THEN 8
+          WHEN 'september' THEN 9
+          WHEN 'october' THEN 10
+          WHEN 'november' THEN 11
+          WHEN 'december' THEN 12
+          ELSE 0
+        END as month_num,
+        CAST(LEFT(mp.fin_year, 4) AS INTEGER) as year_num
+      FROM monthly_performance mp
+      WHERE LOWER(mp.district_name) = LOWER($1)
+      ORDER BY year_num DESC, month_num DESC, mp.last_updated DESC;
+    `;
+    
+    const result = await db.query(query, [decodedDistrictName]);
+    
+    const periods = result.rows.map(row => ({
+      month: formatMonth(row.month),
+      year: row.fin_year,
+      lastUpdated: row.last_updated
+    }));
+    
+    res.json({ periods });
+  } catch (error) {
+    console.error('Error fetching available periods:', error);
+    next(error);
+  }
+});
+
+/**
  * GET /api/performance/:district_name
  * Returns performance metrics for specified district
  * Supports optional query parameters: ?year=2024-25&month=October

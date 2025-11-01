@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './MetricSelector.css';
 
 // Minimalistic modern icons
@@ -60,6 +61,7 @@ const MetricIcons = {
 };
 
 const MetricSelector = ({ selectedMetric, onChange, metrics, onAdvancedToggle }) => {
+  const { t } = useTranslation();
   const [showAdvanced, setShowAdvanced] = useState(false);
   
   const primaryMetrics = Object.keys(metrics).filter(key => metrics[key].category === 'primary');
@@ -79,7 +81,7 @@ const MetricSelector = ({ selectedMetric, onChange, metrics, onAdvancedToggle })
 
   return (
     <div className="metric-selector">
-      <div className="metric-selector-title">SELECT METRIC</div>
+      <div className="metric-selector-title">{t('map.selectMetric')}</div>
       
       {/* Primary Metrics */}
       <div className="metric-buttons">
@@ -123,9 +125,9 @@ const MetricSelector = ({ selectedMetric, onChange, metrics, onAdvancedToggle })
       <button 
         className="advanced-toggle"
         onClick={handleAdvancedToggle}
-        title={showAdvanced ? "Hide advanced metrics" : "Show advanced metrics"}
+        title={showAdvanced ? t('advancedMetrics.hideDetailed') : t('advancedMetrics.showDetailed')}
       >
-        <span className="advanced-toggle-text">Advanced Metrics</span>
+        <span className="advanced-toggle-text">{t('advancedMetrics.title')}</span>
         <svg 
           className={`advanced-toggle-icon ${showAdvanced ? 'expanded' : ''}`}
           viewBox="0 0 24 24" 

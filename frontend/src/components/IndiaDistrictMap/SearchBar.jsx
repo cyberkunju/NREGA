@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { getHeatmapData } from '../../services/api';
 import './SearchBar.css';
 
 const SearchBar = ({ onSelectDistrict }) => {
+  const { t } = useTranslation();
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const [showResults, setShowResults] = useState(false);
@@ -56,7 +58,7 @@ const SearchBar = ({ onSelectDistrict }) => {
         <input
           type="text"
           className="search-input"
-          placeholder="Search for district or state..."
+          placeholder={t('mapControls.search')}
           value={searchQuery}
           onChange={handleSearch}
           onFocus={() => searchResults.length > 0 && setShowResults(true)}

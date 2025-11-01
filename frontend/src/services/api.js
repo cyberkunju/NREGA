@@ -260,17 +260,46 @@ export const getHeatmapData = async () => {
 /**
  * Fetch performance data for a specific district
  * @param {string} districtName - Name of the district
+ * @param {string} year - Optional financial year (e.g., "2024-25")
+ * @param {string} month - Optional month (e.g., "October")
  * @returns {Promise<Object>} Performance data object
  */
-export const getPerformance = async (districtName) => {
+export const getPerformance = async (districtName, year = null, month = null) => {
   try {
     const encodedName = encodeURIComponent(districtName);
-    const response = await retryRequest(() => 
-      apiClient.get(`/performance/${encodedName}`)
-    );
+    let url = `/performance/${encodedName}`;
+    
+    // Add query parameters if provided
+    const params = new URLSearchParams();
+    if (year) params.append('year', year);
+    if (month) params.append('month', month);
+    
+    if (params.toString()) {
+      url += `?${params.toString()}`;
+    }
+    
+    const response = await retryRequest(() => apiClient.get(url));
     return response.data;
   } catch (error) {
     throw handleError(error);
+  }
+};
+
+/**
+ * Fetch available time periods for a district
+ * @param {string} districtName - Name of the district
+ * @returns {Promise<Array>} Array of available periods
+ */
+export const getAvailablePeriods = async (districtName) => {
+  try {
+    const encodedName = encodeURIComponent(districtName);
+    const response = await retryRequest(() => 
+      apiClient.get(`/performance/${encodedName}/periods`)
+    );
+    return response.data.periods || [];
+  } catch (error) {
+    console.error('Error fetching available periods:', error);
+    return [];
   }
 };
 
@@ -292,6 +321,7 @@ const apiService = {
   getPerformance,
   getAllPerformance,
   getHeatmapData,
+  getAvailablePeriods,
   getHealth,
 };
 

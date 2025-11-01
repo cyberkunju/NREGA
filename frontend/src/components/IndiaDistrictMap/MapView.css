@@ -50,7 +50,7 @@
 }
 
 .maplibregl-ctrl-top-right {
-  top: 10px !important;
+  top: 80px !important; /* Moved down to avoid language switcher overlap */
   right: 10px !important;
 }
 
@@ -60,4 +60,24 @@
   background: rgba(255, 255, 255, 0.7);
   padding: 2px 5px;
   border-radius: 3px;
+}
+
+/* Language Switcher Positioning */
+.map-wrapper .language-switcher {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .map-wrapper .language-switcher {
+    top: 15px;
+    right: 15px;
+  }
+  
+  .maplibregl-ctrl-top-right {
+    top: 70px !important; /* Adjusted for mobile */
+    right: 10px !important;
+  }
 }

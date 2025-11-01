@@ -1,0 +1,36 @@
+{
+  "app": {
+    "title": "MGNREGA Report Card",
+    "subtitle": "District Performance Dashboard"
+  },
+  "navigation": {
+    "home": "Home",
+    "back": "Back",
+    "backToSelector": "Back to selector",
+    "goToHome": "Go to Home"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "noData": "No data",
+    "na": "N/A",
+    "close": "Close",
+    "show": "Show",
+    "hide": "Hide",
+    "more": "More",
+    "less": "Less",
+    "days": "days"
+  },
+  "map": {
+    "selectMetric": "SELECT METRIC",
+    "searchPlaceholder": "Search for district or state...",
+    "searchDistricts": "Search districts...",
+    "noResults": "No results found",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "resetMap": "Reset map",
+    "loadingMap": "Loading district map...",
+    "loadingData": "Loading data..."
+  }
+}

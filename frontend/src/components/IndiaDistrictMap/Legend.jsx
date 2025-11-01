@@ -1,7 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './Legend.css';
 
 const Legend = ({ selectedMetric, metricConfig }) => {
+  const { t } = useTranslation();
   if (!metricConfig) return null;
 
   // Create color blocks from colorStops
@@ -39,7 +41,7 @@ const Legend = ({ selectedMetric, metricConfig }) => {
       <div className="legend-info">
         <div className="legend-info-item">
           <div className="legend-dot" style={{ backgroundColor: '#bdbdbd' }} />
-          <span className="legend-text">No data</span>
+          <span className="legend-text">{t('legend.noData')}</span>
         </div>
       </div>
     </div>

@@ -1,0 +1,184 @@
+{
+  "app": {
+    "title": "MGNREGA Report Card",
+    "subtitle": "District Performance Dashboard"
+  },
+  "navigation": {
+    "home": "Home",
+    "back": "Back",
+    "backToSelector": "Back to selector",
+    "goToHome": "Go to Home"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "noData": "No data",
+    "na": "N/A",
+    "close": "Close",
+    "show": "Show",
+    "hide": "Hide",
+    "more": "More",
+    "less": "Less",
+    "days": "days"
+  },
+  "map": {
+    "selectMetric": "SELECT METRIC",
+    "searchPlaceholder": "Search for district or state...",
+    "searchDistricts": "Search districts...",
+    "noResults": "No results found",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "resetMap": "Reset map",
+    "loadingMap": "Loading district map...",
+    "loadingData": "Loading data..."
+  },
+  "mapControls": {
+    "search": "Search for district or state..."
+  },
+  "locationPrompt": {
+    "detecting": "Detecting your location...",
+    "subtitle": "We'll show your district's report",
+    "dismiss": "Dismiss"
+  },
+  "metrics": {
+    "paymentsOnTime": "Payments on time",
+    "paymentsOnTimeDesc": "Share of wages paid within 15 days.",
+    "familiesGotWork": "Families who got work",
+    "familiesGotWorkDesc": "Households that received employment this month.",
+    "avgDaysWork": "Average days of work",
+    "avgDaysWorkDesc": "Average number of days of work provided per household.",
+    "performanceTrend": "Performance trend",
+    "womenParticipation": "Women's participation",
+    "womenParticipationDesc": "Percentage of work done by women.",
+    "avgWageRate": "Average wage rate",
+    "avgWageRateDesc": "Average daily wage paid to workers.",
+    "households100Days": "100-day households",
+    "households100DaysDesc": "Households that completed 100 days of work.",
+    "workCompletionRate": "Work completion rate",
+    "workCompletionRateDesc": "Percentage of works completed vs ongoing.",
+    "scstParticipation": "SC/ST participation",
+    "scstParticipationDesc": "Percentage of work by SC/ST communities.",
+    "agricultureWorks": "Agriculture works",
+    "agricultureWorksDesc": "Share of agriculture-related projects.",
+    "nrmExpenditure": "NRM expenditure",
+    "nrmExpenditureDesc": "Natural Resource Management spending.",
+    "categoryBWorks": "Category B works",
+    "categoryBWorksDesc": "Infrastructure development projects.",
+    "worksCompleted": "Total works completed",
+    "worksCompletedDesc": "Number of projects finished.",
+    "worksOngoing": "Ongoing works",
+    "worksOngoingDesc": "Projects currently in progress."
+  },
+  "metricTitles": {
+    "paymentTimeliness": "Payment Timeliness",
+    "averagePaymentDays": "Average Payment Days",
+    "womenParticipation": "Women Participation",
+    "households100Days": "100-Day Employment",
+    "scstParticipation": "SC/ST Participation",
+    "workCompletionRate": "Work Completion Rate",
+    "averageWageRate": "Average Wage Rate",
+    "agricultureWorks": "Agriculture Works"
+  },
+  "legend": {
+    "title": "Legend",
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High",
+    "noData": "No Data"
+  },
+  "advancedMetrics": {
+    "title": "Advanced Metrics",
+    "showDetailed": "Show detailed analytics",
+    "hideDetailed": "Hide detailed analytics"
+  },
+  "tooltip": {
+    "district": "District",
+    "state": "State",
+    "payment": "Payment",
+    "avgDays": "Avg Days",
+    "women": "Women"
+  },
+  "reportCard": {
+    "loadingData": "Loading performance data…",
+    "errorTitle": "Unable to load district data",
+    "errorMessage": "Please check your connection or try again later.",
+    "noDataTitle": "We don't have data for {{district}} yet",
+    "noDataMessage": "Please try another district or check back again soon.",
+    "backToSelector": "Back to selector",
+    "outdatedWarning": "This data may be outdated. Last updated {{date}}.",
+    "lastUpdated": "Last updated:",
+    "primaryMetrics": "Primary metrics",
+    "trendIndicator": "Trend indicator",
+    "selectPeriod": "Select Period",
+    "viewDataFor": "View data for",
+    "latest": "Latest",
+    "showingLast12Months": "Showing last 12 months",
+    "totalPeriodsAvailable": "total periods available",
+    "advancedMetrics": "Advanced Metrics",
+    "detailedAnalytics": "detailed analytics",
+    "detailedPerformanceAnalytics": "Detailed Performance Analytics",
+    "districtReport": "District Report",
+    "dataFor": "Data for",
+    "goodNewsFrom": "Good news from {{district}} district",
+    "performanceImproving": "Performance is improving with {{percentage}}% of wages paid on time",
+    "stable": "Stable",
+    "improving": "Improving",
+    "declining": "Declining",
+    "stableDesc": "Payment performance is holding steady compared to last month.",
+    "improvingDesc": "More workers are being paid on time compared to last month.",
+    "decliningDesc": "Timely payments have fallen since last month."
+  },
+  "errors": {
+    "failedToLoad": "Failed to load district data. Please try again.",
+    "mapFailed": "Map failed to load. Please refresh the page.",
+    "initFailed": "Failed to initialize map. Please refresh the page.",
+    "connectionError": "Connection error. Please check your internet.",
+    "dataNotAvailable": "Data not available for this district."
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "message": "The page you are looking for does not exist."
+  },
+  "units": {
+    "percent": "%",
+    "days": "days",
+    "day": "day",
+    "perDay": "/day",
+    "households": "households",
+    "works": "works",
+    "projects": "projects",
+    "rupee": "₹"
+  },
+  "months": {
+    "january": "January",
+    "february": "February",
+    "march": "March",
+    "april": "April",
+    "may": "May",
+    "june": "June",
+    "july": "July",
+    "august": "August",
+    "september": "September",
+    "october": "October",
+    "november": "November",
+    "december": "December"
+  },
+  "accessibility": {
+    "expandSection": "Expand section",
+    "collapseSection": "Collapse section",
+    "toggleAdvancedMetrics": "Toggle advanced metrics"
+  },
+  "summary": {
+    "heading": "District Performance Summary",
+    "thisDistrict": "this district",
+    "noData": "We are currently unable to show a full summary for {{district}} for {{month}} {{year}} as some data is missing. Please check the detailed numbers below or try again later.",
+    "trendImproving": "getting better",
+    "trendStable": "staying steady",
+    "trendDeclining": "getting worse",
+    "goodPerformance": "Good news from {{district}} district in {{state}}! For {{month}} {{year}}, the MGNREGA work is going well 👍. Almost all workers ({{paymentPercent}}%) are getting their wages paid quickly and on time. Many families ({{families}}) found work, getting about {{avgDays}} days of work each on average. Things are currently {{trend}}.",
+    "averagePerformance": "Here's the update for {{district}} district in {{state}} for {{month}} {{year}}. Many families ({{families}}) got work through MGNREGA, working around {{avgDays}} days each. While most payments ({{paymentPercent}}%) are on time, there are still some delays we hope improve ⚠️. The situation is currently {{trend}}.",
+    "poorPerformance": "In {{district}} district, {{state}}, for {{month}} {{year}}, attention is needed for MGNREGA payments. Although {{families}} families received work (averaging {{avgDays}} days), many are facing delays in getting their wages (only {{paymentPercent}}% paid on time ❌). We hope this improves soon. The overall trend is currently {{trend}}.",
+    "incompleteNotice": "Summary generated from available data. Some metrics may be incomplete."
+  }
+}

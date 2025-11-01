@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { MetricCard } from './index';
 import { MetricIcons } from './MetricIcons';
+import HistoricalAnalysis from './HistoricalAnalysis';
 import { formatPercentage, formatNumber } from '../../utils/formatters';
 import './AdvancedMetricsDropdown.css';
 
-const AdvancedMetricsDropdown = ({ performanceData }) => {
+const AdvancedMetricsDropdown = ({ performanceData, districtName, availablePeriods }) => {
+  const { t } = useTranslation();
   const [isExpanded, setIsExpanded] = useState(false);
   
   if (!performanceData || !performanceData.currentMonth) {
@@ -31,10 +34,10 @@ const AdvancedMetricsDropdown = ({ performanceData }) => {
           >
             <polyline points="6 9 12 15 18 9" />
           </svg>
-          Advanced Metrics
+          {t('reportCard.advancedMetrics')}
         </span>
         <span className="toggle-hint">
-          {isExpanded ? 'Hide' : 'Show'} detailed analytics
+          {isExpanded ? t('common.hide') : t('common.show')} {t('reportCard.detailedAnalytics')}
         </span>
       </button>
 
@@ -46,7 +49,7 @@ const AdvancedMetricsDropdown = ({ performanceData }) => {
           aria-labelledby="advanced-metrics-heading"
         >
           <h3 id="advanced-metrics-heading" className="advanced-metrics-title">
-            Detailed Performance Analytics
+            {t('reportCard.detailedPerformanceAnalytics')}
           </h3>
           
           <div className="metrics-grid">
@@ -98,6 +101,12 @@ const AdvancedMetricsDropdown = ({ performanceData }) => {
               description="Projects currently in progress."
             />
           </div>
+
+          {/* Historical Analysis Section */}
+          <HistoricalAnalysis 
+            districtName={districtName}
+            availablePeriods={availablePeriods}
+          />
         </div>
       )}
     </section>

@@ -1,7 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import './LoadingOverlay.css';
 
-const LoadingOverlay = ({ message = 'Loading district map...' }) => {
+const LoadingOverlay = ({ message }) => {
+  const { t } = useTranslation();
+  const displayMessage = message || t('map.loadingMap');
   return (
     <motion.div
       className="loading-overlay"
@@ -12,11 +16,18 @@ const LoadingOverlay = ({ message = 'Loading district map...' }) => {
     >
       <div className="loading-content">
         <div className="loading-spinner">
-          <div className="spinner-ring"></div>
-          <div className="spinner-ring"></div>
-          <div className="spinner-ring"></div>
+          <svg className="spinner-svg" viewBox="0 0 50 50">
+            <circle
+              className="spinner-circle"
+              cx="25"
+              cy="25"
+              r="20"
+              fill="none"
+              strokeWidth="3"
+            />
+          </svg>
         </div>
-        <p className="loading-message">{message}</p>
+        <p className="loading-message">{displayMessage}</p>
       </div>
     </motion.div>
   );

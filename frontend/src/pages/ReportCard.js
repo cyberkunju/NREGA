@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { getPerformance } from '../services/api';
+import { useTranslation } from 'react-i18next';
+import { getPerformance, getAvailablePeriods } from '../services/api';
 import ReportCardHeader from '../components/ReportCard/ReportCardHeader';
 import NaturalLanguageSummary from '../components/ReportCard/NaturalLanguageSummary';
+import TimelineSelector from '../components/ReportCard/TimelineSelector';
 import { MetricCard, TrendIndicator } from '../components/ReportCard';
 import { MetricIcons } from '../components/ReportCard/MetricIcons';
 import AdvancedMetricsDropdown from '../components/ReportCard/AdvancedMetricsDropdown';
@@ -17,20 +19,42 @@ import {
 import './ReportCard.css';
 
 const ReportCard = () => {
+  const { t } = useTranslation();
   const { districtName } = useParams();
   const navigate = useNavigate();
   
   const [performanceData, setPerformanceData] = useState(null);
+  const [availablePeriods, setAvailablePeriods] = useState([]);
+  const [selectedPeriod, setSelectedPeriod] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // Fetch available periods when district changes
+  useEffect(() => {
+    const fetchPeriods = async () => {
+      if (districtName) {
+        const periods = await getAvailablePeriods(districtName);
+        setAvailablePeriods(periods);
+        if (periods.length > 0) {
+          setSelectedPeriod(periods[0]); // Set to latest by default
+        }
+      }
+    };
+    fetchPeriods();
+  }, [districtName]);
+
+  // Fetch performance data when district or selected period changes
   useEffect(() => {
     const fetchPerformanceData = async () => {
       setLoading(true);
       setError(null);
       
       try {
-        const data = await getPerformance(districtName);
+        const data = await getPerformance(
+          districtName,
+          selectedPeriod?.year,
+          selectedPeriod?.month
+        );
         setPerformanceData(data);
       } catch (err) {
         setError(err);
@@ -39,10 +63,14 @@ const ReportCard = () => {
       }
     };
 
-    if (districtName) {
+    if (districtName && selectedPeriod) {
       fetchPerformanceData();
     }
-  }, [districtName]);
+  }, [districtName, selectedPeriod]);
+
+  const handlePeriodChange = (period) => {
+    setSelectedPeriod(period);
+  };
 
   const handleBackToSelector = () => {
     navigate('/');
@@ -58,28 +86,28 @@ const ReportCard = () => {
     switch (trend) {
       case 'improving':
         return {
-          label: 'Improving',
+          label: t('reportCard.improving'),
           indicator: 'positive',
           icon: '↑',
-          description: 'More workers are being paid on time compared to last month.',
+          description: t('reportCard.improvingDesc'),
         };
       case 'declining':
         return {
-          label: 'Declining',
+          label: t('reportCard.declining'),
           indicator: 'negative',
           icon: '↓',
-          description: 'Timely payments have fallen since last month.',
+          description: t('reportCard.decliningDesc'),
         };
       case 'stable':
       default:
         return {
-          label: 'Stable',
+          label: t('reportCard.stable'),
           indicator: 'neutral',
           icon: '→',
-          description: 'Payment performance is holding steady compared to last month.',
+          description: t('reportCard.stableDesc'),
         };
     }
-  }, [trend]);
+  }, [trend, t]);
 
   const paymentIndicator = useMemo(() => {
     switch (paymentClassification) {
@@ -103,7 +131,7 @@ const ReportCard = () => {
       <div className="report-card-page">
         <div className="loading-state" role="status" aria-live="polite">
           <div className="loading-spinner" />
-          <p>Loading performance data…</p>
+          <p>{t('reportCard.loadingData')}</p>
         </div>
       </div>
     );
@@ -115,11 +143,11 @@ const ReportCard = () => {
       <div className="report-card-page">
         <div className="error-state" role="alert">
           <div className="error-icon" aria-hidden="true">⚠</div>
-          <h2>Unable to load district data</h2>
-          <p>{error.message || 'Please check your connection or try again later.'}</p>
+          <h2>{t('reportCard.errorTitle')}</h2>
+          <p>{error.message || t('reportCard.errorMessage')}</p>
           <div className="error-actions">
             <button type="button" className="secondary-button" onClick={handleBackToSelector}>
-              Back to selector
+              {t('reportCard.backToSelector')}
             </button>
           </div>
         </div>
@@ -159,44 +187,50 @@ const ReportCard = () => {
           <aside className="data-banner" role="note">
             <span className="data-banner__icon" aria-hidden="true">⚠</span>
             <span>
-              This data may be outdated. Last updated {formatDate(lastUpdated)}.
+              {t('reportCard.outdatedWarning', { date: formatDate(lastUpdated) })}
             </span>
           </aside>
         )}
 
         <NaturalLanguageSummary performanceData={performanceData} />
 
+        <TimelineSelector
+          currentPeriod={selectedPeriod}
+          onPeriodChange={handlePeriodChange}
+          availablePeriods={availablePeriods}
+        />
+
         <section className="primary-metrics" aria-labelledby="primary-metrics-heading">
-          <h2 id="primary-metrics-heading" className="sr-only">Primary metrics</h2>
+          <h2 id="primary-metrics-heading" className="sr-only">{t('reportCard.primaryMetrics')}</h2>
           <div className="metrics-grid">
             <MetricCard
-              title="Payments on time"
+              title={t('metrics.paymentsOnTime')}
               value={formatPercentage(currentMonth.paymentPercentage)}
               icon={MetricIcons.rupee}
               indicator={paymentIndicator}
               accentColor={paymentColor}
-              description="Share of wages paid within 15 days."
+              description={t('metrics.paymentsOnTimeDesc')}
             />
 
             <MetricCard
-              title="Families who got work"
+              title={t('metrics.familiesGotWork')}
               value={formatNumber(currentMonth.totalHouseholds)}
               icon={MetricIcons.users}
               indicator="neutral"
-              description="Households that received employment this month."
+              description={t('metrics.familiesGotWorkDesc')}
             />
 
             <MetricCard
-              title="Average days of work"
+              title={t('metrics.avgDaysWork')}
               value={currentMonth.averageDays?.toFixed(1) ?? '0.0'}
-              unit=" days"
+              unit={` ${t('common.days')}`}
               icon={MetricIcons.calendar}
               indicator="neutral"
-              description="Average number of days of work provided per household."
+              description={t('metrics.avgDaysWorkDesc')}
             />
 
             <MetricCard
-              title="Performance trend"
+              title={t('metrics.performanceTrend')}
               value={trendConfig.label}
               icon={trend === 'improving' ? MetricIcons.trendUp : trend === 'declining' ? MetricIcons.trendDown : MetricIcons.trendStable}
               indicator={trendConfig.indicator}
@@ -204,47 +238,51 @@ const ReportCard = () => {
             />
 
             <MetricCard
-              title="Women's participation"
-              value={currentMonth.womenParticipation ? formatPercentage(currentMonth.womenParticipation) : 'N/A'}
+              title={t('metrics.womenParticipation')}
+              value={currentMonth.womenParticipation ? formatPercentage(currentMonth.womenParticipation) : t('common.na')}
               icon={MetricIcons.women}
               indicator={currentMonth.womenParticipation >= 50 ? 'positive' : 'neutral'}
-              description="Percentage of work done by women."
+              description={t('metrics.womenParticipationDesc')}
             />
 
             <MetricCard
-              title="Average wage rate"
-              value={currentMonth.averageWage ? `₹${currentMonth.averageWage.toFixed(0)}` : 'N/A'}
+              title={t('metrics.avgWageRate')}
+              value={currentMonth.averageWage ? `₹${currentMonth.averageWage.toFixed(0)}` : t('common.na')}
               icon={MetricIcons.wage}
               indicator="neutral"
-              description="Average daily wage paid to workers."
+              description={t('metrics.avgWageRateDesc')}
             />
 
             <MetricCard
-              title="100-day households"
-              value={currentMonth.households100Days ? formatNumber(currentMonth.households100Days) : 'N/A'}
+              title={t('metrics.households100Days')}
+              value={currentMonth.households100Days ? formatNumber(currentMonth.households100Days) : t('common.na')}
               icon={MetricIcons.target}
               indicator={currentMonth.households100Days > 0 ? 'positive' : 'neutral'}
-              description="Households that completed 100 days of work."
+              description={t('metrics.households100DaysDesc')}
             />
 
             <MetricCard
-              title="Work completion rate"
-              value={currentMonth.workCompletion ? formatPercentage(currentMonth.workCompletion) : 'N/A'}
+              title={t('metrics.workCompletionRate')}
+              value={currentMonth.workCompletion ? formatPercentage(currentMonth.workCompletion) : t('common.na')}
               icon={MetricIcons.checkmark}
               indicator={currentMonth.workCompletion >= 70 ? 'positive' : 'neutral'}
-              description="Percentage of works completed vs ongoing."
+              description={t('metrics.workCompletionRateDesc')}
             />
           </div>
         </section>
 
-        <AdvancedMetricsDropdown performanceData={performanceData} />
+        <AdvancedMetricsDropdown 
+          performanceData={performanceData}
+          districtName={districtName}
+          availablePeriods={availablePeriods}
+        />
 
         <section className="trend-indicator-section" aria-label="Trend indicator">
           <TrendIndicator trend={trend} />
         </section>
 
         <footer className="report-card-footer">
-          <p className="last-updated">Last updated: {formatDate(lastUpdated)}</p>
+          <p className="last-updated">{t('reportCard.lastUpdated')} {formatDate(lastUpdated)}</p>
         </footer>
       </div>
     </div>

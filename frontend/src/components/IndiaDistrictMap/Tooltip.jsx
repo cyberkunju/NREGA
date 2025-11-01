@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './Tooltip.css';
 
 // Minimalistic SVG icons
@@ -26,6 +27,8 @@ const TooltipIcons = {
 };
 
 const Tooltip = ({ show, x, y, data }) => {
+  const { t } = useTranslation();
+  
   if (!show || !data) return null;
 
   const style = {
@@ -37,7 +40,7 @@ const Tooltip = ({ show, x, y, data }) => {
 
   // Format helper
   const formatValue = (value, formatter) => {
-    if (value === null || value === undefined) return 'No data';
+    if (value === null || value === undefined) return t('legend.noData');
     return formatter ? formatter(value) : value;
   };
 
@@ -53,7 +56,7 @@ const Tooltip = ({ show, x, y, data }) => {
       <div className="tooltip-content">
         {/* Current selected metric - highlighted */}
         <div className="tooltip-metric current">
-          <span className="tooltip-label">{data.currentMetric}:</span>
+          <span className="tooltip-label">{data.currentMetricKey ? t(data.currentMetricKey) : ''}:</span>
           <span className={`tooltip-value ${data.hasData ? '' : 'no-data'}`}>
             {data.currentValue}
           </span>
@@ -66,7 +69,7 @@ const Tooltip = ({ show, x, y, data }) => {
         <div className="tooltip-metrics-grid">
           <div className="tooltip-metric-row">
             <span className="tooltip-metric-icon">{TooltipIcons.payment}</span>
-            <span className="tooltip-metric-label">Payment:</span>
+            <span className="tooltip-metric-label">{t('tooltip.payment')}:</span>
             <span className="tooltip-metric-value">
               {formatValue(data.paymentPercentage, (v) => `${v.toFixed(1)}%`)}
             </span>
@@ -74,7 +77,7 @@ const Tooltip = ({ show, x, y, data }) => {
           
           <div className="tooltip-metric-row">
             <span className="tooltip-metric-icon">{TooltipIcons.calendar}</span>
-            <span className="tooltip-metric-label">Avg Days:</span>
+            <span className="tooltip-metric-label">{t('tooltip.avgDays')}:</span>
             <span className="tooltip-metric-value">
               {formatValue(data.averageDays, (v) => `${Math.round(v)}d`)}
             </span>
@@ -82,7 +85,7 @@ const Tooltip = ({ show, x, y, data }) => {
           
           <div className="tooltip-metric-row">
             <span className="tooltip-metric-icon">{TooltipIcons.user}</span>
-            <span className="tooltip-metric-label">Women:</span>
+            <span className="tooltip-metric-label">{t('tooltip.women')}:</span>
             <span className="tooltip-metric-value">
               {formatValue(data.womenParticipationPercent, (v) => `${v.toFixed(1)}%`)}
             </span>

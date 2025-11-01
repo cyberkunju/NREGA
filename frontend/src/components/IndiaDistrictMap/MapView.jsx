@@ -1,10 +1,12 @@
-import React, { useRef, useEffect, useState, useCallback } from 'react';
+import React, { useRef, useEffect, useState, useCallback, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import * as turf from '@turf/turf';
 import { getHeatmapData } from '../../services/api';
 import { normalizeDistrictName, createLookupKeys, findBestMatch } from '../../utils/districtNameMapping';
+import { detectUserDistrict } from '../../utils/locationDetection';
 import perfectMapping from '../../data/perfect-district-mapping-v2.json';
 import MetricSelector from './MetricSelector';
 import Legend from './Legend';
@@ -12,14 +14,17 @@ import Tooltip from './Tooltip';
 import LoadingOverlay from './LoadingOverlay';
 import SearchBar from './SearchBar';
 import Logo from './Logo';
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
+import LocationPrompt from './LocationPrompt';
 import './MapView.css';
 
 // Metric configurations with color ramps
+// Note: titles will be translated dynamically using i18n
 const METRICS = {
   // Primary Metrics
   paymentPercentage: {
     key: 'paymentPercentage',
-    title: 'Payment Timeliness',
+    titleKey: 'metricTitles.paymentTimeliness',
     unit: '%',
     format: (val) => `${val.toFixed(1)}%`,
     colorStops: [0, '#dc2626', 0.1, '#ef4444', 25, '#f59e0b', 50, '#eab308', 75, '#84cc16', 100, '#10b981'],
@@ -28,7 +33,7 @@ const METRICS = {
   },
   averageDays: {
     key: 'averageDays',
-    title: 'Average Payment Days',
+    titleKey: 'metricTitles.averagePaymentDays',
     unit: ' days',
     format: (val) => `${Math.round(val)} days`,
     colorStops: [0, '#10b981', 25, '#84cc16', 50, '#eab308', 75, '#f59e0b', 100, '#ef4444', 105, '#dc2626'],
@@ -37,7 +42,7 @@ const METRICS = {
   },
   womenParticipation: {
     key: 'womenParticipationPercent',
-    title: 'Women Participation',
+    titleKey: 'metricTitles.womenParticipation',
     unit: '%',
     format: (val) => `${val.toFixed(1)}%`,
     colorStops: [0, '#dc2626', 0.1, '#ef4444', 25, '#f59e0b', 50, '#eab308', 75, '#84cc16', 100, '#10b981'],
@@ -48,7 +53,7 @@ const METRICS = {
   // Advanced Metrics
   households100Days: {
     key: 'households100DaysPercent',
-    title: '100-Day Employment',
+    titleKey: 'metricTitles.households100Days',
     unit: '%',
     format: (val) => `${val.toFixed(1)}%`,
     colorStops: [0, '#dc2626', 0.1, '#ef4444', 5, '#f59e0b', 10, '#eab308', 15, '#84cc16', 20, '#10b981'],
@@ -57,7 +62,7 @@ const METRICS = {
   },
   scstParticipation: {
     key: 'scstParticipationPercent',
-    title: 'SC/ST Participation',
+    titleKey: 'metricTitles.scstParticipation',
     unit: '%',
     format: (val) => `${val.toFixed(1)}%`,
     colorStops: [0, '#dc2626', 0.1, '#ef4444', 15, '#f59e0b', 30, '#eab308', 45, '#84cc16', 60, '#10b981'],
@@ -66,7 +71,7 @@ const METRICS = {
   },
   workCompletion: {
     key: 'workCompletionPercent',
-    title: 'Work Completion Rate',
+    titleKey: 'metricTitles.workCompletionRate',
     unit: '%',
     format: (val) => `${val.toFixed(1)}%`,
     colorStops: [0, '#dc2626', 0.1, '#ef4444', 25, '#f59e0b', 50, '#eab308', 75, '#84cc16', 100, '#10b981'],
@@ -75,7 +80,7 @@ const METRICS = {
   },
   averageWage: {
     key: 'averageWageRate',
-    title: 'Average Wage Rate',
+    titleKey: 'metricTitles.averageWageRate',
     unit: '/day',
     format: (val) => `₹${Math.round(val)}`,
     colorStops: [0, '#dc2626', 150, '#ef4444', 200, '#f59e0b', 250, '#eab308', 300, '#84cc16', 350, '#10b981'],
@@ -84,7 +89,7 @@ const METRICS = {
   },
   agricultureWorks: {
     key: 'agricultureWorksPercent',
-    title: 'Agriculture Works',
+    titleKey: 'metricTitles.agricultureWorks',
     unit: '%',
     format: (val) => `${val.toFixed(1)}%`,
     colorStops: [0, '#dc2626', 0.1, '#ef4444', 20, '#f59e0b', 40, '#eab308', 60, '#84cc16', 80, '#10b981'],
@@ -105,10 +110,154 @@ const MapView = () => {
   const [error, setError] = useState(null);
   const [tooltip, setTooltip] = useState({ show: false, x: 0, y: 0, data: null });
   const [showAdvancedMetrics, setShowAdvancedMetrics] = useState(false);
+  const [showLocationPrompt, setShowLocationPrompt] = useState(false);
   
   const hoveredDistrictId = useRef(null);
   const enrichedDataRef = useRef(null); // Store enriched data for property lookups
   const selectedMetricRef = useRef(selectedMetric); // Ref to always have current metric
+  const autoDetectionAttempted = useRef(false); // Track if we've already tried auto-detection
+
+  // Auto-detect user's location and navigate to their district
+  const tryAutoDetectLocation = useCallback(async (geoJSON) => {
+    // Check if already attempted in this session
+    const sessionAttempted = sessionStorage.getItem('autoLocationAttempted');
+    if (sessionAttempted === 'true') {
+      console.log('🚫 Auto-location already attempted in this session');
+      return;
+    }
+
+    // Only try once per session
+    if (autoDetectionAttempted.current) return;
+    autoDetectionAttempted.current = true;
+    
+    // Mark as attempted for this session
+    sessionStorage.setItem('autoLocationAttempted', 'true');
+
+    // Check if user has previously dismissed auto-detection permanently
+    const dismissed = localStorage.getItem('autoLocationDismissed');
+    if (dismissed === 'true') {
+      console.log('🚫 Auto-location previously dismissed by user');
+      return;
+    }
+
+    try {
+      console.log('🌍 Attempting auto-location detection...');
+      setShowLocationPrompt(true);
+      
+      const result = await detectUserDistrict(geoJSON);
+      
+      console.log('🔍 Detection result:', result);
+      
+      if (result && result.districtName) {
+        console.log('✅ Auto-detected district:', result.districtName);
+        console.log('🔍 Feature properties:', result.feature.properties);
+        
+        // Find the matching district in our data using perfect mapping
+        const stateNameRaw = result.feature.properties.state_name || result.feature.properties.STATE || result.feature.properties.st_nm;
+        const normalizedState = normalizeDistrictName(stateNameRaw);
+        const normalizedDistrict = normalizeDistrictName(result.districtName);
+        const compositeKey = `${normalizedState}:${normalizedDistrict}`;
+        
+        console.log('🔍 Looking up mapping with key:', compositeKey);
+        let mapping = perfectMapping.mappings[compositeKey];
+        let matchedKey = compositeKey; // Track which key was actually matched
+        console.log('🔍 Mapping found:', mapping);
+        
+        // If exact match not found, try fuzzy matching
+        if (!mapping) {
+          console.log('🔍 Exact match not found, trying fuzzy matching...');
+          
+          // Get all keys for the same state
+          const stateKeys = Object.keys(perfectMapping.mappings).filter(key => 
+            key.startsWith(normalizedState + ':')
+          );
+          
+          console.log('🔍 Available keys for state:', stateKeys.slice(0, 10));
+          
+          // Try to find a partial match
+          const partialMatch = stateKeys.find(key => {
+            const keyDistrict = key.split(':')[1];
+            // Check if either contains the other
+            return keyDistrict.includes(normalizedDistrict) || 
+                   normalizedDistrict.includes(keyDistrict);
+          });
+          
+          if (partialMatch) {
+            console.log('✅ Found partial match:', partialMatch);
+            mapping = perfectMapping.mappings[partialMatch];
+            matchedKey = partialMatch; // Update matched key
+          }
+        }
+        
+        if (mapping) {
+          // Get API district and state names
+          let apiDistrictName, apiStateName;
+          
+          if (mapping.apiDistrict && mapping.apiState) {
+            // Use explicit API names if available
+            apiDistrictName = mapping.apiDistrict;
+            apiStateName = mapping.apiState;
+          } else if (mapping.geoDistrict && mapping.geoState) {
+            // Use geoDistrict name - this is what's in the enriched data
+            // The enriched GeoJSON has apiDistrictName property that matches the API
+            apiDistrictName = mapping.geoDistrict;
+            apiStateName = mapping.geoState;
+            
+            // Try to find the actual API name from enriched data
+            if (enrichedDataRef.current) {
+              const matchingFeature = enrichedDataRef.current.features.find(f => 
+                f.properties.district_name === mapping.geoDistrict &&
+                f.properties.state_name === mapping.geoState
+              );
+              
+              if (matchingFeature && matchingFeature.properties.apiDistrictName) {
+                apiDistrictName = matchingFeature.properties.apiDistrictName;
+                apiStateName = matchingFeature.properties.apiStateName || mapping.geoState;
+                console.log('✅ Found API names from enriched data:', { apiDistrictName, apiStateName });
+              }
+            }
+          } else {
+            // Fallback: extract from the matched key
+            const [state, district] = matchedKey.split(':');
+            apiStateName = state.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+            apiDistrictName = district.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+          }
+          
+          console.log('🔍 Using API names:', { apiDistrictName, apiStateName });
+          
+          // Navigate to the district report page
+          // Route format is /district/:districtName (URL encoded)
+          const districtParam = encodeURIComponent(apiDistrictName);
+          
+          console.log(`🚀 Navigating to: /district/${districtParam}`);
+          
+          // Small delay to ensure map is visible first
+          setTimeout(() => {
+            setShowLocationPrompt(false);
+            navigate(`/district/${districtParam}`);
+          }, 2000);
+        } else {
+          console.warn('⚠️ District found but no API mapping available');
+          console.warn('⚠️ Composite key:', compositeKey);
+          console.warn('⚠️ Available keys sample:', Object.keys(perfectMapping.mappings).slice(0, 10));
+          setShowLocationPrompt(false);
+        }
+      } else {
+        console.warn('⚠️ No district detected from location');
+        setShowLocationPrompt(false);
+      }
+    } catch (error) {
+      console.error('❌ Auto-location error:', error);
+      console.error('❌ Error stack:', error.stack);
+      setShowLocationPrompt(false);
+      // Silently fail - user can still use the map normally
+    }
+  }, [navigate]);
+
+  const handleDismissLocationPrompt = useCallback(() => {
+    setShowLocationPrompt(false);
+    localStorage.setItem('autoLocationDismissed', 'true');
+  }, []);
 
   // Initialize MapLibre GL map (Task 3)
   useEffect(() => {
@@ -127,7 +276,7 @@ const MapView = () => {
               id: 'background',
               type: 'background',
               paint: {
-                'background-color': '#a8dadc'
+                'background-color': '#E3F2FD'
               }
             }
           ],
@@ -450,6 +599,9 @@ const MapView = () => {
         enrichedDataRef.current = enriched;
         setEnrichedGeoJSON(enriched);
         setLoading(false);
+
+        // Auto-detect user's location and navigate to their district
+        tryAutoDetectLocation(geoJSON);
       } catch (err) {
         console.error('❌ Failed to load data:', err);
         setError('Failed to load district data. Please try again.');
@@ -743,7 +895,7 @@ const MapView = () => {
         data: {
           districtName: districtName,
           stateName: stateName,
-          currentMetric: metricConfig.title,
+          currentMetricKey: metricConfig.titleKey, // Pass translation key instead of title
           currentValue: metricValue !== null && metricValue !== undefined 
             ? metricConfig.format(Math.min(100, metricValue)) // Cap display at 100
             : 'No data',
@@ -808,9 +960,29 @@ const MapView = () => {
     });
   };
 
+  const { t } = useTranslation();
+  
+  // Get translated metrics for display (titles and units)
+  const translatedMetrics = useMemo(() => {
+    return Object.keys(METRICS).reduce((acc, key) => {
+      const metric = METRICS[key];
+      acc[key] = {
+        ...metric,
+        title: t(metric.titleKey),
+        // Translate units if they contain 'days'
+        unit: metric.unit.includes('days') ? ` ${t('common.days')}` : metric.unit,
+        // Update format function for days
+        format: key === 'averageDays' 
+          ? (val) => `${Math.round(val)} ${t('common.days')}`
+          : metric.format
+      };
+      return acc;
+    }, {});
+  }, [t]);
+
   return (
     <div className="map-wrapper">
-      {loading && <LoadingOverlay message="Loading district data..." />}
+      {loading && <LoadingOverlay message={t('map.loadingData')} />}
       {error && (
         <div className="map-error">
           <p>{error}</p>
@@ -818,7 +990,10 @@ const MapView = () => {
         </div>
       )}
       
+      {showLocationPrompt && <LocationPrompt onDismiss={handleDismissLocationPrompt} />}
+      
       <Logo />
+      <LanguageSwitcher />
       <SearchBar onSelectDistrict={(districtName) => navigate(`/district/${encodeURIComponent(districtName)}`)} />
       
       <div ref={mapContainer} className="map-container" />
@@ -828,13 +1003,13 @@ const MapView = () => {
           <MetricSelector 
             selectedMetric={selectedMetric} 
             onChange={handleMetricChange}
-            metrics={METRICS}
+            metrics={translatedMetrics}
             onAdvancedToggle={setShowAdvancedMetrics}
           />
           {!showAdvancedMetrics && (
             <Legend 
               selectedMetric={selectedMetric}
-              metricConfig={METRICS[selectedMetric]}
+              metricConfig={translatedMetrics[selectedMetric]}
             />
           )}
           <Tooltip {...tooltip} />

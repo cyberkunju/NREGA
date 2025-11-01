@@ -29,9 +29,9 @@
 }
 
 .back-to-map-link:hover {
-  background: #2196F3;
+  background: #10b981;
   color: #ffffff;
-  border-color: #2196F3;
+  border-color: #10b981;
   transform: translateX(-2px);
 }
 

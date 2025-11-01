@@ -2,13 +2,15 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-# Copy package files
+# Copy package files first (for better caching)
 COPY package*.json ./
 
-# Install dependencies
-RUN npm install
+# Install dependencies (this layer will be cached if package.json doesn't change)
+# Use --legacy-peer-deps to handle peer dependency conflicts
+RUN npm ci --legacy-peer-deps && \
+    npm cache clean --force
 
-# Copy application code
+# Copy application code (excluding node_modules via .dockerignore)
 COPY . .
 
 # Expose port
