@@ -268,6 +268,10 @@ router.get('/heatmap-data', async (req, res, next) => {
         mp.payment_percentage_15_days,
         mp.avg_days_employment_per_hh,
         mp.total_households_worked,
+        mp.women_persondays,
+        mp.persondays_of_central_liability,
+        mp.sc_persondays,
+        mp.st_persondays,
         mp.last_updated,
         -- Month order for proper sorting
         CASE LOWER(mp.month)
@@ -308,8 +312,7 @@ router.get('/heatmap-data', async (req, res, next) => {
     // Format response for heatmap consumption
     const heatmapData = cappedRecords.map(row => {
       // Calculate women participation percentage if data available
-      // Note: These fields may not exist in current schema, but are prepared for future use
-      const womenParticipation = row.women_persondays && row.persondays_of_central_liability_so_far
+      const womenParticipation = row.women_persondays && row.persondays_of_central_liability
         ? calculateWomenParticipation(row)
         : null;
       

@@ -145,13 +145,21 @@ async function upsertRecord(client, record) {
       total_households_worked,
       avg_days_employment_per_hh,
       payment_percentage_15_days,
+      women_persondays,
+      persondays_of_central_liability,
+      sc_persondays,
+      st_persondays,
       last_updated
-    ) VALUES ($1, $2, $3, $4, $5, $6, NOW())
+    ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, NOW())
     ON CONFLICT (district_name, month, fin_year)
     DO UPDATE SET
       total_households_worked = EXCLUDED.total_households_worked,
       avg_days_employment_per_hh = EXCLUDED.avg_days_employment_per_hh,
       payment_percentage_15_days = EXCLUDED.payment_percentage_15_days,
+      women_persondays = EXCLUDED.women_persondays,
+      persondays_of_central_liability = EXCLUDED.persondays_of_central_liability,
+      sc_persondays = EXCLUDED.sc_persondays,
+      st_persondays = EXCLUDED.st_persondays,
       last_updated = NOW()
     RETURNING (xmax = 0) AS inserted
   `;
@@ -163,6 +171,10 @@ async function upsertRecord(client, record) {
     record.total_households_worked,
     record.avg_days_employment_per_hh,
     record.payment_percentage_15_days,
+    record.women_persondays,
+    record.persondays_of_central_liability,
+    record.sc_persondays,
+    record.st_persondays,
   ];
 
   const result = await client.query(query, values);

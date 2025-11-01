@@ -33,6 +33,10 @@ CREATE TABLE IF NOT EXISTS monthly_performance (
   total_households_worked INTEGER NOT NULL,
   avg_days_employment_per_hh DECIMAL(8,2) NOT NULL,
   payment_percentage_15_days DECIMAL(8,2) NOT NULL,
+  women_persondays BIGINT,
+  persondays_of_central_liability BIGINT,
+  sc_persondays BIGINT,
+  st_persondays BIGINT,
   last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   CONSTRAINT unique_district_month_year UNIQUE(district_name, month, fin_year)
 );

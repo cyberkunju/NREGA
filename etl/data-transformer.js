@@ -79,6 +79,12 @@ function transformSingleRecord(record) {
   // Get state name from API (with GeoJSON mapping as fallback)
   const stateName = extractStateName(record);
 
+  // Extract social inclusion metrics
+  const womenPersondays = extractWomenPersondays(record);
+  const persondaysOfCentralLiability = extractPersondaysOfCentralLiability(record);
+  const scPersondays = extractSCPersondays(record);
+  const stPersondays = extractSTPersondays(record);
+
   return {
     district_name: districtName,
     state_name: stateName,
@@ -87,6 +93,10 @@ function transformSingleRecord(record) {
     total_households_worked: totalHouseholds,
     avg_days_employment_per_hh: avgDays,
     payment_percentage_15_days: paymentPercentage,
+    women_persondays: womenPersondays,
+    persondays_of_central_liability: persondaysOfCentralLiability,
+    sc_persondays: scPersondays,
+    st_persondays: stPersondays,
   };
 }
 
@@ -198,6 +208,62 @@ function extractPaymentPercentage(record) {
                 record.payment_percentage_15_days || 
                 record.paymentPercentage15Days || 
                 record.payment_percentage;
+  
+  return parseNumber(value);
+}
+
+/**
+ * Extract and parse women persondays
+ * @param {Object} record - Raw record
+ * @returns {number|null} Parsed number or null if invalid
+ */
+function extractWomenPersondays(record) {
+  // API field: Women_Persondays (note the capital W and camelCase)
+  const value = record.Women_Persondays || 
+                record.women_persondays || 
+                record.womenPersondays;
+  
+  return parseNumber(value);
+}
+
+/**
+ * Extract and parse total persondays of central liability
+ * @param {Object} record - Raw record
+ * @returns {number|null} Parsed number or null if invalid
+ */
+function extractPersondaysOfCentralLiability(record) {
+  // API field: Persondays_of_Central_Liability_so_far
+  const value = record.Persondays_of_Central_Liability_so_far || 
+                record.persondays_of_central_liability_so_far || 
+                record.persondaysOfCentralLiability;
+  
+  return parseNumber(value);
+}
+
+/**
+ * Extract and parse SC persondays
+ * @param {Object} record - Raw record
+ * @returns {number|null} Parsed number or null if invalid
+ */
+function extractSCPersondays(record) {
+  // API field: SC_persondays
+  const value = record.SC_persondays || 
+                record.sc_persondays || 
+                record.scPersondays;
+  
+  return parseNumber(value);
+}
+
+/**
+ * Extract and parse ST persondays
+ * @param {Object} record - Raw record
+ * @returns {number|null} Parsed number or null if invalid
+ */
+function extractSTPersondays(record) {
+  // API field: ST_persondays
+  const value = record.ST_persondays || 
+                record.st_persondays || 
+                record.stPersondays;
   
   return parseNumber(value);
 }

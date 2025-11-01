@@ -56,6 +56,7 @@ const MapView = () => {
   
   const hoveredDistrictId = useRef(null);
   const enrichedDataRef = useRef(null); // Store enriched data for property lookups
+  const selectedMetricRef = useRef(selectedMetric); // Ref to always have current metric
 
   // Initialize MapLibre GL map (Task 3)
   useEffect(() => {
@@ -80,6 +81,7 @@ const MapView = () => {
           ],
           glyphs: 'https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf'
         },
+        center: [78.9629, 22.5937], // Center of India
         zoom: 4,
         minZoom: 4,
         maxZoom: 10,
@@ -88,10 +90,71 @@ const MapView = () => {
         touchZoomRotate: false
       });
 
+      // Store initial center and bounds
+      let initialCenter = { lng: 78.9629, lat: 22.5937 };
+      let initialBounds = null;
+
       map.current.on('load', () => {
         console.log('✅ [MapView] Map loaded successfully');
         setMapLoaded(true);
       });
+
+      // Snap back to center at default zoom, constrain at higher zoom
+      map.current.on('moveend', () => {
+        if (!initialBounds) return;
+        
+        const currentZoom = map.current.getZoom();
+        const currentCenter = map.current.getCenter();
+        
+        // At default zoom level (4-4.5), snap back to center
+        if (currentZoom <= 4.5) {
+          const distanceFromCenter = Math.sqrt(
+            Math.pow(currentCenter.lng - initialCenter.lng, 2) + 
+            Math.pow(currentCenter.lat - initialCenter.lat, 2)
+          );
+          
+          // If moved more than a tiny amount, snap back
+          if (distanceFromCenter > 0.1) {
+            map.current.easeTo({
+              center: initialCenter,
+              duration: 500,
+              easing: (t) => t * (2 - t) // easeOutQuad
+            });
+          }
+        } else {
+          // When zoomed in, constrain to India's bounds
+          let needsCorrection = false;
+          let newCenter = { ...currentCenter };
+          
+          // Check longitude bounds
+          if (currentCenter.lng < initialBounds.getWest()) {
+            newCenter.lng = initialBounds.getWest() + 1;
+            needsCorrection = true;
+          } else if (currentCenter.lng > initialBounds.getEast()) {
+            newCenter.lng = initialBounds.getEast() - 1;
+            needsCorrection = true;
+          }
+          
+          // Check latitude bounds
+          if (currentCenter.lat < initialBounds.getSouth()) {
+            newCenter.lat = initialBounds.getSouth() + 1;
+            needsCorrection = true;
+          } else if (currentCenter.lat > initialBounds.getNorth()) {
+            newCenter.lat = initialBounds.getNorth() - 1;
+            needsCorrection = true;
+          }
+          
+          // Smoothly pan back if out of bounds
+          if (needsCorrection) {
+            map.current.panTo(newCenter, { duration: 300 });
+          }
+        }
+      });
+
+      // Store initial bounds reference
+      window.setInitialBounds = (bounds) => {
+        initialBounds = bounds;
+      };
 
       // Add navigation controls
       map.current.addControl(new maplibregl.NavigationControl(), 'top-right');
@@ -130,6 +193,7 @@ const MapView = () => {
         const apiData = heatmapResponse.data || heatmapResponse;
         console.log(`✅ Loaded ${apiData.length} districts from API`);
         console.log('🔍 First 3 districts:', apiData.slice(0, 3));
+        console.log('🔍 Women participation check:', apiData.filter(d => d.womenParticipationPercent !== null).slice(0, 5).map(d => `${d.districtName}: ${d.womenParticipationPercent}%`));
 
         // Load GeoJSON from public folder
         const geoResponse = await fetch('/india-districts.geojson');
@@ -353,10 +417,21 @@ const MapView = () => {
 
     if (map.current && enrichedGeoJSON.features.length > 0) {
       const bbox = turf.bbox(enrichedGeoJSON);
-      map.current.fitBounds(bbox, {
+      const bounds = [
+        [bbox[0], bbox[1]], // Southwest
+        [bbox[2], bbox[3]]  // Northeast
+      ];
+      
+      map.current.fitBounds(bounds, {
         padding: 40,
-        duration: 0
+        duration: 0,
+        maxZoom: 4 // Prevent fitBounds from zooming in too much
       });
+      
+      // Store initial bounds for constraint checking
+      if (window.setInitialBounds) {
+        window.setInitialBounds(map.current.getBounds());
+      }
     }
 
     // Add heatmap fill layer with initial metric
@@ -537,12 +612,18 @@ const MapView = () => {
   const handleMetricChange = (newMetric) => {
     console.log(`📊 Metric changed to: ${newMetric}`);
     setSelectedMetric(newMetric);
+    selectedMetricRef.current = newMetric; // Update ref immediately
     updateMapColors(newMetric);
   };
 
   // Setup hover and click interactions (Task 7 & 8)
   const setupInteractions = () => {
     if (!map.current) return;
+
+    // Remove existing event listeners to prevent duplicates
+    map.current.off('mousemove', 'district-heatmap');
+    map.current.off('mouseleave', 'district-heatmap');
+    map.current.off('click', 'district-heatmap');
 
     // Hover effect
     map.current.on('mousemove', 'district-heatmap', (e) => {
@@ -582,7 +663,7 @@ const MapView = () => {
         }
       }
       
-      const metricConfig = METRICS[selectedMetric];
+      const metricConfig = METRICS[selectedMetricRef.current];
       const metricValue = fullProps[metricConfig.key];
 
       // Get district and state names, handling both naming conventions

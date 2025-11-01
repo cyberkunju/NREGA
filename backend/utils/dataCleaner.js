@@ -70,7 +70,7 @@ function calculateWomenParticipation(record) {
   if (!record) return null;
 
   const womenPersondays = parseFloat(record.women_persondays || 0);
-  const totalPersondays = parseFloat(record.persondays_of_central_liability_so_far || record.total_persondays || 0);
+  const totalPersondays = parseFloat(record.persondays_of_central_liability || record.persondays_of_central_liability_so_far || record.total_persondays || 0);
 
   // Avoid division by zero
   if (totalPersondays === 0) {
@@ -100,7 +100,7 @@ function cleanRecords(records) {
     const cleaned = capPercentageFields(record);
     
     // Add calculated fields if base data exists
-    if (record.women_persondays && record.persondays_of_central_liability_so_far) {
+    if (record.women_persondays && (record.persondays_of_central_liability || record.persondays_of_central_liability_so_far)) {
       cleaned.women_participation_percent = calculateWomenParticipation(record);
     }
     
