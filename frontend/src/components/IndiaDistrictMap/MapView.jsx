@@ -10,6 +10,7 @@ import Legend from './Legend';
 import Tooltip from './Tooltip';
 import LoadingOverlay from './LoadingOverlay';
 import SearchBar from './SearchBar';
+import Logo from './Logo';
 import './MapView.css';
 
 // Metric configurations with color ramps (Gray -> Emerald)
@@ -661,6 +662,7 @@ const MapView = () => {
         </div>
       )}
       
+      <Logo />
       <SearchBar onSelectDistrict={(districtName) => navigate(`/district/${encodeURIComponent(districtName)}`)} />
       
       <div ref={mapContainer} className="map-container" />
